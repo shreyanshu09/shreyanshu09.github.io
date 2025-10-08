@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Language Toggle -->
@@ -64,14 +64,14 @@
                 </div>
                 
                 <div class="profile-showcase" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/profile.jpg" alt="Shreyanshu Bhushan" class="about-profile-img">
+                    <img src="images/profile.png" alt="Shreyanshu Bhushan" class="about-profile-img">
                     <div class="profile-stats">
                         <div class="stat">
-                            <span class="stat-number">5+</span>
+                            <span class="stat-number">2+</span>
                             <span class="stat-label" data-en="Years Total Experience" data-ko="총 경력 년수">Years Total Experience</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">15+</span>
+                            <span class="stat-number">17+</span>
                             <span class="stat-label" data-en="AI Projects Completed" data-ko="완료된 AI 프로젝트">AI Projects Completed</span>
                         </div>
                         <div class="stat">
@@ -179,7 +179,6 @@
                     <div class="competency-icon">🔧</div>
                     <h3 data-en="Software Engineering" data-ko="소프트웨어 엔지니어링">Software Engineering</h3>
                     <ul>
-                        <li data-en="Full-stack application development" data-ko="풀스택 애플리케이션 개발">Full-stack application development</li>
                         <li data-en="Distributed system architecture" data-ko="분산 시스템 아키텍처">Distributed system architecture</li>
                         <li data-en="API design and development" data-ko="API 설계 및 개발">API design and development</li>
                         <li data-en="Docker containerization" data-ko="Docker 컨테이너화">Docker containerization</li>
@@ -211,7 +210,7 @@
                         <div class="skill-bar">
                             <div class="skill-name">C++</div>
                             <div class="skill-progress">
-                                <div class="skill-fill" style="width: 80%"></div>
+                                <div class="skill-fill" style="width: 70%"></div>
                             </div>
                         </div>
                         <div class="skill-bar">
@@ -313,8 +312,14 @@
     <script src="js/script.js"></script>
     <style>
         /* Additional styles for About page */
+        
+        /* Fixed header compensation */
+        body {
+            padding-top: 80px; /* Adjust based on your navbar height */
+        }
+        
         .page-hero {
-            padding: 120px 0 80px;
+            padding: 40px 0 80px; /* Reduced top padding since we have body padding */
             text-align: center;
             background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
         }
@@ -639,6 +644,10 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding-top: 60px; /* Smaller padding for mobile */
+            }
+            
             .info-grid {
                 grid-template-columns: 1fr;
                 text-align: center;
