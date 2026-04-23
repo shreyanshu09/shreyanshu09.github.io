@@ -1,0 +1,140 @@
+/* ============================================
+   Design tokens — Neural Odyssey
+   Two accents (lime + ultraviolet), warm/cool duality
+   ============================================ */
+
+:root {
+  /* Type scale */
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-body:    'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Fluid sizes */
+  --fs-mega: clamp(3rem, 10vw, 8.5rem);
+  --fs-hero: clamp(2.2rem, 6.2vw, 5rem);
+  --fs-h1:   clamp(2rem, 4.8vw, 3.8rem);
+  --fs-h2:   clamp(1.5rem, 3vw, 2.4rem);
+  --fs-h3:   clamp(1.15rem, 1.8vw, 1.4rem);
+  --fs-body: clamp(0.95rem, 1.05vw, 1.08rem);
+  --fs-sm:   clamp(0.8rem, 0.95vw, 0.9rem);
+  --fs-xs:   0.72rem;
+
+  --lh-tight: 0.95;
+  --lh-body:  1.62;
+
+  /* Layout */
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --max-w:  1320px;
+  --radius-sm: 10px;
+  --radius:    18px;
+  --radius-lg: 28px;
+
+  /* Easings */
+  --e-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --e-in-out: cubic-bezier(0.83, 0, 0.17, 1);
+  --e-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Shared accents (identical in both themes for brand continuity) */
+  --lime:   oklch(0.86 0.18 128);
+  --lime-2: oklch(0.75 0.19 135);
+  --violet: oklch(0.65 0.22 295);
+  --violet-2: oklch(0.55 0.24 290);
+  --coral:  oklch(0.72 0.18 30);
+}
+
+/* =============== DARK ================ */
+[data-theme="dark"] {
+  --bg-0:   oklch(0.13 0.018 262);   /* page */
+  --bg-1:   oklch(0.17 0.022 262);   /* cards */
+  --bg-2:   oklch(0.21 0.025 262);   /* raised */
+  --bg-ink: oklch(0.09 0.012 262);
+
+  --fg-0:   oklch(0.97 0.005 260);
+  --fg-1:   oklch(0.82 0.015 260);
+  --fg-2:   oklch(0.62 0.02 260);
+  --fg-3:   oklch(0.45 0.02 260);
+
+  --line:   oklch(0.28 0.02 260 / 0.7);
+  --line-soft: oklch(0.28 0.02 260 / 0.35);
+  --glass:  oklch(0.22 0.025 262 / 0.55);
+  --glass-hi: oklch(0.30 0.03 262 / 0.65);
+
+  --shadow-lg: 0 30px 80px -20px oklch(0 0 0 / 0.6);
+  --shadow:    0 10px 30px -10px oklch(0 0 0 / 0.5);
+
+  --grid-line: oklch(1 0 0 / 0.04);
+  --dot:       oklch(1 0 0 / 0.12);
+
+  --particle-a: oklch(0.86 0.18 128 / 0.85);
+  --particle-b: oklch(0.65 0.22 295 / 0.8);
+  --particle-c: oklch(0.72 0.18 30 / 0.55);
+
+  color-scheme: dark;
+}
+
+/* =============== LIGHT ================ */
+[data-theme="light"] {
+  --bg-0:   oklch(0.975 0.008 85);
+  --bg-1:   oklch(0.99 0.005 85);
+  --bg-2:   oklch(0.94 0.012 85);
+  --bg-ink: oklch(0.99 0.004 85);
+
+  --fg-0:   oklch(0.18 0.02 260);
+  --fg-1:   oklch(0.32 0.018 260);
+  --fg-2:   oklch(0.48 0.015 260);
+  --fg-3:   oklch(0.62 0.012 260);
+
+  --line:   oklch(0.18 0.02 260 / 0.14);
+  --line-soft: oklch(0.18 0.02 260 / 0.07);
+  --glass:  oklch(1 0 0 / 0.6);
+  --glass-hi: oklch(1 0 0 / 0.85);
+
+  --shadow-lg: 0 30px 80px -24px oklch(0.2 0.05 260 / 0.22);
+  --shadow:    0 10px 30px -12px oklch(0.2 0.05 260 / 0.15);
+
+  --grid-line: oklch(0.18 0.02 260 / 0.06);
+  --dot:       oklch(0.18 0.02 260 / 0.15);
+
+  /* Re-tune accents for light bg — higher chroma, slightly lower L */
+  --lime:   oklch(0.68 0.22 132);
+  --lime-2: oklch(0.58 0.20 135);
+  --violet: oklch(0.52 0.25 295);
+  --violet-2: oklch(0.42 0.24 290);
+
+  --particle-a: oklch(0.65 0.22 132 / 0.6);
+  --particle-b: oklch(0.52 0.25 295 / 0.55);
+  --particle-c: oklch(0.60 0.20 30 / 0.4);
+
+  color-scheme: light;
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  background: var(--bg-0);
+  color: var(--fg-1);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+  transition: background 600ms var(--e-out), color 400ms var(--e-out);
+}
+
+img { max-width: 100%; display: block; }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+
+::selection { background: var(--lime); color: var(--bg-ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

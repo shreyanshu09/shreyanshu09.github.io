@@ -1,198 +1,162 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research — Shreyanshu Bhushan</title>
-  <meta name="description" content="Research publications and patents by Shreyanshu Bhushan in NLP, Computer Vision, and Document AI.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Research — Shreyanshu Bhushan</title>
+<meta name="description" content="Research publications, patent, and research interests of Shreyanshu Bhushan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css?v=3">
+<link rel="stylesheet" href="styles/layout.css?v=3">
+<link rel="stylesheet" href="styles/sections.css?v=3">
+<link rel="stylesheet" href="styles/pages.css?v=3">
 </head>
-<body>
-<div id="scroll-progress"></div>
+<body data-page="research">
 
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><span>Shreyanshu</span> Bhushan</a>
-    <ul class="nav-links">
-      <li><a href="index.html"      class="nav-link">Home</a></li>
-      <li><a href="about.html"      class="nav-link">About</a></li>
-      <li><a href="experience.html" class="nav-link">Experience</a></li>
-      <li><a href="projects.html"   class="nav-link">Projects</a></li>
-      <li><a href="research.html"   class="nav-link">Research</a></li>
-      <li><a href="contact.html"    class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ko">KO</button>
+<main>
+
+<section class="page-hero" data-screen-label="Research">
+  <div class="container">
+    <span class="eyebrow"><span class="pulse"></span> Publications &amp; Patents</span>
+    <h1 class="page-hero-title">Research &amp; <em>publications</em>.</h1>
+    <p class="page-hero-kicker">Peer-reviewed publications, patents, and research interests in NLP, Computer Vision, and Document AI.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-num">— Publications</div>
+        <h2 class="sec-title">Peer-reviewed <em>papers</em>.</h2>
       </div>
-      <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">☀</span></button>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-<nav class="mobile-menu" id="mobile-nav">
-  <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
-  <a href="experience.html" class="nav-link">Experience</a><a href="projects.html" class="nav-link">Projects</a>
-  <a href="research.html" class="nav-link">Research</a><a href="contact.html" class="nav-link">Contact</a>
-</nav>
-
-<div class="page-hero">
-  <div class="container">
-    <p class="page-hero-label">Academic Output</p>
-    <h1 class="page-hero-title" data-en="Research" data-ko="연구">Research</h1>
-    <p class="page-hero-subtitle" data-en="Peer-reviewed publications, patents, and academic contributions in NLP, Computer Vision, and Document AI." data-ko="NLP, 컴퓨터 비전, 문서 AI 분야의 동료 심사 논문, 특허 및 학술 기여.">
-      Peer-reviewed publications, patents, and academic contributions in NLP, Computer Vision, and Document AI.
-    </p>
-  </div>
-</div>
-
-<!-- Publications -->
-<section style="padding: 5rem 0;">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">Publications</span>
-      <h2 class="section-title">Peer-Reviewed <span>Papers</span></h2>
+      <p class="sec-kicker">Published at top-tier NLP venues.</p>
     </div>
 
-    <div style="display:flex; flex-direction:column; gap:1.5rem; max-width:860px; margin:0 auto;">
-
-      <!-- BlockNet ACL 2024 -->
-      <div class="pub-card reveal">
+    <div class="pub-list">
+      <article class="pub-card reveal">
         <div class="pub-year">2024</div>
-        <div class="pub-body">
-          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:0.5rem;">
-            <h3 class="pub-title">BlockNet: Multilingual Block Diagram Summarization</h3>
-            <span class="badge badge-gold">ACL 2024</span>
-          </div>
-          <p class="pub-venue">Annual Meeting of the Association for Computational Linguistics (ACL 2024)</p>
-          <p class="pub-authors">Shreyanshu Bhushan et al.</p>
-          <p class="pub-abstract" data-en="Introduces BlockNet, a novel framework for understanding and summarizing block diagrams with multilingual output support. The model addresses the challenge of extracting structured information from technical diagram images, combining computer vision with language generation. BlockNet advances document AI by enabling automated summarization of complex flow charts and process diagrams commonly found in technical and scientific documents." data-ko="다국어 출력 지원을 통한 블록 다이어그램 이해 및 요약을 위한 새로운 프레임워크인 BlockNet을 소개합니다. 이 모델은 컴퓨터 비전과 언어 생성을 결합하여 기술 다이어그램 이미지에서 구조화된 정보를 추출하는 과제를 해결합니다.">
-            Introduces BlockNet, a novel framework for understanding and summarizing block diagrams with multilingual output support. The model addresses the challenge of extracting structured information from technical diagram images, combining computer vision with language generation. BlockNet advances document AI by enabling automated summarization of complex flow charts and process diagrams commonly found in technical and scientific documents.
-          </p>
-          <div class="skill-cloud" style="margin-top:1rem;">
-            <span class="tag">NLP</span><span class="tag">Computer Vision</span>
-            <span class="tag">Diagram Understanding</span><span class="tag">Multilingual</span>
-            <span class="tag">Seq2Seq</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- AACL 2022 -->
-      <div class="pub-card reveal delay-1">
-        <div class="pub-year">2022</div>
-        <div class="pub-body">
-          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:0.5rem;">
-            <h3 class="pub-title">Image-Based Document Summarization</h3>
-            <span class="badge badge-blue">AACL-IJCNLP 2022</span>
-          </div>
-          <p class="pub-venue">Asia-Pacific Chapter of the ACL — AACL-IJCNLP 2022</p>
-          <p class="pub-authors">Shreyanshu Bhushan et al.</p>
-          <p class="pub-abstract" data-en="Research on extracting and summarizing textual content from document images, integrating OCR pipelines with abstractive summarization models. The work explores techniques for handling noisy OCR outputs in summarization workflows, contributing to the field of document image understanding." data-ko="OCR 파이프라인과 추상적 요약 모델을 통합하여 문서 이미지에서 텍스트 내용을 추출하고 요약하는 연구. 요약 워크플로우에서 노이즈 있는 OCR 출력 처리 기술을 탐구합니다.">
-            Research on extracting and summarizing textual content from document images, integrating OCR pipelines with abstractive summarization models. The work explores techniques for handling noisy OCR outputs in summarization workflows, contributing to the field of document image understanding.
-          </p>
-          <div class="skill-cloud" style="margin-top:1rem;">
-            <span class="tag">OCR</span><span class="tag">Text Summarization</span>
-            <span class="tag">NLP</span><span class="tag">Document Understanding</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Patent -->
-<section style="padding: 5rem 0; background: var(--bg-secondary); border-top: 1px solid var(--border);">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">Intellectual Property</span>
-      <h2 class="section-title">Patent <span>Application</span></h2>
-    </div>
-
-    <div class="card reveal" style="max-width:720px; margin:0 auto;">
-      <div style="display:flex; align-items:flex-start; gap:1.5rem;">
-        <div style="font-size:1.8rem; min-width:44px; text-align:center; color:var(--accent-gold);">⚖</div>
         <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem; flex-wrap:wrap;">
-            <h3 style="font-size:1.1rem;" data-en="AI-Based Method and System for Understanding Document Structures" data-ko="문서 구조 이해를 위한 AI 기반 방법 및 시스템">
-              AI-Based Method and System for Understanding Document Structures
-            </h3>
-            <span class="badge badge-gold">Filed</span>
+          <h3 class="pub-title">BlockNet: Multilingual Block Diagram Summarization</h3>
+          <p class="pub-venue">Annual Meeting of the Association for Computational Linguistics · ACL 2024</p>
+          <p class="pub-authors">Shreyanshu Bhushan et al.</p>
+          <p class="pub-abstract">A novel framework for understanding and summarizing block diagrams with multilingual output support. BlockNet addresses the challenge of extracting structured information from technical diagram images by combining computer vision with language generation, enabling automated summarization of complex flow charts and process diagrams commonly found in technical and scientific documents.</p>
+          <div class="pub-tags">
+            <span class="chip">NLP</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">Diagram Understanding</span>
+            <span class="chip">Multilingual</span>
+            <span class="chip violet">ACL 2024</span>
           </div>
-          <p style="font-size:0.82rem; color:var(--text-muted); font-family:'JetBrains Mono',monospace; margin-bottom:0.75rem;">NEOALI Co. Ltd. · South Korea</p>
-          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.7;" data-en="Patent application for a novel AI-based approach to parsing, interpreting, and structuring complex document layouts, enabling accurate extraction of hierarchical content from multi-format business and government documents." data-ko="복합적인 문서 레이아웃을 파싱, 해석 및 구조화하는 새로운 AI 기반 접근 방식에 대한 특허 출원으로, 다양한 형식의 비즈니스 및 정부 문서에서 계층적 내용의 정확한 추출을 가능하게 합니다.">
-            Patent application for a novel AI-based approach to parsing, interpreting, and structuring complex document layouts, enabling accurate extraction of hierarchical content from multi-format business and government documents.
-          </p>
         </div>
-      </div>
+      </article>
+
+      <article class="pub-card reveal">
+        <div class="pub-year">2022</div>
+        <div>
+          <h3 class="pub-title">Image-Based Document Summarization</h3>
+          <p class="pub-venue">Asia-Pacific Chapter of the ACL · AACL-IJCNLP 2022</p>
+          <p class="pub-authors">Shreyanshu Bhushan et al.</p>
+          <p class="pub-abstract">Research on extracting and summarizing textual content from document images, integrating OCR pipelines with abstractive summarization models. The work explores techniques for handling noisy OCR outputs in summarization workflows, contributing to the field of document image understanding.</p>
+          <div class="pub-tags">
+            <span class="chip">OCR</span>
+            <span class="chip">Text Summarization</span>
+            <span class="chip">NLP</span>
+            <span class="chip violet">AACL-IJCNLP 2022</span>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- Research areas -->
-<section style="padding: 5rem 0;">
+<section class="sec">
   <div class="container">
-    <div class="section-header">
-      <span class="section-label">Focus Areas</span>
-      <h2 class="section-title">Research <span>Interests</span></h2>
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-num">— Intellectual Property</div>
+        <h2 class="sec-title">Patents.</h2>
+      </div>
+      <p class="sec-kicker">Two patents issued by KIPO (South Korea) in 2024.</p>
+    </div>
+
+    <div class="pub-list">
+      <article class="pub-card reveal">
+        <div class="pub-year">Sep 2024</div>
+        <div>
+          <h3 class="pub-title">AI-Based Method and System for Understanding Document Structures</h3>
+          <p class="pub-venue">KIPO · 10-2024-0132123 · Issued Sep 27, 2024 · NEOALI Co. Ltd.</p>
+          <p class="pub-abstract">Proposes a method and system for understanding complex documents containing text, tables, images, charts, and block diagrams by extracting and structuring the data into a usable format for tasks such as question-answering, summary generation, and descriptions.</p>
+          <div class="pub-tags">
+            <span class="chip">Document AI</span>
+            <span class="chip">Layout Detection</span>
+            <span class="chip">Multi-Modal</span>
+            <span class="chip violet">Patent Issued</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub-card reveal">
+        <div class="pub-year">Jul 2024</div>
+        <div>
+          <h3 class="pub-title">Method for Understanding Block Diagrams and Generating Natural Language Descriptions</h3>
+          <p class="pub-venue">KIPO · 10-2024-0101342 · Issued Jul 31, 2024 · Kyungpook National University</p>
+          <p class="pub-abstract">Proposes a method and system for understanding block diagrams and generating natural language descriptions, enhancing document summarization by including diagram content. Applicable in document management, education, and assistive technologies.</p>
+          <div class="pub-tags">
+            <span class="chip">Diagram Understanding</span>
+            <span class="chip">NLG</span>
+            <span class="chip">Summarization</span>
+            <span class="chip violet">Patent Issued</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Research interests -->
+<section class="sec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-num">— Focus Areas</div>
+        <h2 class="sec-title">Research <em>interests</em>.</h2>
+      </div>
+      <p class="sec-kicker">Where I spend most of my research time.</p>
     </div>
 
     <div class="skills-grid">
-      <div class="skill-category-card reveal">
-        <div class="skill-cat-title">Document AI & Understanding</div>
-        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.65;" data-en="Layout detection, structure parsing, multi-format document processing, format-preserving translation, and AI-driven document automation." data-ko="레이아웃 감지, 구조 파싱, 다중 형식 문서 처리, 형식 보존 번역 및 AI 기반 문서 자동화.">
-          Layout detection, structure parsing, multi-format document processing, format-preserving translation, and AI-driven document automation.
-        </p>
+      <div class="skill-cell reveal" data-d="1">
+        <div class="skill-num">/ 01</div>
+        <h3>Document AI &amp; Understanding</h3>
+        <p>Layout detection, structure parsing, multi-format document processing, format-preserving translation, and AI-driven document automation.</p>
       </div>
-      <div class="skill-category-card reveal delay-1">
-        <div class="skill-cat-title">Large & Small Language Models</div>
-        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.65;" data-en="On-device LLM deployment, quantization, prompt engineering, fine-tuning for domain-specific tasks, and efficient inference with Ollama and vLLM." data-ko="온디바이스 LLM 배포, 양자화, 프롬프트 엔지니어링, 도메인별 작업을 위한 미세 조정, Ollama 및 vLLM을 사용한 효율적인 추론.">
-          On-device LLM deployment, quantization, prompt engineering, fine-tuning for domain-specific tasks, and efficient inference with Ollama and vLLM.
-        </p>
+      <div class="skill-cell reveal" data-d="2">
+        <div class="skill-num">/ 02</div>
+        <h3>Large &amp; Small LMs</h3>
+        <p>On-device LLM deployment, quantization, prompt engineering, fine-tuning for domain-specific tasks, and efficient inference with Ollama and vLLM.</p>
       </div>
-      <div class="skill-category-card reveal delay-2">
-        <div class="skill-cat-title">Vision-Language Models & OCR</div>
-        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.65;" data-en="Multi-engine OCR fusion, VLM post-correction, block diagram understanding, chart analysis, and visual document question answering." data-ko="다중 엔진 OCR 융합, VLM 후처리 교정, 블록 다이어그램 이해, 차트 분석, 시각적 문서 질의응답.">
-          Multi-engine OCR fusion, VLM post-correction, block diagram understanding, chart analysis, and visual document question answering.
-        </p>
+      <div class="skill-cell reveal" data-d="3">
+        <div class="skill-num">/ 03</div>
+        <h3>Vision-Language &amp; OCR</h3>
+        <p>Multi-engine OCR fusion, VLM post-correction, block diagram understanding, chart analysis, and visual document question answering.</p>
       </div>
-      <div class="skill-category-card reveal delay-3">
-        <div class="skill-cat-title">Retrieval-Augmented Generation</div>
-        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.65;" data-en="Semantic chunking strategies, vector database optimization, multi-modal retrieval, re-ranking methods, and enterprise-grade RAG system design." data-ko="의미론적 청킹 전략, 벡터 데이터베이스 최적화, 다중 모달 검색, 재순위화 방법, 기업급 RAG 시스템 설계.">
-          Semantic chunking strategies, vector database optimization, multi-modal retrieval, re-ranking methods, and enterprise-grade RAG system design.
-        </p>
+      <div class="skill-cell reveal" data-d="4">
+        <div class="skill-num">/ 04</div>
+        <h3>Retrieval-Augmented Generation</h3>
+        <p>Semantic chunking strategies, vector database optimization, multi-modal retrieval, re-ranking methods, and enterprise-grade RAG system design.</p>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-text">© 2025 Shreyanshu Bhushan</p>
-    <nav class="footer-links">
-      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
-      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
-      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
-    </nav>
-  </div>
-</footer>
+</main>
 
-<div class="chatbot-fab">
-  <button class="chatbot-trigger" id="chatbot-trigger">💬</button>
-  <div class="chatbot-window" id="chatbot-window">
-    <div class="chatbot-head"><h4>Ask about Shreyanshu</h4><button class="chatbot-close-btn" id="chatbot-close">✕</button></div>
-    <div class="chatbot-body" id="chatbot-messages"><div class="chat-msg bot">Ask me about research, projects, or skills.</div></div>
-    <div class="chatbot-footer">
-      <input class="chatbot-input" id="chatbot-input" type="text" placeholder="Ask anything...">
-      <button class="chatbot-send" id="chatbot-send">Send</button>
-    </div>
-  </div>
-</div>
+<script src="partials/shared.js"></script>
+<script src="scripts/scene.js"></script>
+<script src="scripts/interactions.js"></script>
 
-<script src="js/main.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/chatbot.js"></script>
 </body>
 </html>

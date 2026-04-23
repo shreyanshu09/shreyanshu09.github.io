@@ -1,434 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shreyanshu Bhushan — AI Engineer & Researcher</title>
-  <meta name="description" content="AI Engineer & Researcher at NEOALI — specializing in Document AI, LLMs, NLP, OCR, and Vision-Language Models.">
-  <meta property="og:title" content="Shreyanshu Bhushan — AI Engineer">
-  <meta property="og:description" content="3+ years building production AI systems: on-device LLMs, Document AI, RAG pipelines, and VLMs.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shreyanshu Bhushan — AI Engineer & Researcher</title>
+<meta name="description" content="AI Engineer & Researcher at NEOALI — Document AI, LLMs, RAG, OCR, and Vision-Language Models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css?v=3">
+<link rel="stylesheet" href="styles/layout.css?v=3">
+<link rel="stylesheet" href="styles/sections.css?v=3">
+<link rel="stylesheet" href="styles/pages.css?v=3">
 </head>
-<body>
+<body data-page="index">
 
-<!-- Scroll Progress -->
-<div id="scroll-progress"></div>
+<main>
 
-<!-- ── Navbar ──────────────────────────────────────────── -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <span>Shreyanshu</span> Bhushan
-    </a>
+<!-- HERO -->
+<section class="hero" id="top" data-screen-label="Home">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow"><span class="pulse"></span> Seoul · AI Engineer &amp; Researcher</span>
+      <h1 class="hero-title" data-split>SHREYANSHU <em class="accent">BHUSHAN</em></h1>
+      <p class="hero-role">
+        <span class="prefix">$</span> whoami &nbsp;→&nbsp;
+        <span class="typed" id="typed-role">AI Engineer</span><span class="caret"></span>
+      </p>
+      <p class="hero-desc">
+        AI Engineer &amp; Researcher at NEOALI Co. Ltd. in Seoul, South Korea. I specialize in Document AI, Large &amp; Small Language Models, Retrieval-Augmented Generation, OCR, and Vision-Language Models — building production systems end-to-end from research prototyping to enterprise deployment.
+      </p>
 
-    <ul class="nav-links">
-      <li><a href="index.html"      class="nav-link" data-en="Home"       data-ko="홈">Home</a></li>
-      <li><a href="about.html"      class="nav-link" data-en="About"      data-ko="소개">About</a></li>
-      <li><a href="experience.html" class="nav-link" data-en="Experience" data-ko="경력">Experience</a></li>
-      <li><a href="projects.html"   class="nav-link" data-en="Projects"   data-ko="프로젝트">Projects</a></li>
-      <li><a href="research.html"   class="nav-link" data-en="Research"   data-ko="연구">Research</a></li>
-      <li><a href="contact.html"    class="nav-link" data-en="Contact"    data-ko="연락처">Contact</a></li>
-    </ul>
-
-    <div class="nav-actions">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ko">KO</button>
+      <div class="hero-stats">
+        <div>
+          <span class="stat-num" data-count="3">0</span><span class="plus">+</span>
+          <span class="stat-lbl">Years Industry</span>
+        </div>
+        <div>
+          <span class="stat-num" data-count="15">0</span><span class="plus">+</span>
+          <span class="stat-lbl">AI Projects</span>
+        </div>
+        <div>
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-lbl">Publications</span>
+        </div>
+        <div>
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-lbl">Patents Issued</span>
+        </div>
       </div>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        <span id="theme-icon">☀</span>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">View Projects
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="contact.html" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <!-- 3D floating memory orbit -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="orbit-stage">
+        <div class="orbit-card"><span class="dot"></span>LLM · sLLM</div>
+        <div class="orbit-card violet"><span class="dot"></span>RAG · VectorDB</div>
+        <div class="orbit-card"><span class="dot"></span>Document AI</div>
+        <div class="orbit-card coral"><span class="dot"></span>VLM Fusion</div>
+        <div class="orbit-card violet"><span class="dot"></span>On-Device</div>
+        <div class="portrait-ring">
+          <img src="assets/profile.png" alt="Shreyanshu Bhushan portrait">
+        </div>
+      </div>
     </div>
   </div>
-</nav>
 
-<!-- Mobile Nav -->
-<nav class="mobile-menu" id="mobile-nav">
-  <a href="index.html"      class="nav-link" data-en="Home"       data-ko="홈">Home</a>
-  <a href="about.html"      class="nav-link" data-en="About"      data-ko="소개">About</a>
-  <a href="experience.html" class="nav-link" data-en="Experience" data-ko="경력">Experience</a>
-  <a href="projects.html"   class="nav-link" data-en="Projects"   data-ko="프로젝트">Projects</a>
-  <a href="research.html"   class="nav-link" data-en="Research"   data-ko="연구">Research</a>
-  <a href="contact.html"    class="nav-link" data-en="Contact"    data-ko="연락처">Contact</a>
-</nav>
-
-<!-- ── Hero ────────────────────────────────────────────── -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <canvas id="hero-canvas"></canvas>
-
-  <div class="hero-inner container">
-    <div class="hero-content">
-
-      <!-- Text side -->
-      <div class="hero-text">
-        <div class="hero-eyebrow" data-en="AI Engineer & Researcher · Seoul, Korea" data-ko="AI 엔지니어 & 연구원 · 서울, 대한민국">
-          AI Engineer &amp; Researcher · Seoul, Korea
-        </div>
-
-        <h1 class="hero-name" data-en="Shreyanshu Bhushan" data-ko="Shreyanshu Bhushan">
-          Shreyanshu<br>Bhushan
-        </h1>
-
-        <p class="hero-role">
-          <strong><span id="typed-role">AI Engineer</span><span class="typed-cursor"></span></strong>
-        </p>
-
-        <p class="hero-desc" data-en="Building intelligent document systems, on-device language models, and vision-language pipelines that bridge research and production." data-ko="연구와 제품을 연결하는 지능형 문서 시스템, 온디바이스 언어 모델, 비전-언어 파이프라인을 개발합니다.">
-          Building intelligent document systems, on-device language models, and vision-language pipelines that bridge research and production.
-        </p>
-
-        <div class="hero-stats">
-          <div>
-            <span class="hero-stat-num" data-count="3">0</span>
-            <span class="hero-stat-lbl" data-en="Years Industry" data-ko="년 경력">Years Industry</span>
-          </div>
-          <div>
-            <span class="hero-stat-num" data-count="15">0</span>
-            <span class="hero-stat-lbl" data-en="AI Projects" data-ko="AI 프로젝트">AI Projects</span>
-          </div>
-          <div>
-            <span class="hero-stat-num" data-count="2">0</span>
-            <span class="hero-stat-lbl" data-en="Publications" data-ko="논문 발표">Publications</span>
-          </div>
-        </div>
-
-        <div class="hero-actions">
-          <a href="projects.html" class="btn btn-primary" data-en="View Projects" data-ko="프로젝트 보기">View Projects</a>
-          <a href="contact.html"  class="btn btn-secondary" data-en="Get In Touch" data-ko="연락하기">Get In Touch</a>
-        </div>
-      </div>
-
-      <!-- Visual side -->
-      <div class="hero-visual">
-        <div class="profile-ring" style="position:relative;">
-          <img src="images/profile.png" alt="Shreyanshu Bhushan" class="profile-img">
-          <span class="float-badge">LLM / sLLM</span>
-          <span class="float-badge">RAG · VectorDB</span>
-          <span class="float-badge">Document AI</span>
-        </div>
-
-        <div class="hero-badges">
-          <span class="badge badge-gold">Intel AI Challenge Winner</span>
-          <span class="badge badge-blue">ACL 2024</span>
-          <span class="badge badge-green">On-Device AI</span>
-        </div>
-      </div>
-
-    </div>
+  <div class="hero-scroll" aria-hidden="true">
+    Explore the site
+    <span class="line-anim"></span>
   </div>
 </section>
 
-<!-- ── Specializations ──────────────────────────────────── -->
-<section style="padding: 5rem 0; border-top: 1px solid var(--border);">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label" data-en="What I Build" data-ko="전문 분야">What I Build</span>
-      <h2 class="section-title" data-en="Core <span>Specializations</span>" data-ko="핵심 <span>전문 분야</span>">
-        Core <span>Specializations</span>
-      </h2>
-    </div>
+</main>
 
-    <div class="skills-grid">
-      <div class="skill-category-card reveal">
-        <div class="skill-cat-title" data-en="Document AI" data-ko="문서 AI">Document AI</div>
-        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1rem;" data-en="End-to-end document processing — translation, format preservation, layout detection, and multi-format parsing for DOCX, HWPX, PDF." data-ko="DOCX, HWPX, PDF 형식의 번역, 형식 보존, 레이아웃 감지 및 다중 형식 파싱 등 엔드투엔드 문서 처리.">
-          End-to-end document processing — translation, format preservation, layout detection, and multi-format parsing for DOCX, HWPX, PDF.
-        </p>
-        <div class="skill-cloud">
-          <span class="skill-pill">Pandoc</span>
-          <span class="skill-pill">Layout Detection</span>
-          <span class="skill-pill">python-docx</span>
-          <span class="skill-pill">HWPX</span>
-          <span class="skill-pill">PDFMiner</span>
-        </div>
-      </div>
+<script src="partials/shared.js"></script>
+<script src="scripts/scene.js"></script>
+<script src="scripts/interactions.js"></script>
 
-      <div class="skill-category-card reveal delay-1">
-        <div class="skill-cat-title" data-en="LLMs & On-Device AI" data-ko="LLM 및 온디바이스 AI">LLMs & On-Device AI</div>
-        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1rem;" data-en="Fine-tuning, quantization, and deployment of large and small language models for offline, privacy-first enterprise applications." data-ko="오프라인, 프라이버시 우선 기업 애플리케이션을 위한 대형 및 소형 언어 모델의 미세 조정, 양자화 및 배포.">
-          Fine-tuning, quantization, and deployment of large and small language models for offline, privacy-first enterprise applications.
-        </p>
-        <div class="skill-cloud">
-          <span class="skill-pill">Ollama</span>
-          <span class="skill-pill">vLLM</span>
-          <span class="skill-pill">HuggingFace</span>
-          <span class="skill-pill">Prompt Engineering</span>
-          <span class="skill-pill">GGUF / Quantization</span>
-        </div>
-      </div>
-
-      <div class="skill-category-card reveal delay-2">
-        <div class="skill-cat-title" data-en="RAG & Retrieval Systems" data-ko="RAG 및 검색 시스템">RAG & Retrieval Systems</div>
-        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1rem;" data-en="Retrieval-Augmented Generation pipelines with semantic chunking, vector search, and re-ranking for high-accuracy document QA." data-ko="높은 정확도의 문서 QA를 위한 의미론적 청킹, 벡터 검색 및 재순위화를 포함한 RAG 파이프라인.">
-          Retrieval-Augmented Generation pipelines with semantic chunking, vector search, and re-ranking for high-accuracy document QA.
-        </p>
-        <div class="skill-cloud">
-          <span class="skill-pill">Qdrant</span>
-          <span class="skill-pill">LangChain</span>
-          <span class="skill-pill">OpenAI API</span>
-          <span class="skill-pill">Embeddings</span>
-          <span class="skill-pill">Reranking</span>
-        </div>
-      </div>
-
-      <div class="skill-category-card reveal delay-3">
-        <div class="skill-cat-title" data-en="OCR & Vision-Language" data-ko="OCR 및 비전-언어">OCR & Vision-Language</div>
-        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1rem;" data-en="Multi-engine OCR fusion enhanced with Vision-Language Models for superior accuracy on complex and low-quality document images." data-ko="복잡하고 저품질 문서 이미지에 대한 탁월한 정확도를 위해 비전-언어 모델로 향상된 다중 엔진 OCR 융합.">
-          Multi-engine OCR fusion enhanced with Vision-Language Models for superior accuracy on complex and low-quality document images.
-        </p>
-        <div class="skill-cloud">
-          <span class="skill-pill">EasyOCR</span>
-          <span class="skill-pill">PaddleOCR</span>
-          <span class="skill-pill">Tesseract</span>
-          <span class="skill-pill">VLMs</span>
-          <span class="skill-pill">OpenCV</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Featured Projects ────────────────────────────────── -->
-<section style="padding: 5rem 0; background: var(--bg-secondary);">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label" data-en="Selected Work" data-ko="주요 작업">Selected Work</span>
-      <h2 class="section-title" data-en="Featured <span>Projects</span>" data-ko="주요 <span>프로젝트</span>">
-        Featured <span>Projects</span>
-      </h2>
-    </div>
-
-    <div class="project-grid">
-
-      <!-- LayGen -->
-      <div class="project-card featured reveal">
-        <div class="project-head">
-          <h3 class="project-title">LayGen</h3>
-          <span class="badge badge-gold">Award Winner</span>
-        </div>
-        <p class="project-desc" data-en="Multi-platform AI document translation ecosystem with on-device LLM support, format preservation across DOCX/HWPX/PDF, and enterprise-grade offline security." data-ko="온디바이스 LLM 지원, DOCX/HWPX/PDF 형식 보존 및 기업급 오프라인 보안을 갖춘 다중 플랫폼 AI 문서 번역 생태계.">
-          Multi-platform AI document translation ecosystem with on-device LLM support, format preservation across DOCX/HWPX/PDF, and enterprise-grade offline security.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">ElectronJS</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">On-Device LLM</span>
-          <span class="tag">PyTorch</span>
-        </div>
-        <div class="project-links">
-          <a href="https://ondevice.neoali.com/laygen" target="_blank" rel="noopener" class="project-link">Live Product ↗</a>
-          <a href="projects.html#laygen" class="project-link" data-en="Details" data-ko="자세히">Details →</a>
-        </div>
-      </div>
-
-      <!-- AskMe -->
-      <div class="project-card reveal delay-1">
-        <div class="project-head">
-          <h3 class="project-title">AskMe</h3>
-          <span class="badge badge-blue">RAG System</span>
-        </div>
-        <p class="project-desc" data-en="Intelligent document Q&A platform using RAG architecture — semantic chunking, vector retrieval, and LLM synthesis for complex multi-document analysis." data-ko="복잡한 다중 문서 분석을 위한 의미론적 청킹, 벡터 검색 및 LLM 합성을 사용한 RAG 아키텍처 기반 지능형 문서 Q&A 플랫폼.">
-          Intelligent document Q&A platform using RAG architecture — semantic chunking, vector retrieval, and LLM synthesis for complex multi-document analysis.
-        </p>
-        <div class="project-tags">
-          <span class="tag">RAG</span>
-          <span class="tag">LLMs</span>
-          <span class="tag">Vector DB</span>
-          <span class="tag">ALIParse</span>
-        </div>
-        <div class="project-links">
-          <a href="projects.html#askme" class="project-link" data-en="Details" data-ko="자세히">Details →</a>
-        </div>
-      </div>
-
-      <!-- FormGen -->
-      <div class="project-card reveal delay-2">
-        <div class="project-head">
-          <h3 class="project-title">FormGen</h3>
-          <span class="badge badge-cyan">Document AI</span>
-        </div>
-        <p class="project-desc" data-en="AI-powered form field extraction and auto-fill for HTML, DOCX, and HWPX documents. Supports RAG-based fill-from-documents with parallel LLM processing." data-ko="HTML, DOCX, HWPX 문서의 AI 기반 양식 필드 추출 및 자동 채우기. 병렬 LLM 처리를 통한 RAG 기반 문서에서 채우기 지원.">
-          AI-powered form field extraction and auto-fill for HTML, DOCX, and HWPX documents. Supports RAG-based fill-from-documents with parallel LLM processing.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Node.js</span>
-          <span class="tag">OpenAI API</span>
-          <span class="tag">RAG</span>
-          <span class="tag">Qdrant</span>
-        </div>
-        <div class="project-links">
-          <a href="projects.html#formgen" class="project-link" data-en="Details" data-ko="자세히">Details →</a>
-        </div>
-      </div>
-
-      <!-- HanForge -->
-      <div class="project-card reveal delay-1">
-        <div class="project-head">
-          <h3 class="project-title">HanForge</h3>
-          <span class="badge badge-green">Open Source</span>
-        </div>
-        <p class="project-desc" data-en="HTML to HWPX conversion engine — pure JavaScript, no native dependencies. Supports tables, images, nested lists, inline styles, and all major HTML elements." data-ko="순수 JavaScript, 네이티브 종속성 없는 HTML to HWPX 변환 엔진. 테이블, 이미지, 중첩 목록, 인라인 스타일 지원.">
-          HTML to HWPX conversion engine — pure JavaScript, no native dependencies. Supports tables, images, nested lists, inline styles, and all major HTML elements.
-        </p>
-        <div class="project-tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">HWPX</span>
-          <span class="tag">HTML Parsing</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/shreyanshu09/HanForge" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
-          <a href="projects.html#hanforge" class="project-link" data-en="Details" data-ko="자세히">Details →</a>
-        </div>
-      </div>
-
-      <!-- VLMFusion OCR -->
-      <div class="project-card reveal delay-2">
-        <div class="project-head">
-          <h3 class="project-title">VLMFusion OCR</h3>
-          <span class="badge badge-blue">Research</span>
-        </div>
-        <p class="project-desc" data-en="Multi-engine OCR system combining EasyOCR, PaddleOCR, and Tesseract, with Vision-Language Model post-correction for superior accuracy on degraded documents." data-ko="열화된 문서에 대한 뛰어난 정확도를 위해 EasyOCR, PaddleOCR, Tesseract를 결합하고 VLM 후처리 교정을 사용하는 다중 엔진 OCR 시스템.">
-          Multi-engine OCR system combining EasyOCR, PaddleOCR, and Tesseract, with Vision-Language Model post-correction for superior accuracy on degraded documents.
-        </p>
-        <div class="project-tags">
-          <span class="tag">VLMs</span>
-          <span class="tag">EasyOCR</span>
-          <span class="tag">PaddleOCR</span>
-          <span class="tag">Python</span>
-        </div>
-        <div class="project-links">
-          <a href="projects.html#vlmfusion" class="project-link" data-en="Details" data-ko="자세히">Details →</a>
-        </div>
-      </div>
-
-      <!-- SlideGen -->
-      <div class="project-card reveal delay-3">
-        <div class="project-head">
-          <h3 class="project-title">SlideGen</h3>
-          <span class="badge badge-cyan">Gen AI</span>
-        </div>
-        <p class="project-desc" data-en="AI presentation generator from text prompts or PDF context. Supports multiple LLM providers (OpenRouter, Together AI, Cohere, Gemini) and dynamic Unsplash backgrounds." data-ko="텍스트 프롬프트 또는 PDF 컨텍스트에서 AI 프레젠테이션 생성. 여러 LLM 제공업체 및 동적 Unsplash 배경 지원.">
-          AI presentation generator from text prompts or PDF context. Supports multiple LLM providers (OpenRouter, Together AI, Cohere, Gemini) and dynamic Unsplash backgrounds.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Streamlit</span>
-          <span class="tag">Multi-LLM</span>
-          <span class="tag">PPTX</span>
-        </div>
-        <div class="project-links">
-          <a href="projects.html#slidegen" class="project-link" data-en="Details" data-ko="자세히">Details →</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div style="text-align:center; margin-top:3rem;">
-      <a href="projects.html" class="btn btn-outline" data-en="View All Projects" data-ko="모든 프로젝트 보기">View All Projects</a>
-    </div>
-  </div>
-</section>
-
-<!-- ── Awards & Recognition ─────────────────────────────── -->
-<section style="padding: 5rem 0;">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label" data-en="Recognition" data-ko="수상">Recognition</span>
-      <h2 class="section-title" data-en="Awards & <span>Publications</span>" data-ko="수상 & <span>논문</span>">
-        Awards &amp; <span>Publications</span>
-      </h2>
-    </div>
-
-    <div class="awards-row">
-      <div class="award-card reveal">
-        <div class="award-icon">🥇</div>
-        <div class="award-place">1st Place</div>
-        <div class="award-event">Intel AI PC Innovation Challenge 2024</div>
-        <div class="award-proj">LayGen</div>
-      </div>
-      <div class="award-card reveal delay-1">
-        <div class="award-icon">🥈</div>
-        <div class="award-place">2nd Place</div>
-        <div class="award-event">AI Grand Challenge 2023</div>
-        <div class="award-proj">Chart2Excel + Chart QA</div>
-      </div>
-      <div class="award-card reveal delay-2">
-        <div class="award-icon" style="font-size:1.5rem;">ACL</div>
-        <div class="award-place" style="color:var(--accent-purple);">Publication</div>
-        <div class="award-event">ACL 2024</div>
-        <div class="award-proj">BlockNet</div>
-      </div>
-      <div class="award-card reveal delay-3">
-        <div class="award-icon" style="font-size:1.5rem; color:var(--accent-cyan);">⚖</div>
-        <div class="award-place" style="color:var(--accent-cyan);">Patent Filed</div>
-        <div class="award-event">AI Document Structure</div>
-        <div class="award-proj">NEOALI Co. Ltd.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── CTA ──────────────────────────────────────────────── -->
-<section style="padding: 5rem 0; background: var(--bg-secondary); border-top: 1px solid var(--border);">
-  <div class="container" style="text-align:center;">
-    <h2 style="font-size:clamp(1.8rem,4vw,2.8rem); margin-bottom:1rem;" class="reveal" data-en="Open to New Opportunities" data-ko="새로운 기회에 열려 있습니다">
-      Open to New Opportunities
-    </h2>
-    <p style="color:var(--text-secondary); max-width:520px; margin:0 auto 2.5rem; font-size:1.05rem;" class="reveal delay-1" data-en="Interested in AI research, document intelligence, or on-device LLM projects? Let's connect." data-ko="AI 연구, 문서 지능 또는 온디바이스 LLM 프로젝트에 관심이 있으신가요? 연락해 주세요.">
-      Interested in AI research, document intelligence, or on-device LLM projects? Let's connect.
-    </p>
-    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;" class="reveal delay-2">
-      <a href="contact.html" class="btn btn-primary" data-en="Get In Touch" data-ko="연락하기">Get In Touch</a>
-      <a href="files/cv.pdf" download class="btn btn-secondary" data-en="Download CV" data-ko="이력서 다운로드">Download CV</a>
-    </div>
-  </div>
-</section>
-
-<!-- ── Footer ───────────────────────────────────────────── -->
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-text">© 2025 Shreyanshu Bhushan. Built with care.</p>
-    <nav class="footer-links">
-      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
-      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
-      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
-    </nav>
-  </div>
-</footer>
-
-<!-- ── Chatbot ──────────────────────────────────────────── -->
-<div class="chatbot-fab">
-  <button class="chatbot-trigger" id="chatbot-trigger" aria-label="Chat">💬</button>
-  <div class="chatbot-window" id="chatbot-window">
-    <div class="chatbot-head">
-      <h4 data-en="Ask about Shreyanshu" data-ko="Shreyanshu에 대해 물어보세요">Ask about Shreyanshu</h4>
-      <button class="chatbot-close-btn" id="chatbot-close">✕</button>
-    </div>
-    <div class="chatbot-body" id="chatbot-messages">
-      <div class="chat-msg bot" data-en="Hi! Ask me about Shreyanshu's experience, projects, skills, or research." data-ko="안녕하세요! Shreyanshu의 경험, 프로젝트, 기술 또는 연구에 대해 물어보세요.">
-        Hi! Ask me about Shreyanshu's experience, projects, skills, or research.
-      </div>
-    </div>
-    <div class="chatbot-footer">
-      <input class="chatbot-input" id="chatbot-input" type="text"
-        placeholder="Ask anything..."
-        data-placeholder-en="Ask anything..."
-        data-placeholder-ko="무엇이든 물어보세요...">
-      <button class="chatbot-send" id="chatbot-send" data-en="Send" data-ko="전송">Send</button>
-    </div>
-  </div>
-</div>
-
-<script src="js/main.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/chatbot.js"></script>
 </body>
 </html>

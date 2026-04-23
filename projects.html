@@ -1,254 +1,305 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Shreyanshu Bhushan</title>
-  <meta name="description" content="AI projects by Shreyanshu Bhushan — Document AI, LLMs, RAG systems, OCR, and more.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects — Shreyanshu Bhushan</title>
+<meta name="description" content="AI projects by Shreyanshu Bhushan — LayGen, AskMe, VLMFusion OCR, HanForge, FormGen, SlideGen, and academic research projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css?v=3">
+<link rel="stylesheet" href="styles/layout.css?v=3">
+<link rel="stylesheet" href="styles/sections.css?v=3">
+<link rel="stylesheet" href="styles/pages.css?v=3">
+<link rel="stylesheet" href="styles/projects.css?v=2">
 </head>
-<body>
-<div id="scroll-progress"></div>
+<body data-page="projects">
 
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><span>Shreyanshu</span> Bhushan</a>
-    <ul class="nav-links">
-      <li><a href="index.html"      class="nav-link">Home</a></li>
-      <li><a href="about.html"      class="nav-link">About</a></li>
-      <li><a href="experience.html" class="nav-link">Experience</a></li>
-      <li><a href="projects.html"   class="nav-link">Projects</a></li>
-      <li><a href="research.html"   class="nav-link">Research</a></li>
-      <li><a href="contact.html"    class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ko">KO</button>
-      </div>
-      <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">☀</span></button>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-<nav class="mobile-menu" id="mobile-nav">
-  <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
-  <a href="experience.html" class="nav-link">Experience</a><a href="projects.html" class="nav-link">Projects</a>
-  <a href="research.html" class="nav-link">Research</a><a href="contact.html" class="nav-link">Contact</a>
-</nav>
+<main>
 
-<div class="page-hero">
+<section class="page-hero" data-screen-label="Projects">
   <div class="container">
-    <p class="page-hero-label">Portfolio</p>
-    <h1 class="page-hero-title" data-en="Projects" data-ko="프로젝트">Projects</h1>
-    <p class="page-hero-subtitle" data-en="Production AI systems, open-source tools, and research implementations." data-ko="프로덕션 AI 시스템, 오픈소스 도구 및 연구 구현체.">
-      Production AI systems, open-source tools, and research implementations.
-    </p>
-  </div>
-</div>
-
-<section style="padding: 5rem 0;">
-  <div class="container">
-
-    <!-- LayGen -->
-    <div id="laygen" class="card reveal" style="margin-bottom:2rem; border-color:rgba(232,184,75,0.25); position:relative; overflow:hidden;">
-      <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--gradient-gold);"></div>
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-        <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-            <h2 style="font-size:1.4rem;">LayGen</h2>
-            <span class="badge badge-gold">Award Winner</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2025–Present</p>
-        </div>
-        <div style="display:flex; gap:0.75rem; flex-shrink:0; flex-wrap:wrap;">
-          <a href="https://ondevice.neoali.com/laygen" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Product ↗</a>
-        </div>
-      </div>
-      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="LayGen is a multi-platform AI document translation ecosystem that preserves original document formatting across DOCX, HWPX, PDF, PPTX, and XLSX. The system integrates on-device LLM inference (via Ollama) for enterprise-grade offline security, eliminating the need to send sensitive documents to cloud servers. A desktop application (ElectronJS) and server-side API (FastAPI + Python) provide a seamless end-to-end user experience. Won 1st Place at Intel AI PC Innovation Challenge 2024." data-ko="LayGen은 DOCX, HWPX, PDF, PPTX, XLSX 형식의 원본 문서 서식을 보존하는 다중 플랫폼 AI 문서 번역 생태계입니다. 기업급 오프라인 보안을 위한 온디바이스 LLM 추론(Ollama)을 통합하여 민감한 문서를 클라우드 서버로 전송할 필요가 없습니다. 2024 인텔 AI PC 혁신 챌린지 1위 수상.">
-        LayGen is a multi-platform AI document translation ecosystem that preserves original document formatting across DOCX, HWPX, PDF, PPTX, and XLSX. The system integrates on-device LLM inference (via Ollama) for enterprise-grade offline security, eliminating the need to send sensitive documents to cloud servers. A desktop application (ElectronJS) and server-side API (FastAPI + Python) provide a seamless end-to-end user experience. Won 1st Place at Intel AI PC Innovation Challenge 2024.
-      </p>
-      <div class="skill-cloud">
-        <span class="tag">Python</span><span class="tag">ElectronJS</span><span class="tag">FastAPI</span>
-        <span class="tag">Ollama</span><span class="tag">On-Device LLM</span><span class="tag">PyTorch</span>
-        <span class="tag">Pandoc</span><span class="tag">Layout Detection</span><span class="tag">HWPX</span>
-      </div>
+    <span class="eyebrow"><span class="pulse"></span> Production AI · Open Source · Research</span>
+    <h1 class="page-hero-title">Featured <em>projects</em>.</h1>
+    <p class="page-hero-kicker">Production systems at NEOALI Co. Ltd., open-source tools, and academic research projects from graduate and undergraduate coursework.</p>
+    <div class="proj-filters">
+      <button class="proj-filter on" data-filter="all">All</button>
+      <button class="proj-filter" data-filter="production">Production</button>
+      <button class="proj-filter" data-filter="oss">Open Source</button>
+      <button class="proj-filter" data-filter="research">Research</button>
+      <button class="proj-filter" data-filter="academic">Academic</button>
     </div>
-
-    <!-- HanForge -->
-    <div id="hanforge" class="card reveal" style="margin-bottom:2rem;">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-        <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-            <h2 style="font-size:1.4rem;">HanForge</h2>
-            <span class="badge badge-green">Open Source</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2026 · github.com/shreyanshu09/HanForge</p>
-        </div>
-        <a href="https://github.com/shreyanshu09/HanForge" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">GitHub ↗</a>
-      </div>
-      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="Lightweight HTML to HWPX (Hangul Word Processor XML) conversion engine written in pure JavaScript with no native binaries. Supports headings, paragraphs, bold/italic/underline, tables with colspan/rowspan, nested lists, hyperlinks, images (auto-sizing), inline styles, and code blocks. Available as a standalone script, CLI command, or Node.js library. Designed to support document pipelines that target Korean government and enterprise workflows." data-ko="네이티브 바이너리 없이 순수 JavaScript로 작성된 경량 HTML to HWPX 변환 엔진. 제목, 단락, 굵게/기울임꼴/밑줄, colspan/rowspan 테이블, 중첩 목록, 하이퍼링크, 이미지, 인라인 스타일, 코드 블록을 지원합니다. 독립형 스크립트, CLI 명령 또는 Node.js 라이브러리로 사용 가능합니다.">
-        Lightweight HTML to HWPX (Hangul Word Processor XML) conversion engine written in pure JavaScript with no native binaries. Supports headings, paragraphs, bold/italic/underline, tables with colspan/rowspan, nested lists, hyperlinks, images (auto-sizing), inline styles, and code blocks. Available as a standalone script, CLI command, or Node.js library.
-      </p>
-      <div class="skill-cloud">
-        <span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">HWPX / ZIP</span>
-        <span class="tag">htmlparser2</span><span class="tag">XML DOM</span><span class="tag">CLI</span>
-      </div>
-    </div>
-
-    <!-- FormGen -->
-    <div id="formgen" class="card reveal" style="margin-bottom:2rem;">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-        <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-            <h2 style="font-size:1.4rem;">FormGen</h2>
-            <span class="badge badge-cyan">Document AI</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · Ongoing</p>
-        </div>
-      </div>
-      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="AI-powered form field extraction and auto-fill system for HTML, DOCX, and HWPX documents. Detects form fields using LLM-based document analysis, supports sample data generation, and provides a RAG-powered 'Fill from Documents' feature that retrieves relevant values from uploaded reference documents via semantic search and re-ranking. Features parallel LLM processing with order-preserving concurrency, a React frontend, and an Express.js backend." data-ko="HTML, DOCX, HWPX 문서용 AI 기반 양식 필드 추출 및 자동 채우기 시스템. LLM 기반 문서 분석을 사용하여 양식 필드를 감지하고, 샘플 데이터 생성을 지원하며, 의미론적 검색 및 재순위화를 통해 업로드된 참조 문서에서 관련 값을 검색하는 RAG 기반 '문서에서 채우기' 기능을 제공합니다.">
-        AI-powered form field extraction and auto-fill system for HTML, DOCX, and HWPX documents. Detects form fields using LLM-based document analysis, supports sample data generation, and provides a RAG-powered "Fill from Documents" feature that retrieves relevant values from uploaded reference documents via semantic search and re-ranking. Features parallel LLM processing with order-preserving concurrency, a React frontend, and an Express.js backend.
-      </p>
-      <div class="skill-cloud">
-        <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">React</span>
-        <span class="tag">OpenAI API</span><span class="tag">Qdrant</span><span class="tag">RAG</span>
-        <span class="tag">Semantic Search</span><span class="tag">HWPX</span><span class="tag">DOCX XML</span>
-      </div>
-    </div>
-
-    <!-- AskMe -->
-    <div id="askme" class="card reveal" style="margin-bottom:2rem;">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-        <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-            <h2 style="font-size:1.4rem;">AskMe</h2>
-            <span class="badge badge-blue">RAG System</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2023</p>
-        </div>
-      </div>
-      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="Intelligent document Q&A platform leveraging RAG architecture for complex multi-document analysis. Integrates ALIParse for advanced document structure parsing, semantic vector retrieval, and LLM synthesis to provide accurate, context-aware answers. Designed for enterprise deployment with support for DOCX, PDF, and HWPX input formats." data-ko="복잡한 다중 문서 분석을 위한 RAG 아키텍처를 활용한 지능형 문서 Q&A 플랫폼. 고급 문서 구조 파싱을 위한 ALIParse, 의미론적 벡터 검색, LLM 합성을 통합하여 정확하고 상황에 맞는 답변을 제공합니다.">
-        Intelligent document Q&A platform leveraging RAG architecture for complex multi-document analysis. Integrates ALIParse for advanced document structure parsing, semantic vector retrieval, and LLM synthesis to provide accurate, context-aware answers. Designed for enterprise deployment with support for DOCX, PDF, and HWPX input formats.
-      </p>
-      <div class="skill-cloud">
-        <span class="tag">Python</span><span class="tag">RAG</span><span class="tag">ALIParse</span>
-        <span class="tag">LLMs</span><span class="tag">Vector DB</span><span class="tag">FastAPI</span>
-      </div>
-    </div>
-
-    <!-- VLMFusion OCR -->
-    <div id="vlmfusion" class="card reveal" style="margin-bottom:2rem;">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-        <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-            <h2 style="font-size:1.4rem;">VLMFusion OCR</h2>
-            <span class="badge badge-blue">Research</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2024</p>
-        </div>
-      </div>
-      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="Multi-engine OCR fusion system combining EasyOCR, PaddleOCR, and Tesseract, with a Vision-Language Model post-correction layer for superior accuracy on degraded, complex, or low-resolution document images. Implements confidence-based engine selection and VLM-driven error correction to significantly reduce character error rates." data-ko="VLM 후처리 교정 레이어를 통해 열화되고 복잡하거나 저해상도 문서 이미지에서 탁월한 정확도를 제공하는 EasyOCR, PaddleOCR, Tesseract를 결합한 다중 엔진 OCR 융합 시스템.">
-        Multi-engine OCR fusion system combining EasyOCR, PaddleOCR, and Tesseract, with a Vision-Language Model post-correction layer for superior accuracy on degraded, complex, or low-resolution document images. Implements confidence-based engine selection and VLM-driven error correction to significantly reduce character error rates.
-      </p>
-      <div class="skill-cloud">
-        <span class="tag">Python</span><span class="tag">EasyOCR</span><span class="tag">PaddleOCR</span>
-        <span class="tag">Tesseract</span><span class="tag">VLMs</span><span class="tag">OpenCV</span>
-        <span class="tag">Qwen-VL</span>
-      </div>
-    </div>
-
-    <!-- SlideGen -->
-    <div id="slidegen" class="card reveal" style="margin-bottom:2rem;">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-        <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-            <h2 style="font-size:1.4rem;">SlideGen</h2>
-            <span class="badge badge-cyan">Generative AI</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2025</p>
-        </div>
-      </div>
-      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="AI-powered presentation generator that creates structured slide decks from a text prompt or uploaded PDF context. Supports multiple LLM providers including OpenRouter, Together AI, Cohere, Google Gemini, Hugging Face, and Azure OpenAI. Features dynamic Unsplash background integration and adjustable slide count (3–30)." data-ko="텍스트 프롬프트 또는 업로드된 PDF 컨텍스트에서 구조화된 슬라이드 덱을 생성하는 AI 기반 프레젠테이션 생성기. OpenRouter, Together AI, Cohere, Google Gemini, Hugging Face, Azure OpenAI를 포함한 여러 LLM 제공업체 지원.">
-        AI-powered presentation generator that creates structured slide decks from a text prompt or uploaded PDF context. Supports multiple LLM providers including OpenRouter, Together AI, Cohere, Google Gemini, Hugging Face, and Azure OpenAI. Features dynamic Unsplash background integration and adjustable slide count (3–30).
-      </p>
-      <div class="skill-cloud">
-        <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Multi-LLM</span>
-        <span class="tag">OpenRouter</span><span class="tag">Google Gemini</span><span class="tag">PPTX</span>
-        <span class="tag">PDF Parsing</span>
-      </div>
-    </div>
-
-    <!-- Medical Disease Extractor -->
-    <div id="medical" class="card reveal" style="margin-bottom:2rem;">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-        <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-            <h2 style="font-size:1.4rem;">Medical Document Disease Extractor</h2>
-            <span class="badge badge-blue">Medical NLP</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2025</p>
-        </div>
-      </div>
-      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="RAG-based medical NLP system for extracting disease information from clinical documents and research literature. Supports three analysis modes: Single Pass, Double Pass, and RAG. Uses Qdrant vector store with HNSW indexing, Qwen VLM for visual document understanding, and WebSocket-based real-time progress updates." data-ko="임상 문서 및 연구 문헌에서 질병 정보를 추출하는 RAG 기반 의료 NLP 시스템. 단일 패스, 이중 패스, RAG 세 가지 분석 모드를 지원합니다. Qdrant 벡터 스토어, HNSW 인덱싱, Qwen VLM을 사용합니다.">
-        RAG-based medical NLP system for extracting disease information from clinical documents and research literature. Supports three analysis modes: Single Pass, Double Pass, and RAG. Uses Qdrant vector store with HNSW indexing, Qwen VLM for visual document understanding, and WebSocket-based real-time progress updates.
-      </p>
-      <div class="skill-cloud">
-        <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">RAG</span>
-        <span class="tag">Qdrant</span><span class="tag">Qwen-VL</span><span class="tag">Docker</span>
-        <span class="tag">WebSockets</span><span class="tag">OpenRouter</span>
-      </div>
-    </div>
-
-    <!-- Chart2Excel -->
-    <div id="chart2excel" class="card reveal" style="margin-bottom:2rem;">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-        <div>
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-            <h2 style="font-size:1.4rem;">Chart2Excel + Chart QA</h2>
-            <span class="badge badge-gold">Award Winner</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">ABR Lab, KNU · 2023</p>
-        </div>
-      </div>
-      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="Chart data extraction and question-answering system that converts chart images into structured Excel data and supports natural language queries over chart content. Secured 2nd Place at AI Grand Challenge 2023 (Document QA track)." data-ko="차트 이미지를 구조화된 Excel 데이터로 변환하고 차트 내용에 대한 자연어 쿼리를 지원하는 차트 데이터 추출 및 질의응답 시스템. AI 그랜드 챌린지 2023(문서 QA 트랙)에서 2위 수상.">
-        Chart data extraction and question-answering system that converts chart images into structured Excel data and supports natural language queries over chart content. Secured 2nd Place at AI Grand Challenge 2023 (Document QA track).
-      </p>
-      <div class="skill-cloud">
-        <span class="tag">Python</span><span class="tag">Computer Vision</span><span class="tag">Chart Understanding</span>
-        <span class="tag">NLP</span><span class="tag">Excel</span>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-text">© 2026 Shreyanshu Bhushan</p>
-    <nav class="footer-links">
-      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
-      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
-      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
-    </nav>
-  </div>
-</footer>
+<!-- Flagship / Production work -->
+<section class="sec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-num">01 — At NEOALI</div>
+        <h2 class="sec-title">Production <em>systems</em>.</h2>
+      </div>
+      <p class="sec-kicker">Enterprise AI products in active use.</p>
+    </div>
 
-<div class="chatbot-fab">
-  <button class="chatbot-trigger" id="chatbot-trigger">💬</button>
-  <div class="chatbot-window" id="chatbot-window">
-    <div class="chatbot-head"><h4>Ask about Shreyanshu</h4><button class="chatbot-close-btn" id="chatbot-close">✕</button></div>
-    <div class="chatbot-body" id="chatbot-messages"><div class="chat-msg bot">Hi! Ask me about projects, skills, or experience.</div></div>
-    <div class="chatbot-footer">
-      <input class="chatbot-input" id="chatbot-input" type="text" placeholder="Ask anything...">
-      <button class="chatbot-send" id="chatbot-send">Send</button>
+    <div class="pgrid">
+
+      <article class="pcard pcard-flagship reveal" data-cat="production">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip lime">Document AI</span>
+            <span class="chip lime">Flagship</span>
+            <span class="chip gold">Intel Award '24</span>
+          </div>
+          <div class="pcard-yr">2025 — Present</div>
+        </div>
+        <h3 class="pcard-name">LayGen</h3>
+        <p class="pcard-tag">Multi-platform AI document translation ecosystem</p>
+        <p class="pcard-desc">Preserves original formatting across DOCX, HWPX, PDF, PPTX, and XLSX. On-device LLM inference (Ollama) for enterprise offline security. Electron desktop app + FastAPI server-side API. Won 1st Place at Intel AI PC Innovation Challenge 2024.</p>
+        <ul class="pcard-points">
+          <li>End-to-end format preservation via Pandoc + custom HWPX engine</li>
+          <li>On-device inference eliminates cloud upload of sensitive docs</li>
+          <li>Cross-platform desktop (Electron) + containerized backend</li>
+        </ul>
+        <div class="pcard-stack">
+          <span>Python</span><span>ElectronJS</span><span>FastAPI</span><span>Ollama</span><span>PyTorch</span><span>Pandoc</span><span>HWPX</span>
+        </div>
+        <div class="pcard-actions">
+          <a href="https://ondevice.neoali.com/laygen" target="_blank" rel="noopener" class="btn btn-primary">Live product ↗</a>
+        </div>
+      </article>
+
+      <article class="pcard reveal" data-cat="production">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip violet">RAG</span>
+            <span class="chip">Production</span>
+          </div>
+          <div class="pcard-yr">2023</div>
+        </div>
+        <h3 class="pcard-name">AskMe</h3>
+        <p class="pcard-tag">Intelligent document Q&amp;A platform</p>
+        <p class="pcard-desc">Leverages RAG architecture for complex multi-document analysis. Integrates ALIParse for advanced document structure parsing, semantic vector retrieval, and LLM synthesis to provide accurate, context-aware answers across DOCX, PDF, and HWPX.</p>
+        <div class="pcard-stack">
+          <span>Python</span><span>RAG</span><span>ALIParse</span><span>Qdrant</span><span>FastAPI</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" data-cat="production research">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip violet">Vision-Language</span>
+            <span class="chip">Research</span>
+          </div>
+          <div class="pcard-yr">2024</div>
+        </div>
+        <h3 class="pcard-name">VLMFusion OCR</h3>
+        <p class="pcard-tag">Multi-engine OCR with VLM post-correction</p>
+        <p class="pcard-desc">Combines EasyOCR, PaddleOCR, and Tesseract with a Vision-Language Model post-correction layer for superior accuracy on degraded, complex, or low-resolution document images. Confidence-based engine selection + VLM error correction.</p>
+        <div class="pcard-stack">
+          <span>Python</span><span>EasyOCR</span><span>PaddleOCR</span><span>Tesseract</span><span>Qwen-VL</span><span>OpenCV</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" data-cat="production">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip">Document AI</span>
+            <span class="chip">Enterprise</span>
+          </div>
+          <div class="pcard-yr">Ongoing</div>
+        </div>
+        <h3 class="pcard-name">FormGen</h3>
+        <p class="pcard-tag">AI form field extraction &amp; auto-fill</p>
+        <p class="pcard-desc">Detects form fields in HTML / DOCX / HWPX via LLM-based document analysis, with RAG-powered "fill from documents" that retrieves values from uploaded references via semantic search &amp; re-ranking. Parallel LLM processing with order-preserving concurrency.</p>
+        <div class="pcard-stack">
+          <span>Node.js</span><span>Express.js</span><span>React</span><span>OpenAI API</span><span>Qdrant</span><span>HWPX</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" data-cat="production">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip violet">Gen AI</span>
+            <span class="chip">Tools</span>
+          </div>
+          <div class="pcard-yr">2025</div>
+        </div>
+        <h3 class="pcard-name">SlideGen</h3>
+        <p class="pcard-tag">AI presentation generator</p>
+        <p class="pcard-desc">Creates structured slide decks from a text prompt or PDF context. Supports multi-provider LLMs — OpenRouter, Together AI, Cohere, Google Gemini, HuggingFace, Azure OpenAI — with dynamic Unsplash backgrounds and adjustable slide count (3–30).</p>
+        <div class="pcard-stack">
+          <span>Python</span><span>Streamlit</span><span>Multi-LLM</span><span>Google Gemini</span><span>PPTX</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" data-cat="production research">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip violet">Medical NLP</span>
+            <span class="chip">RAG</span>
+          </div>
+          <div class="pcard-yr">2025</div>
+        </div>
+        <h3 class="pcard-name">Medical Document Disease Extractor</h3>
+        <p class="pcard-tag">RAG-based clinical NLP pipeline</p>
+        <p class="pcard-desc">Extracts disease information from clinical documents and research literature. Supports Single Pass, Double Pass, and RAG analysis modes. Qdrant vector store with HNSW indexing, Qwen VLM for visual understanding, WebSocket real-time progress.</p>
+        <div class="pcard-stack">
+          <span>Python</span><span>FastAPI</span><span>Qdrant</span><span>Qwen-VL</span><span>Docker</span><span>WebSockets</span>
+        </div>
+      </article>
+
     </div>
   </div>
-</div>
+</section>
 
-<script src="js/main.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/chatbot.js"></script>
+<!-- Open Source -->
+<section class="sec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-num">02 — Open Source</div>
+        <h2 class="sec-title">Open-source <em>tools</em>.</h2>
+      </div>
+      <p class="sec-kicker">Published on GitHub for the community.</p>
+    </div>
+
+    <div class="pgrid">
+      <article class="pcard reveal" data-cat="oss">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip lime">Open Source</span>
+            <span class="chip">Library</span>
+          </div>
+          <div class="pcard-yr">2026</div>
+        </div>
+        <h3 class="pcard-name">HanForge</h3>
+        <p class="pcard-tag">HTML → HWPX conversion engine</p>
+        <p class="pcard-desc">Lightweight pure-JavaScript engine with no native binaries. Supports headings, paragraphs, bold/italic/underline, tables with colspan/rowspan, nested lists, hyperlinks, auto-sized images, inline styles, and code blocks. Standalone script, CLI, or Node.js library.</p>
+        <div class="pcard-stack">
+          <span>JavaScript</span><span>Node.js</span><span>HWPX / ZIP</span><span>htmlparser2</span><span>XML DOM</span><span>CLI</span>
+        </div>
+        <div class="pcard-actions">
+          <a href="https://github.com/shreyanshu09/HanForge" target="_blank" rel="noopener" class="btn btn-ghost">View on GitHub ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Academic / Research Projects -->
+<section class="sec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-num">03 — Academic Research</div>
+        <h2 class="sec-title">Graduate &amp; undergraduate <em>research</em>.</h2>
+      </div>
+      <p class="sec-kicker">Selected coursework and research projects from ABR Lab &amp; Kyungpook National University.</p>
+    </div>
+
+    <div class="pgrid">
+
+      <article class="pcard reveal" data-cat="research academic">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip gold">Award Winner</span>
+            <span class="chip">Document QA</span>
+          </div>
+          <div class="pcard-yr">2023</div>
+        </div>
+        <h3 class="pcard-name">Chart2Excel + Chart QA</h3>
+        <p class="pcard-tag">Chart data extraction &amp; question-answering</p>
+        <p class="pcard-desc">Converts chart images into structured Excel data and supports natural language queries over chart content. Secured 2nd Place at AI Grand Challenge 2023 (Document QA track).</p>
+        <div class="pcard-stack">
+          <span>Python</span><span>Computer Vision</span><span>Chart Understanding</span><span>NLP</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" data-cat="research academic">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip violet">Computer Vision</span>
+            <span class="chip">Deep Learning</span>
+          </div>
+          <div class="pcard-yr">Sep — Dec 2021</div>
+        </div>
+        <h3 class="pcard-name">Semantic Segmentation on Cityscapes</h3>
+        <p class="pcard-tag">SegNet, U-Net &amp; FCN — a comparative study</p>
+        <p class="pcard-desc">Extensive experiments with pre-existing models for semantic segmentation on the Cityscapes dataset. Investigated SegNet, U-Net, and Fully Convolutional Networks (FCN) with VGG-16 as the encoder, applying enhancement techniques and providing a comprehensive performance comparison.</p>
+        <div class="pcard-stack">
+          <span>PyTorch</span><span>SegNet</span><span>U-Net</span><span>FCN</span><span>VGG-16</span><span>Cityscapes</span>
+        </div>
+        <div class="pcard-actions">
+          <a href="https://github.com/shreyanshu09/Semantic-Segmentation-Cityscapes" target="_blank" rel="noopener" class="btn btn-ghost">View on GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="pcard reveal" data-cat="research academic">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip violet">Deep Learning</span>
+            <span class="chip">Classification</span>
+          </div>
+          <div class="pcard-yr">Sep — Nov 2021</div>
+        </div>
+        <h3 class="pcard-name">Image Classification on CIFAR-10</h3>
+        <p class="pcard-tag">A study of Deep CNNs</p>
+        <p class="pcard-desc">Comparative study of Deep Convolutional Neural Networks on CIFAR-10. Developed a custom CNN with an optimal layer configuration via Deep Cognition, applied traditional and modern techniques across multiple DCNN variants, and benchmarked their performance.</p>
+        <div class="pcard-stack">
+          <span>Python</span><span>DCNNs</span><span>Deep Cognition</span><span>CIFAR-10</span><span>Keras / TF</span>
+        </div>
+        <div class="pcard-actions">
+          <a href="https://github.com/shreyanshu09/CIFAR-10" target="_blank" rel="noopener" class="btn btn-ghost">View on GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="pcard reveal" data-cat="research academic">
+        <div class="pcard-top">
+          <div class="pcard-tags">
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Security</span>
+          </div>
+          <div class="pcard-yr">Apr — Jun 2020</div>
+        </div>
+        <h3 class="pcard-name">Intrusion Detection System</h3>
+        <p class="pcard-tag">Comparative ML on NSL-KDD dataset</p>
+        <p class="pcard-desc">Applied various classifiers to network intrusion detection data to enhance detection capabilities. Conducted a comparative analysis across classifiers using the NSL-KDD dataset to evaluate and improve identification of network intrusions.</p>
+        <div class="pcard-stack">
+          <span>Python</span><span>scikit-learn</span><span>NSL-KDD</span><span>Classifiers</span>
+        </div>
+        <div class="pcard-actions">
+          <a href="https://github.com/shreyanshu09/Network-Intrusion-Detection-System-using-Machine-Learning" target="_blank" rel="noopener" class="btn btn-ghost">View on GitHub ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="partials/shared.js"></script>
+<script src="scripts/scene.js"></script>
+<script src="scripts/interactions.js"></script>
+<script>
+  // Project filters
+  const filters = document.querySelectorAll('.proj-filter');
+  const cards   = document.querySelectorAll('.pcard');
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const f = btn.dataset.filter;
+      filters.forEach(b => b.classList.toggle('on', b === btn));
+      cards.forEach(c => {
+        const cats = (c.dataset.cat || '').split(/\s+/);
+        const show = (f === 'all') || cats.includes(f);
+        c.classList.toggle('hidden', !show);
+      });
+    });
+  });
+</script>
+
 </body>
 </html>

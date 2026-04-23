@@ -1,0 +1,190 @@
+/* ============================================
+   Projects page — clean card grid with filters
+   ============================================ */
+
+.proj-filters {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.proj-filter {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--glass);
+  color: var(--fg-2);
+  cursor: pointer;
+  transition: border-color 0.25s, color 0.25s, background 0.25s, transform 0.25s;
+}
+.proj-filter:hover {
+  border-color: var(--line-strong, var(--line));
+  color: var(--fg);
+  transform: translateY(-1px);
+}
+.proj-filter.on {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--bg-ink, var(--bg));
+}
+
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.5rem;
+}
+@media (max-width: 640px) {
+  .pgrid { grid-template-columns: 1fr; }
+}
+
+.pcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--glass);
+  backdrop-filter: blur(8px);
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+  overflow: hidden;
+}
+.pcard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(135deg, transparent 40%, color-mix(in oklch, var(--lime) 40%, transparent) 70%, transparent);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.pcard:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-strong, var(--line));
+}
+.pcard:hover::before {
+  opacity: 1;
+}
+.pcard.hidden {
+  display: none;
+}
+
+/* Flagship variant — full-width on wider screens with accent stripe */
+.pcard-flagship {
+  grid-column: 1 / -1;
+}
+.pcard-flagship::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--lime), var(--violet));
+}
+
+.pcard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.pcard-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.pcard-yr {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--fg-3);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-top: 0.3rem;
+}
+
+.pcard-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-weight: 500;
+  color: var(--fg-0, var(--fg));
+  margin: 0 0 0.35rem;
+}
+.pcard-tag {
+  font-size: 0.85rem;
+  color: var(--fg-2);
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+  margin: 0 0 1rem;
+}
+.pcard-desc {
+  color: var(--fg-2);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0 0 1.1rem;
+}
+.pcard-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.pcard-points li {
+  position: relative;
+  padding-left: 1.15rem;
+  color: var(--fg-2);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+.pcard-points li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--lime);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.pcard-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+.pcard-stack span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  background: color-mix(in oklch, var(--bg) 60%, transparent);
+  border: 1px solid var(--line);
+  color: var(--fg-2);
+  letter-spacing: 0.03em;
+}
+.pcard-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+/* Chip color variants */
+.chip.lime  { background: color-mix(in oklch, var(--lime) 22%, transparent); color: var(--lime); border-color: color-mix(in oklch, var(--lime) 40%, transparent); }
+.chip.violet { background: color-mix(in oklch, var(--violet) 22%, transparent); color: var(--violet); border-color: color-mix(in oklch, var(--violet) 40%, transparent); }
+.chip.gold  { background: color-mix(in oklch, oklch(0.82 0.16 85) 22%, transparent); color: oklch(0.82 0.16 85); border-color: color-mix(in oklch, oklch(0.82 0.16 85) 40%, transparent); }

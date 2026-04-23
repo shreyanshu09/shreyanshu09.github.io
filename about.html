@@ -1,330 +1,122 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Shreyanshu Bhushan</title>
-  <meta name="description" content="About Shreyanshu Bhushan — AI Engineer & Researcher with expertise in Document AI, LLMs, OCR, and Vision-Language Models.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About — Shreyanshu Bhushan</title>
+<meta name="description" content="About Shreyanshu Bhushan — AI Engineer & Researcher in Seoul, South Korea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css?v=3">
+<link rel="stylesheet" href="styles/layout.css?v=3">
+<link rel="stylesheet" href="styles/sections.css?v=3">
+<link rel="stylesheet" href="styles/pages.css?v=3">
 </head>
-<body>
-<div id="scroll-progress"></div>
+<body data-page="about">
 
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><span>Shreyanshu</span> Bhushan</a>
-    <ul class="nav-links">
-      <li><a href="index.html"      class="nav-link" data-en="Home"       data-ko="홈">Home</a></li>
-      <li><a href="about.html"      class="nav-link" data-en="About"      data-ko="소개">About</a></li>
-      <li><a href="experience.html" class="nav-link" data-en="Experience" data-ko="경력">Experience</a></li>
-      <li><a href="projects.html"   class="nav-link" data-en="Projects"   data-ko="프로젝트">Projects</a></li>
-      <li><a href="research.html"   class="nav-link" data-en="Research"   data-ko="연구">Research</a></li>
-      <li><a href="contact.html"    class="nav-link" data-en="Contact"    data-ko="연락처">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ko">KO</button>
+<main>
+
+<section class="page-hero" data-screen-label="About">
+  <div class="container">
+    <span class="eyebrow"><span class="pulse"></span> Who I am</span>
+    <h1 class="page-hero-title">About <em>me</em>.</h1>
+    <p class="page-hero-kicker">Short background and the work I care about — from India to South Korea.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-portrait">
+          <img src="assets/profile.png" alt="Shreyanshu Bhushan">
+        </div>
+        <div class="about-facts">
+          <div class="fact-cell">
+            <div class="fact-label">Based</div>
+            <div class="fact-value">Seoul, KR</div>
+          </div>
+          <div class="fact-cell">
+            <div class="fact-label">Visa</div>
+            <div class="fact-value">F-2</div>
+          </div>
+          <div class="fact-cell">
+            <div class="fact-label">Languages</div>
+            <div class="fact-value">EN · HI · KO</div>
+          </div>
+          <div class="fact-cell">
+            <div class="fact-label">Role</div>
+            <div class="fact-value">AI Researcher</div>
+          </div>
+        </div>
       </div>
-      <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">☀</span></button>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+
+      <div class="reveal">
+        <p class="about-lede">I'm an <em>AI Engineer &amp; Researcher</em> at NEOALI Co. Ltd. in Seoul, building production systems around Document AI, LLMs, RAG, OCR and Vision-Language Models.</p>
+        <div class="about-prose">
+          <p>I completed my Bachelor of Science (Engineering, Exchange) at Kyungpook National University, followed by a Master of Science in Artificial Intelligence at ABR Lab, KNU — where I focused on bridging NLP and Computer Vision with deep learning, image-based summarization and block diagram understanding.</p>
+          <p>Since joining NEOALI Co. Ltd. in May 2023, I've led research and engineering on products like LayGen (1st Place, Intel AI PC Innovation Challenge 2024), AskMe, FormGen, VLMFusion OCR, SlideGen, HanForge, and a medical document disease extractor — each shipping to real enterprise deployments.</p>
+          <p>My research has been published at ACL 2024 and AACL-IJCNLP 2022, and I'm a co-inventor on a filed patent for an AI-Based Method and System for Understanding Document Structures.</p>
+          <p>I care most about on-device and offline-first AI: systems that treat user documents as private-by-default, run locally when they can, and don't compromise on format fidelity or answer quality.</p>
+        </div>
+
+        <div class="hero-cta" style="margin-top:2rem;">
+          <a href="experience.html" class="btn btn-primary">See experience
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="assets/cv.pdf" download class="btn btn-ghost">Download CV</a>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
-<nav class="mobile-menu" id="mobile-nav">
-  <a href="index.html"      class="nav-link">Home</a>
-  <a href="about.html"      class="nav-link">About</a>
-  <a href="experience.html" class="nav-link">Experience</a>
-  <a href="projects.html"   class="nav-link">Projects</a>
-  <a href="research.html"   class="nav-link">Research</a>
-  <a href="contact.html"    class="nav-link">Contact</a>
-</nav>
+</section>
 
-<!-- Page Hero -->
-<div class="page-hero">
+<!-- Skills grid (kept on about page) -->
+<section class="sec" id="skills">
   <div class="container">
-    <p class="page-hero-label" data-en="Background & Profile" data-ko="배경 및 프로필">Background & Profile</p>
-    <h1 class="page-hero-title" data-en="About Me" data-ko="소개">About Me</h1>
-    <p class="page-hero-subtitle" data-en="AI Researcher and Engineer bridging fundamental research with scalable production systems." data-ko="기초 연구와 확장 가능한 제품 시스템을 연결하는 AI 연구원 및 엔지니어.">
-      AI Researcher and Engineer bridging fundamental research with scalable production systems.
-    </p>
-  </div>
-</div>
-
-<!-- Profile + Summary -->
-<section style="padding: 5rem 0;">
-  <div class="container">
-    <div style="display:grid; grid-template-columns:340px 1fr; gap:4rem; align-items:start;">
-
-      <!-- Profile card -->
-      <div class="reveal" style="text-align:center;">
-        <div style="display:inline-block; position:relative; margin-bottom:1.5rem;">
-          <div class="profile-ring" style="width:220px; height:220px; margin:0 auto;">
-            <img src="images/profile.png" alt="Shreyanshu Bhushan" class="profile-img">
-          </div>
-        </div>
-        <h2 style="font-size:1.3rem; margin-bottom:0.3rem;">Shreyanshu Bhushan</h2>
-        <p style="color:var(--accent-cyan); font-size:0.9rem; margin-bottom:1rem;">AI Engineer & Researcher</p>
-        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:1.5rem;">Seoul, South Korea · F-2 Visa</p>
-
-        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; text-align:center; margin-bottom:1.5rem;">
-          <div>
-            <div style="font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:800; background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;" data-count="3">0</div>
-            <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;" data-en="Yrs Industry" data-ko="년 경력">Yrs Industry</div>
-          </div>
-          <div>
-            <div style="font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:800; background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;" data-count="15">0</div>
-            <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;" data-en="AI Projects" data-ko="AI 프로젝트">AI Projects</div>
-          </div>
-          <div>
-            <div style="font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:800; background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;" data-count="3">0</div>
-            <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;" data-en="Countries" data-ko="국가">Countries</div>
-          </div>
-        </div>
-
-        <div style="display:flex; flex-direction:column; gap:0.5rem;">
-          <a href="files/cv.pdf" download class="btn btn-primary btn-sm" style="justify-content:center;" data-en="Download CV" data-ko="이력서 다운로드">Download CV</a>
-          <a href="contact.html" class="btn btn-secondary btn-sm" style="justify-content:center;" data-en="Get In Touch" data-ko="연락하기">Get In Touch</a>
-        </div>
-      </div>
-
-      <!-- Summary -->
+    <div class="sec-head reveal">
       <div>
-        <div class="reveal">
-          <span class="section-label" data-en="Professional Summary" data-ko="전문가 요약">Professional Summary</span>
-          <p style="margin-top:0.75rem; color:var(--text-secondary); line-height:1.8; font-size:1.02rem;" data-en="AI Engineer and Researcher with 3+ years of industry experience at NEOALI Co. Ltd. in Seoul, and a strong academic foundation from Kyungpook National University. I specialize in end-to-end development of AI systems — from research prototyping to enterprise deployment — with deep expertise in Document AI, Large and Small Language Models, Retrieval-Augmented Generation, OCR, and Vision-Language Models." data-ko="서울의 NEOALI Co. Ltd.에서 3년 이상의 산업 경험을 보유하고 경북대학교의 강력한 학문적 기반을 갖춘 AI 엔지니어 및 연구원입니다. 저는 문서 AI, 대형 및 소형 언어 모델, RAG, OCR, 비전-언어 모델에 대한 깊은 전문 지식을 바탕으로 연구 프로토타이핑부터 기업 배포까지 AI 시스템의 엔드투엔드 개발을 전문으로 합니다.">
-            AI Engineer and Researcher with 3+ years of industry experience at NEOALI Co. Ltd. in Seoul, and a strong academic foundation from Kyungpook National University. I specialize in end-to-end development of AI systems — from research prototyping to enterprise deployment — with deep expertise in Document AI, Large and Small Language Models, Retrieval-Augmented Generation, OCR, and Vision-Language Models.
-          </p>
-        </div>
-
-        <div class="reveal delay-1" style="margin-top:2rem;">
-          <p style="color:var(--text-secondary); line-height:1.8; font-size:1.02rem;" data-en="My work spans building multi-platform AI ecosystems for document translation, designing RAG pipelines for enterprise knowledge retrieval, developing on-device AI applications for offline-first environments, and publishing peer-reviewed research at top NLP venues including ACL 2024." data-ko="제 작업은 문서 번역을 위한 다중 플랫폼 AI 생태계 구축, 기업 지식 검색을 위한 RAG 파이프라인 설계, 오프라인 우선 환경을 위한 온디바이스 AI 애플리케이션 개발, ACL 2024를 포함한 최고의 NLP 학술지에서의 동료 심사 연구 발표를 아우릅니다.">
-            My work spans building multi-platform AI ecosystems for document translation, designing RAG pipelines for enterprise knowledge retrieval, developing on-device AI applications for offline-first environments, and publishing peer-reviewed research at top NLP venues including ACL 2024.
-          </p>
-        </div>
-
-        <div class="reveal delay-2" style="margin-top:2rem;">
-          <blockquote style="border-left:3px solid var(--accent-cyan); padding-left:1.25rem; font-style:italic; color:var(--text-secondary); font-size:0.97rem; line-height:1.75;" data-en='"I deliver transformative automation by bridging fundamental AI research with scalable product engineering — owning systems end-to-end from research concept to enterprise deployment."' data-ko='"저는 기초 AI 연구와 확장 가능한 제품 엔지니어링을 연결하여 혁신적인 자동화를 제공하며, 연구 개념부터 기업 배포까지 시스템을 엔드투엔드로 소유합니다."'>
-            "I deliver transformative automation by bridging fundamental AI research with scalable product engineering — owning systems end-to-end from research concept to enterprise deployment."
-          </blockquote>
-        </div>
+        <div class="sec-num">— Skills</div>
+        <h2 class="sec-title">Core <em>specializations</em>.</h2>
       </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Education Timeline -->
-<section style="padding: 5rem 0; background: var(--bg-secondary); border-top: 1px solid var(--border);">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label" data-en="Academic Background" data-ko="학력">Academic Background</span>
-      <h2 class="section-title" data-en="Educational <span>Journey</span>" data-ko="교육 <span>여정</span>">Educational <span>Journey</span></h2>
-    </div>
-
-    <div class="timeline" style="max-width:720px; margin:0 auto;">
-      <div class="timeline-item gold reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-period">2021 — 2023</div>
-        <h3 class="timeline-title" data-en="Master of Science — Artificial Intelligence" data-ko="인공지능 석사">Master of Science — Artificial Intelligence</h3>
-        <p class="timeline-org">Kyungpook National University, South Korea · GPA 4.1 / 4.3</p>
-        <div class="skill-cloud" style="margin-top:0.75rem;">
-          <span class="skill-pill">Deep Learning</span>
-          <span class="skill-pill">Advanced AI</span>
-          <span class="skill-pill">Computer Vision</span>
-          <span class="skill-pill">NLP</span>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal delay-1">
-        <div class="timeline-dot"></div>
-        <div class="timeline-period">2018 — 2020</div>
-        <h3 class="timeline-title" data-en="Bachelor of Science — Engineering (Exchange)" data-ko="공학 학사 (교환학생)">Bachelor of Science — Engineering (Exchange)</h3>
-        <p class="timeline-org">Kyungpook National University, South Korea · GPA 3.81 / 4.3</p>
-        <div class="skill-cloud" style="margin-top:0.75rem;">
-          <span class="skill-pill">Machine Learning</span>
-          <span class="skill-pill">Linear Algebra</span>
-          <span class="skill-pill">Artificial Intelligence</span>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal delay-2">
-        <div class="timeline-dot"></div>
-        <div class="timeline-period">2016 — 2018</div>
-        <h3 class="timeline-title" data-en="Bachelor of Technology (2+2 Double Degree)" data-ko="기술 학사 (2+2 복수 학위)">Bachelor of Technology (2+2 Double Degree)</h3>
-        <p class="timeline-org">Christ University, India · GPA 3.6 / 4.0</p>
-        <div class="skill-cloud" style="margin-top:0.75rem;">
-          <span class="skill-pill">Data Structures</span>
-          <span class="skill-pill">Algorithms</span>
-          <span class="skill-pill">Discrete Mathematics</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Skills -->
-<section style="padding: 5rem 0;">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label" data-en="Technical Competencies" data-ko="기술 역량">Technical Competencies</span>
-      <h2 class="section-title" data-en="Skills & <span>Expertise</span>" data-ko="기술 및 <span>전문성</span>">Skills & <span>Expertise</span></h2>
+      <p class="sec-kicker">Technical expertise across Document AI, LLMs, RAG systems, and Vision-Language Models.</p>
     </div>
 
     <div class="skills-grid">
-
-      <div class="skill-category-card reveal">
-        <div class="skill-cat-title">Languages</div>
-        <div class="skill-cloud">
-          <span class="skill-pill">Python</span>
-          <span class="skill-pill">JavaScript</span>
-          <span class="skill-pill">Java</span>
-          <span class="skill-pill">C++</span>
-          <span class="skill-pill">Bash</span>
-        </div>
+      <div class="skill-cell reveal" data-d="1">
+        <div class="skill-num">/ 01</div>
+        <h3>Document AI</h3>
+        <p>End-to-end document pipelines — translation, format preservation, layout detection, multi-format parsing for DOCX, HWPX, PDF.</p>
+        <div class="skill-tech"><span>Pandoc</span><span>python-docx</span><span>HWPX</span><span>PDFMiner</span><span>Layout Det.</span></div>
       </div>
-
-      <div class="skill-category-card reveal delay-1">
-        <div class="skill-cat-title">AI / ML Frameworks</div>
-        <div class="skill-cloud">
-          <span class="skill-pill">PyTorch</span>
-          <span class="skill-pill">TensorFlow</span>
-          <span class="skill-pill">HuggingFace</span>
-          <span class="skill-pill">Transformers</span>
-          <span class="skill-pill">OpenCV</span>
-          <span class="skill-pill">scikit-learn</span>
-        </div>
+      <div class="skill-cell reveal" data-d="2">
+        <div class="skill-num">/ 02</div>
+        <h3>LLMs &amp; On-Device</h3>
+        <p>Fine-tuning, quantization, and deployment of large &amp; small language models for offline, privacy-first enterprise.</p>
+        <div class="skill-tech"><span>Ollama</span><span>vLLM</span><span>HuggingFace</span><span>GGUF</span><span>AWQ</span></div>
       </div>
-
-      <div class="skill-category-card reveal delay-2">
-        <div class="skill-cat-title">LLM Inference & Deployment</div>
-        <div class="skill-cloud">
-          <span class="skill-pill">Ollama</span>
-          <span class="skill-pill">vLLM</span>
-          <span class="skill-pill">OpenAI API</span>
-          <span class="skill-pill">OpenRouter</span>
-          <span class="skill-pill">GGUF</span>
-          <span class="skill-pill">Quantization</span>
-        </div>
+      <div class="skill-cell reveal" data-d="3">
+        <div class="skill-num">/ 03</div>
+        <h3>RAG &amp; Retrieval</h3>
+        <p>Retrieval-Augmented Generation with semantic chunking, vector search, reranking — high-accuracy multi-document QA.</p>
+        <div class="skill-tech"><span>Qdrant</span><span>LangChain</span><span>Embeddings</span><span>Reranking</span></div>
       </div>
-
-      <div class="skill-category-card reveal delay-3">
-        <div class="skill-cat-title">RAG & Vector Systems</div>
-        <div class="skill-cloud">
-          <span class="skill-pill">Qdrant</span>
-          <span class="skill-pill">LangChain</span>
-          <span class="skill-pill">Embeddings</span>
-          <span class="skill-pill">Semantic Chunking</span>
-          <span class="skill-pill">Reranking</span>
-          <span class="skill-pill">Retrieval</span>
-        </div>
-      </div>
-
-      <div class="skill-category-card reveal">
-        <div class="skill-cat-title">Document AI</div>
-        <div class="skill-cloud">
-          <span class="skill-pill">Pandoc</span>
-          <span class="skill-pill">Layout Detection</span>
-          <span class="skill-pill">python-docx</span>
-          <span class="skill-pill">HWPX</span>
-          <span class="skill-pill">PDF Processing</span>
-          <span class="skill-pill">ALIParse</span>
-        </div>
-      </div>
-
-      <div class="skill-category-card reveal delay-1">
-        <div class="skill-cat-title">OCR & Vision</div>
-        <div class="skill-cloud">
-          <span class="skill-pill">EasyOCR</span>
-          <span class="skill-pill">PaddleOCR</span>
-          <span class="skill-pill">Tesseract</span>
-          <span class="skill-pill">VLMs</span>
-          <span class="skill-pill">Qwen-VL</span>
-          <span class="skill-pill">Image Processing</span>
-        </div>
-      </div>
-
-      <div class="skill-category-card reveal delay-2">
-        <div class="skill-cat-title">Backend & APIs</div>
-        <div class="skill-cloud">
-          <span class="skill-pill">FastAPI</span>
-          <span class="skill-pill">Node.js</span>
-          <span class="skill-pill">Express.js</span>
-          <span class="skill-pill">REST APIs</span>
-          <span class="skill-pill">WebSockets</span>
-          <span class="skill-pill">Docker</span>
-        </div>
-      </div>
-
-      <div class="skill-category-card reveal delay-3">
-        <div class="skill-cat-title">Tools & Platforms</div>
-        <div class="skill-cloud">
-          <span class="skill-pill">Git</span>
-          <span class="skill-pill">GitHub</span>
-          <span class="skill-pill">Streamlit</span>
-          <span class="skill-pill">ElectronJS</span>
-          <span class="skill-pill">Prompt Engineering</span>
-          <span class="skill-pill">Linux</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Languages spoken -->
-    <div style="margin-top:3rem;" class="reveal">
-      <div class="skill-category-card" style="max-width:480px;">
-        <div class="skill-cat-title" data-en="Spoken Languages" data-ko="구사 언어">Spoken Languages</div>
-        <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.5rem;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span style="font-size:0.9rem;" data-en="English" data-ko="영어">English</span>
-            <span class="badge badge-green" data-en="Fluent" data-ko="유창함">Fluent</span>
-          </div>
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span style="font-size:0.9rem;" data-en="Hindi" data-ko="힌디어">Hindi</span>
-            <span class="badge badge-green" data-en="Native" data-ko="모국어">Native</span>
-          </div>
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span style="font-size:0.9rem;" data-en="Korean" data-ko="한국어">Korean</span>
-            <span class="badge badge-cyan" data-en="Beginner" data-ko="초급">Beginner</span>
-          </div>
-        </div>
+      <div class="skill-cell reveal" data-d="4">
+        <div class="skill-num">/ 04</div>
+        <h3>OCR &amp; Vision-Language</h3>
+        <p>Multi-engine OCR fusion enhanced by VLMs — superior accuracy on complex, low-quality, and multilingual documents.</p>
+        <div class="skill-tech"><span>EasyOCR</span><span>PaddleOCR</span><span>Tesseract</span><span>VLMs</span><span>OpenCV</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-text">© 2025 Shreyanshu Bhushan</p>
-    <nav class="footer-links">
-      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
-      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
-      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
-    </nav>
-  </div>
-</footer>
+</main>
 
-<!-- Chatbot -->
-<div class="chatbot-fab">
-  <button class="chatbot-trigger" id="chatbot-trigger">💬</button>
-  <div class="chatbot-window" id="chatbot-window">
-    <div class="chatbot-head">
-      <h4>Ask about Shreyanshu</h4>
-      <button class="chatbot-close-btn" id="chatbot-close">✕</button>
-    </div>
-    <div class="chatbot-body" id="chatbot-messages">
-      <div class="chat-msg bot">Hi! Ask me about Shreyanshu's experience, projects, skills, or research.</div>
-    </div>
-    <div class="chatbot-footer">
-      <input class="chatbot-input" id="chatbot-input" type="text" placeholder="Ask anything...">
-      <button class="chatbot-send" id="chatbot-send">Send</button>
-    </div>
-  </div>
-</div>
+<script src="partials/shared.js"></script>
+<script src="scripts/scene.js"></script>
+<script src="scripts/interactions.js"></script>
 
-<script src="js/main.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/chatbot.js"></script>
 </body>
 </html>

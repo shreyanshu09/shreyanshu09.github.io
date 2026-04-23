@@ -1,77 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Shreyanshu Bhushan</title>
-  <meta name="description" content="Contact Shreyanshu Bhushan — AI Engineer & Researcher based in Seoul, South Korea.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Shreyanshu Bhushan</title>
+<meta name="description" content="Contact Shreyanshu Bhushan — AI Engineer & Researcher based in Seoul, South Korea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css?v=3">
+<link rel="stylesheet" href="styles/layout.css?v=3">
+<link rel="stylesheet" href="styles/sections.css?v=3">
+<link rel="stylesheet" href="styles/pages.css?v=3">
 </head>
-<body>
-<div id="scroll-progress"></div>
+<body data-page="contact">
 
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><span>Shreyanshu</span> Bhushan</a>
-    <ul class="nav-links">
-      <li><a href="index.html"      class="nav-link">Home</a></li>
-      <li><a href="about.html"      class="nav-link">About</a></li>
-      <li><a href="experience.html" class="nav-link">Experience</a></li>
-      <li><a href="projects.html"   class="nav-link">Projects</a></li>
-      <li><a href="research.html"   class="nav-link">Research</a></li>
-      <li><a href="contact.html"    class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ko">KO</button>
-      </div>
-      <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">☀</span></button>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-<nav class="mobile-menu" id="mobile-nav">
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="experience.html" class="nav-link">Experience</a>
-  <a href="projects.html" class="nav-link">Projects</a>
-  <a href="research.html" class="nav-link">Research</a>
-  <a href="contact.html" class="nav-link">Contact</a>
-</nav>
+<main>
 
-<div class="page-hero">
+<section class="page-hero" data-screen-label="Contact">
   <div class="container">
-    <p class="page-hero-label" data-en="Let's Connect" data-ko="연결하기">Let's Connect</p>
-    <h1 class="page-hero-title" data-en="Contact" data-ko="연락처">Contact</h1>
-    <p class="page-hero-subtitle" data-en="Open to research collaborations, engineering roles, and consulting opportunities." data-ko="연구 협업, 엔지니어링 직책, 컨설팅 기회에 열려 있습니다.">
-      Open to research collaborations, engineering roles, and consulting opportunities.
-    </p>
+    <span class="eyebrow"><span class="pulse"></span> Let's connect</span>
+    <h1 class="page-hero-title">Get in <em>touch</em>.</h1>
+    <p class="page-hero-kicker">Open to AI research collaborations, engineering roles, and consulting on Document AI, LLM deployment, and intelligent automation.</p>
   </div>
-</div>
+</section>
 
-<section style="padding: 5rem 0;">
+<section class="sec">
   <div class="container">
     <div class="contact-grid">
-
-      <!-- Contact Info -->
-      <div>
-        <h2 style="font-size:clamp(1.5rem,3vw,2rem); margin-bottom:1rem;" class="reveal" data-en="Get In Touch" data-ko="연락하기">Get In Touch</h2>
-        <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:2rem;" class="reveal delay-1" data-en="Based in Seoul, South Korea, holding an F-2 residency visa. Available for AI engineering roles, research partnerships, and consulting on Document AI, LLM deployment, and intelligent automation projects." data-ko="F-2 거주 비자를 보유하고 서울에 거주합니다. AI 엔지니어링 직책, 연구 파트너십, 문서 AI, LLM 배포, 지능형 자동화 프로젝트 컨설팅에 응합니다.">
-          Based in Seoul, South Korea, holding an F-2 residency visa. Available for AI engineering roles, research partnerships, and consulting on Document AI, LLM deployment, and intelligent automation projects.
-        </p>
+      <div class="reveal">
+        <p style="color:var(--fg-2); line-height:1.75; margin-bottom:2rem; max-width:480px;">Based in Seoul, South Korea, holding an F-2 residency visa. Available for AI engineering roles, research partnerships, and consulting on Document AI, LLM deployment, and intelligent automation projects.</p>
 
         <div class="contact-methods">
-          <a href="mailto:shreyanshubhushan@gmail.com" class="contact-method reveal">
+          <a href="mailto:shreyanshubhushan@gmail.com" class="contact-method">
             <div class="contact-method-icon">@</div>
             <div>
-              <div class="contact-method-label" data-en="Email" data-ko="이메일">Email</div>
+              <div class="contact-method-label">Email</div>
               <div class="contact-method-value">shreyanshubhushan@gmail.com</div>
             </div>
           </a>
 
-          <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="contact-method reveal delay-1">
+          <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="contact-method">
             <div class="contact-method-icon">in</div>
             <div>
               <div class="contact-method-label">LinkedIn</div>
@@ -79,7 +48,7 @@
             </div>
           </a>
 
-          <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="contact-method reveal delay-2">
+          <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="contact-method">
             <div class="contact-method-icon" style="font-size:0.85rem; font-weight:700;">GH</div>
             <div>
               <div class="contact-method-label">GitHub</div>
@@ -87,138 +56,71 @@
             </div>
           </a>
 
-          <div class="contact-method reveal delay-3" style="cursor:default;">
+          <div class="contact-method" style="cursor:default;">
             <div class="contact-method-icon">◎</div>
             <div>
-              <div class="contact-method-label" data-en="Location" data-ko="위치">Location</div>
-              <div class="contact-method-value" data-en="Seoul, South Korea · F-2 Visa" data-ko="서울, 대한민국 · F-2 비자">Seoul, South Korea · F-2 Visa</div>
+              <div class="contact-method-label">Location</div>
+              <div class="contact-method-value">Seoul, South Korea · F-2 Visa</div>
             </div>
           </div>
         </div>
 
-        <!-- Download buttons -->
-        <div style="display:flex; gap:0.75rem; margin-top:2rem; flex-wrap:wrap;" class="reveal">
-          <a href="files/cv.pdf" download class="btn btn-primary btn-sm" data-en="Download CV" data-ko="이력서 다운로드">Download CV</a>
-          <a href="files/portfolio.pdf" download class="btn btn-secondary btn-sm" data-en="Download Portfolio" data-ko="포트폴리오 다운로드">Download Portfolio</a>
+        <div style="display:flex; gap:0.75rem; margin-top:2rem; flex-wrap:wrap;">
+          <a href="assets/cv.pdf" download class="btn btn-primary">Download CV</a>
         </div>
       </div>
 
-      <!-- Contact Form -->
-      <div class="reveal delay-1">
-        <div class="card" style="padding:2rem;">
-          <h3 style="font-size:1.1rem; margin-bottom:1.5rem;" data-en="Send a Message" data-ko="메시지 보내기">Send a Message</h3>
+      <div class="reveal">
+        <div class="form-card">
+          <h3 style="font-family:var(--font-display); font-size:1.3rem; letter-spacing:-0.01em; margin-bottom:1.5rem;">Send a message</h3>
 
           <div class="form-group">
-            <label class="form-label" for="name" data-en="Name" data-ko="이름">Name</label>
-            <input class="form-input" type="text" id="name" name="name"
-              placeholder="Your name"
-              data-placeholder-en="Your name"
-              data-placeholder-ko="이름을 입력하세요">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Your name">
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="email" data-en="Email" data-ko="이메일">Email</label>
-            <input class="form-input" type="email" id="email" name="email"
-              placeholder="your@email.com"
-              data-placeholder-en="your@email.com"
-              data-placeholder-ko="이메일을 입력하세요">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com">
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="subject" data-en="Subject" data-ko="제목">Subject</label>
-            <input class="form-input" type="text" id="subject" name="subject"
-              placeholder="What's this about?"
-              data-placeholder-en="What's this about?"
-              data-placeholder-ko="제목을 입력하세요">
+            <label class="form-label" for="subject">Subject</label>
+            <input class="form-input" type="text" id="subject" name="subject" placeholder="What's this about?">
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="message" data-en="Message" data-ko="메시지">Message</label>
-            <textarea class="form-textarea" id="message" name="message"
-              placeholder="Your message..."
-              data-placeholder-en="Your message..."
-              data-placeholder-ko="메시지를 입력하세요..."></textarea>
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Your message..."></textarea>
           </div>
 
-          <button class="btn btn-primary" id="send-btn" style="width:100%; justify-content:center;"
-            data-en="Send Message" data-ko="메시지 전송">
-            Send Message
-          </button>
-
-          <p id="form-status" style="margin-top:1rem; font-size:0.85rem; color:var(--accent-green); display:none;" data-en="Message sent — I'll be in touch soon." data-ko="메시지가 전송되었습니다. 곧 연락드리겠습니다.">
-            Message sent — I'll be in touch soon.
-          </p>
+          <button class="btn btn-primary" id="send-btn" style="width:100%; justify-content:center;">Send Message</button>
+          <p id="form-status" style="margin-top:1rem; font-size:0.85rem; color:var(--lime); display:none;">Opening your email client…</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- Availability card -->
-<section style="padding: 3rem 0 5rem;">
-  <div class="container">
-    <div class="card reveal" style="max-width:720px; margin:0 auto; text-align:center; border-color:var(--border-accent);">
-      <div style="display:flex; align-items:center; justify-content:center; gap:0.6rem; margin-bottom:1rem;">
-        <span style="width:8px; height:8px; border-radius:50%; background:var(--accent-green); display:inline-block; box-shadow:0 0 0 3px rgba(52,211,153,0.2);"></span>
-        <span style="font-size:0.82rem; color:var(--accent-green); font-weight:600; text-transform:uppercase; letter-spacing:0.08em;" data-en="Open to Opportunities" data-ko="기회에 열려 있음">Open to Opportunities</span>
-      </div>
-      <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.7;" data-en="Currently available for full-time AI engineering and research positions, as well as consulting engagements in Document AI, LLM deployment, RAG systems, and intelligent automation. Based in Seoul, no relocation required for Korean companies." data-ko="현재 풀타임 AI 엔지니어링 및 연구 직책, 문서 AI, LLM 배포, RAG 시스템, 지능형 자동화 컨설팅에 응합니다. 서울에 거주하며 한국 기업의 경우 이전 불필요.">
-        Currently available for full-time AI engineering and research positions, as well as consulting engagements in Document AI, LLM deployment, RAG systems, and intelligent automation. Based in Seoul — no relocation required for Korean companies.
-      </p>
-    </div>
-  </div>
-</section>
+</main>
 
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-text">© 2025 Shreyanshu Bhushan</p>
-    <nav class="footer-links">
-      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
-      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
-      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
-    </nav>
-  </div>
-</footer>
-
-<div class="chatbot-fab">
-  <button class="chatbot-trigger" id="chatbot-trigger">💬</button>
-  <div class="chatbot-window" id="chatbot-window">
-    <div class="chatbot-head"><h4>Ask about Shreyanshu</h4><button class="chatbot-close-btn" id="chatbot-close">✕</button></div>
-    <div class="chatbot-body" id="chatbot-messages"><div class="chat-msg bot">Hi! Ask me about availability, projects, or skills.</div></div>
-    <div class="chatbot-footer">
-      <input class="chatbot-input" id="chatbot-input" type="text" placeholder="Ask anything...">
-      <button class="chatbot-send" id="chatbot-send">Send</button>
-    </div>
-  </div>
-</div>
-
-<script src="js/main.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/chatbot.js"></script>
+<script src="partials/shared.js"></script>
+<script src="scripts/scene.js"></script>
+<script src="scripts/interactions.js"></script>
 <script>
-  // Simple form feedback (no server — opens mailto fallback)
   document.getElementById('send-btn').addEventListener('click', () => {
-    const name    = document.getElementById('name').value.trim();
-    const email   = document.getElementById('email').value.trim();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('message').value.trim();
-
-    if (!name || !email || !message) {
-      alert('Please fill in name, email, and message.');
-      return;
-    }
-
-    const mailto = `mailto:shreyanshubhushan@gmail.com`
-      + `?subject=${encodeURIComponent(subject || 'Portfolio Contact: ' + name)}`
-      + `&body=${encodeURIComponent('From: ' + name + ' <' + email + '>\n\n' + message)}`;
-
+    if (!name || !email || !message) { alert('Please fill in name, email, and message.'); return; }
+    const mailto = `mailto:shreyanshubhushan@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Contact: ' + name)}&body=${encodeURIComponent('From: ' + name + ' <' + email + '>\n\n' + message)}`;
     window.location.href = mailto;
-
-    const status = document.getElementById('form-status');
-    status.style.display = 'block';
-    setTimeout(() => { status.style.display = 'none'; }, 5000);
+    const s = document.getElementById('form-status');
+    s.style.display = 'block';
+    setTimeout(() => { s.style.display = 'none'; }, 5000);
   });
 </script>
+
 </body>
 </html>
