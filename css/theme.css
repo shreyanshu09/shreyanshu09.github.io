@@ -1,0 +1,70 @@
+/* ============================================================
+   THEME.CSS — Light & Dark CSS Variables
+   ============================================================ */
+
+:root {
+  /* --- Dark Theme (default) --- */
+  --bg-primary:        #080d18;
+  --bg-secondary:      #0d1425;
+  --bg-card:           #111827;
+  --bg-card-hover:     #172035;
+  --bg-overlay:        rgba(8, 13, 24, 0.85);
+
+  --text-primary:      #e8edf5;
+  --text-secondary:    #8a9bb8;
+  --text-muted:        #4a5568;
+
+  --accent-cyan:       #00c9ff;
+  --accent-gold:       #e8b84b;
+  --accent-green:      #34d399;
+  --accent-purple:     #818cf8;
+
+  --border:            rgba(255,255,255,0.07);
+  --border-accent:     rgba(0,201,255,0.25);
+
+  --glow-cyan:         0 0 40px rgba(0,201,255,0.15);
+  --glow-gold:         0 0 40px rgba(232,184,75,0.12);
+
+  --nav-bg:            rgba(8, 13, 24, 0.92);
+  --shadow-card:       0 8px 32px rgba(0,0,0,0.4);
+  --shadow-hover:      0 16px 48px rgba(0,0,0,0.5);
+
+  --gradient-hero:     radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,201,255,0.08) 0%, transparent 60%);
+  --gradient-accent:   linear-gradient(135deg, #00c9ff 0%, #818cf8 100%);
+  --gradient-gold:     linear-gradient(135deg, #e8b84b 0%, #f5d78e 100%);
+
+  --timeline-line:     rgba(0,201,255,0.2);
+}
+
+[data-theme="light"] {
+  --bg-primary:        #f8f9fc;
+  --bg-secondary:      #f0f2f7;
+  --bg-card:           #ffffff;
+  --bg-card-hover:     #f5f7ff;
+  --bg-overlay:        rgba(248,249,252,0.92);
+
+  --text-primary:      #0d1425;
+  --text-secondary:    #4a5878;
+  --text-muted:        #8a9bb8;
+
+  --accent-cyan:       #0099cc;
+  --accent-gold:       #c8900a;
+  --accent-green:      #059669;
+  --accent-purple:     #5b63d8;
+
+  --border:            rgba(0,0,0,0.07);
+  --border-accent:     rgba(0,153,204,0.25);
+
+  --glow-cyan:         0 0 30px rgba(0,153,204,0.1);
+  --glow-gold:         0 0 30px rgba(200,144,10,0.08);
+
+  --nav-bg:            rgba(248,249,252,0.95);
+  --shadow-card:       0 4px 24px rgba(0,0,0,0.08);
+  --shadow-hover:      0 12px 40px rgba(0,0,0,0.12);
+
+  --gradient-hero:     radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,153,204,0.06) 0%, transparent 60%);
+  --gradient-accent:   linear-gradient(135deg, #0099cc 0%, #5b63d8 100%);
+  --gradient-gold:     linear-gradient(135deg, #c8900a 0%, #e8b84b 100%);
+
+  --timeline-line:     rgba(0,153,204,0.2);
+}

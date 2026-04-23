@@ -1,679 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Shreyanshu Bhushan</title>
-    <meta name="description" content="Learn more about Shreyanshu Bhushan's background, education, and journey in AI research">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Shreyanshu Bhushan</title>
+  <meta name="description" content="About Shreyanshu Bhushan — AI Engineer & Researcher with expertise in Document AI, LLMs, OCR, and Vision-Language Models.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <!-- Language Toggle -->
-    <div class="language-toggle">
-        <button id="lang-en" class="lang-btn active">EN</button>
-        <button id="lang-ko" class="lang-btn">한국어</button>
+<div id="scroll-progress"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>Shreyanshu</span> Bhushan</a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link" data-en="Home"       data-ko="홈">Home</a></li>
+      <li><a href="about.html"      class="nav-link" data-en="About"      data-ko="소개">About</a></li>
+      <li><a href="experience.html" class="nav-link" data-en="Experience" data-ko="경력">Experience</a></li>
+      <li><a href="projects.html"   class="nav-link" data-en="Projects"   data-ko="프로젝트">Projects</a></li>
+      <li><a href="research.html"   class="nav-link" data-en="Research"   data-ko="연구">Research</a></li>
+      <li><a href="contact.html"    class="nav-link" data-en="Contact"    data-ko="연락처">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ko">KO</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">☀</span></button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-menu" id="mobile-nav">
+  <a href="index.html"      class="nav-link">Home</a>
+  <a href="about.html"      class="nav-link">About</a>
+  <a href="experience.html" class="nav-link">Experience</a>
+  <a href="projects.html"   class="nav-link">Projects</a>
+  <a href="research.html"   class="nav-link">Research</a>
+  <a href="contact.html"    class="nav-link">Contact</a>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <p class="page-hero-label" data-en="Background & Profile" data-ko="배경 및 프로필">Background & Profile</p>
+    <h1 class="page-hero-title" data-en="About Me" data-ko="소개">About Me</h1>
+    <p class="page-hero-subtitle" data-en="AI Researcher and Engineer bridging fundamental research with scalable production systems." data-ko="기초 연구와 확장 가능한 제품 시스템을 연결하는 AI 연구원 및 엔지니어.">
+      AI Researcher and Engineer bridging fundamental research with scalable production systems.
+    </p>
+  </div>
+</div>
+
+<!-- Profile + Summary -->
+<section style="padding: 5rem 0;">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:340px 1fr; gap:4rem; align-items:start;">
+
+      <!-- Profile card -->
+      <div class="reveal" style="text-align:center;">
+        <div style="display:inline-block; position:relative; margin-bottom:1.5rem;">
+          <div class="profile-ring" style="width:220px; height:220px; margin:0 auto;">
+            <img src="images/profile.png" alt="Shreyanshu Bhushan" class="profile-img">
+          </div>
+        </div>
+        <h2 style="font-size:1.3rem; margin-bottom:0.3rem;">Shreyanshu Bhushan</h2>
+        <p style="color:var(--accent-cyan); font-size:0.9rem; margin-bottom:1rem;">AI Engineer & Researcher</p>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:1.5rem;">Seoul, South Korea · F-2 Visa</p>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; text-align:center; margin-bottom:1.5rem;">
+          <div>
+            <div style="font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:800; background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;" data-count="3">0</div>
+            <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;" data-en="Yrs Industry" data-ko="년 경력">Yrs Industry</div>
+          </div>
+          <div>
+            <div style="font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:800; background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;" data-count="15">0</div>
+            <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;" data-en="AI Projects" data-ko="AI 프로젝트">AI Projects</div>
+          </div>
+          <div>
+            <div style="font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:800; background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;" data-count="3">0</div>
+            <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;" data-en="Countries" data-ko="국가">Countries</div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:0.5rem;">
+          <a href="files/cv.pdf" download class="btn btn-primary btn-sm" style="justify-content:center;" data-en="Download CV" data-ko="이력서 다운로드">Download CV</a>
+          <a href="contact.html" class="btn btn-secondary btn-sm" style="justify-content:center;" data-en="Get In Touch" data-ko="연락하기">Get In Touch</a>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div>
+        <div class="reveal">
+          <span class="section-label" data-en="Professional Summary" data-ko="전문가 요약">Professional Summary</span>
+          <p style="margin-top:0.75rem; color:var(--text-secondary); line-height:1.8; font-size:1.02rem;" data-en="AI Engineer and Researcher with 3+ years of industry experience at NEOALI Co. Ltd. in Seoul, and a strong academic foundation from Kyungpook National University. I specialize in end-to-end development of AI systems — from research prototyping to enterprise deployment — with deep expertise in Document AI, Large and Small Language Models, Retrieval-Augmented Generation, OCR, and Vision-Language Models." data-ko="서울의 NEOALI Co. Ltd.에서 3년 이상의 산업 경험을 보유하고 경북대학교의 강력한 학문적 기반을 갖춘 AI 엔지니어 및 연구원입니다. 저는 문서 AI, 대형 및 소형 언어 모델, RAG, OCR, 비전-언어 모델에 대한 깊은 전문 지식을 바탕으로 연구 프로토타이핑부터 기업 배포까지 AI 시스템의 엔드투엔드 개발을 전문으로 합니다.">
+            AI Engineer and Researcher with 3+ years of industry experience at NEOALI Co. Ltd. in Seoul, and a strong academic foundation from Kyungpook National University. I specialize in end-to-end development of AI systems — from research prototyping to enterprise deployment — with deep expertise in Document AI, Large and Small Language Models, Retrieval-Augmented Generation, OCR, and Vision-Language Models.
+          </p>
+        </div>
+
+        <div class="reveal delay-1" style="margin-top:2rem;">
+          <p style="color:var(--text-secondary); line-height:1.8; font-size:1.02rem;" data-en="My work spans building multi-platform AI ecosystems for document translation, designing RAG pipelines for enterprise knowledge retrieval, developing on-device AI applications for offline-first environments, and publishing peer-reviewed research at top NLP venues including ACL 2024." data-ko="제 작업은 문서 번역을 위한 다중 플랫폼 AI 생태계 구축, 기업 지식 검색을 위한 RAG 파이프라인 설계, 오프라인 우선 환경을 위한 온디바이스 AI 애플리케이션 개발, ACL 2024를 포함한 최고의 NLP 학술지에서의 동료 심사 연구 발표를 아우릅니다.">
+            My work spans building multi-platform AI ecosystems for document translation, designing RAG pipelines for enterprise knowledge retrieval, developing on-device AI applications for offline-first environments, and publishing peer-reviewed research at top NLP venues including ACL 2024.
+          </p>
+        </div>
+
+        <div class="reveal delay-2" style="margin-top:2rem;">
+          <blockquote style="border-left:3px solid var(--accent-cyan); padding-left:1.25rem; font-style:italic; color:var(--text-secondary); font-size:0.97rem; line-height:1.75;" data-en='"I deliver transformative automation by bridging fundamental AI research with scalable product engineering — owning systems end-to-end from research concept to enterprise deployment."' data-ko='"저는 기초 AI 연구와 확장 가능한 제품 엔지니어링을 연결하여 혁신적인 자동화를 제공하며, 연구 개념부터 기업 배포까지 시스템을 엔드투엔드로 소유합니다."'>
+            "I deliver transformative automation by bridging fundamental AI research with scalable product engineering — owning systems end-to-end from research concept to enterprise deployment."
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Education Timeline -->
+<section style="padding: 5rem 0; background: var(--bg-secondary); border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-en="Academic Background" data-ko="학력">Academic Background</span>
+      <h2 class="section-title" data-en="Educational <span>Journey</span>" data-ko="교육 <span>여정</span>">Educational <span>Journey</span></h2>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-highlight">Shreyanshu</span> Bhushan
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link" data-en="Home" data-ko="홈">Home</a></li>
-                <li><a href="about.html" class="nav-link active" data-en="About" data-ko="소개">About</a></li>
-                <li><a href="experience.html" class="nav-link" data-en="Experience" data-ko="경력">Experience</a></li>
-                <li><a href="projects.html" class="nav-link" data-en="Projects" data-ko="프로젝트">Projects</a></li>
-                <li><a href="research.html" class="nav-link" data-en="Research" data-ko="연구">Research</a></li>
-                <li><a href="contact.html" class="nav-link" data-en="Contact" data-ko="연락처">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <div class="timeline" style="max-width:720px; margin:0 auto;">
+      <div class="timeline-item gold reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2021 — 2023</div>
+        <h3 class="timeline-title" data-en="Master of Science — Artificial Intelligence" data-ko="인공지능 석사">Master of Science — Artificial Intelligence</h3>
+        <p class="timeline-org">Kyungpook National University, South Korea · GPA 4.1 / 4.3</p>
+        <div class="skill-cloud" style="margin-top:0.75rem;">
+          <span class="skill-pill">Deep Learning</span>
+          <span class="skill-pill">Advanced AI</span>
+          <span class="skill-pill">Computer Vision</span>
+          <span class="skill-pill">NLP</span>
         </div>
+      </div>
+
+      <div class="timeline-item reveal delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2018 — 2020</div>
+        <h3 class="timeline-title" data-en="Bachelor of Science — Engineering (Exchange)" data-ko="공학 학사 (교환학생)">Bachelor of Science — Engineering (Exchange)</h3>
+        <p class="timeline-org">Kyungpook National University, South Korea · GPA 3.81 / 4.3</p>
+        <div class="skill-cloud" style="margin-top:0.75rem;">
+          <span class="skill-pill">Machine Learning</span>
+          <span class="skill-pill">Linear Algebra</span>
+          <span class="skill-pill">Artificial Intelligence</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2016 — 2018</div>
+        <h3 class="timeline-title" data-en="Bachelor of Technology (2+2 Double Degree)" data-ko="기술 학사 (2+2 복수 학위)">Bachelor of Technology (2+2 Double Degree)</h3>
+        <p class="timeline-org">Christ University, India · GPA 3.6 / 4.0</p>
+        <div class="skill-cloud" style="margin-top:0.75rem;">
+          <span class="skill-pill">Data Structures</span>
+          <span class="skill-pill">Algorithms</span>
+          <span class="skill-pill">Discrete Mathematics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section style="padding: 5rem 0;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-en="Technical Competencies" data-ko="기술 역량">Technical Competencies</span>
+      <h2 class="section-title" data-en="Skills & <span>Expertise</span>" data-ko="기술 및 <span>전문성</span>">Skills & <span>Expertise</span></h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-category-card reveal">
+        <div class="skill-cat-title">Languages</div>
+        <div class="skill-cloud">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">C++</span>
+          <span class="skill-pill">Bash</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card reveal delay-1">
+        <div class="skill-cat-title">AI / ML Frameworks</div>
+        <div class="skill-cloud">
+          <span class="skill-pill">PyTorch</span>
+          <span class="skill-pill">TensorFlow</span>
+          <span class="skill-pill">HuggingFace</span>
+          <span class="skill-pill">Transformers</span>
+          <span class="skill-pill">OpenCV</span>
+          <span class="skill-pill">scikit-learn</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card reveal delay-2">
+        <div class="skill-cat-title">LLM Inference & Deployment</div>
+        <div class="skill-cloud">
+          <span class="skill-pill">Ollama</span>
+          <span class="skill-pill">vLLM</span>
+          <span class="skill-pill">OpenAI API</span>
+          <span class="skill-pill">OpenRouter</span>
+          <span class="skill-pill">GGUF</span>
+          <span class="skill-pill">Quantization</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card reveal delay-3">
+        <div class="skill-cat-title">RAG & Vector Systems</div>
+        <div class="skill-cloud">
+          <span class="skill-pill">Qdrant</span>
+          <span class="skill-pill">LangChain</span>
+          <span class="skill-pill">Embeddings</span>
+          <span class="skill-pill">Semantic Chunking</span>
+          <span class="skill-pill">Reranking</span>
+          <span class="skill-pill">Retrieval</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card reveal">
+        <div class="skill-cat-title">Document AI</div>
+        <div class="skill-cloud">
+          <span class="skill-pill">Pandoc</span>
+          <span class="skill-pill">Layout Detection</span>
+          <span class="skill-pill">python-docx</span>
+          <span class="skill-pill">HWPX</span>
+          <span class="skill-pill">PDF Processing</span>
+          <span class="skill-pill">ALIParse</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card reveal delay-1">
+        <div class="skill-cat-title">OCR & Vision</div>
+        <div class="skill-cloud">
+          <span class="skill-pill">EasyOCR</span>
+          <span class="skill-pill">PaddleOCR</span>
+          <span class="skill-pill">Tesseract</span>
+          <span class="skill-pill">VLMs</span>
+          <span class="skill-pill">Qwen-VL</span>
+          <span class="skill-pill">Image Processing</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card reveal delay-2">
+        <div class="skill-cat-title">Backend & APIs</div>
+        <div class="skill-cloud">
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Express.js</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">WebSockets</span>
+          <span class="skill-pill">Docker</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card reveal delay-3">
+        <div class="skill-cat-title">Tools & Platforms</div>
+        <div class="skill-cloud">
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">GitHub</span>
+          <span class="skill-pill">Streamlit</span>
+          <span class="skill-pill">ElectronJS</span>
+          <span class="skill-pill">Prompt Engineering</span>
+          <span class="skill-pill">Linux</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Languages spoken -->
+    <div style="margin-top:3rem;" class="reveal">
+      <div class="skill-category-card" style="max-width:480px;">
+        <div class="skill-cat-title" data-en="Spoken Languages" data-ko="구사 언어">Spoken Languages</div>
+        <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.5rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-size:0.9rem;" data-en="English" data-ko="영어">English</span>
+            <span class="badge badge-green" data-en="Fluent" data-ko="유창함">Fluent</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-size:0.9rem;" data-en="Hindi" data-ko="힌디어">Hindi</span>
+            <span class="badge badge-green" data-en="Native" data-ko="모국어">Native</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-size:0.9rem;" data-en="Korean" data-ko="한국어">Korean</span>
+            <span class="badge badge-cyan" data-en="Beginner" data-ko="초급">Beginner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-text">© 2025 Shreyanshu Bhushan</p>
+    <nav class="footer-links">
+      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
     </nav>
+  </div>
+</footer>
 
-    <!-- About Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <h1 class="page-title" data-en="About Me" data-ko="소개">About Me</h1>
-            <p class="page-subtitle" data-en="AI Researcher passionate about bridging fundamental research with practical applications" data-ko="기초 연구와 실용적 응용을 연결하는 데 열정적인 AI 연구원">AI Researcher passionate about bridging fundamental research with practical applications</p>
-        </div>
-    </section>
-
-    <!-- Personal Info -->
-    <section class="personal-info">
-        <div class="container">
-            <div class="info-grid">
-                <div class="info-card" data-aos="fade-up">
-                    <div class="info-content">
-                        <h2 data-en="Professional Summary" data-ko="전문가 요약">Professional Summary</h2>
-                        <p data-en="Distinguished AI engineer with over 2 years of industry experience and 3 years of academic research expertise, currently holding an F-2 residency visa in Korea. Passionate about developing and applying diverse algorithms to solve real-world challenges." data-ko="2년 이상의 업계 경험과 3년의 학술 연구 전문 지식을 보유한 저명한 AI 엔지니어로, 현재 한국에서 F-2 거주 비자를 소지하고 있습니다. 실제 문제를 해결하기 위해 다양한 알고리즘을 개발하고 적용하는 데 열정적입니다.">
-                            Distinguished AI engineer with over 2 years of industry experience and 3 years of academic research expertise, currently holding an F-2 residency visa in Korea. Passionate about developing and applying diverse algorithms to solve real-world challenges.
-                        </p>
-                        <p data-en="My primary research areas include Natural Language Processing (NLP), particularly Large and Small Language Models (LLMs/sLLMs), Optical Character Recognition (OCR), Vision-Language Models (VLMs), and Computer Vision. I focus on developing compact models optimized for efficient on-device and offline performance." data-ko="제 주요 연구 분야는 자연어 처리(NLP), 특히 대형 및 소형 언어 모델(LLM/sLLM), 광학 문자 인식(OCR), 비전-언어 모델(VLM), 컴퓨터 비전입니다. 효율적인 온디바이스 및 오프라인 성능에 최적화된 컴팩트 모델 개발에 중점을 두고 있습니다.">
-                            My primary research areas include Natural Language Processing (NLP), particularly Large and Small Language Models (LLMs/sLLMs), Optical Character Recognition (OCR), Vision-Language Models (VLMs), and Computer Vision. I focus on developing compact models optimized for efficient on-device and offline performance.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="profile-showcase" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/profile.png" alt="Shreyanshu Bhushan" class="about-profile-img">
-                    <div class="profile-stats">
-                        <div class="stat">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label" data-en="Years Total Experience" data-ko="총 경력 년수">Years Total Experience</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">17+</span>
-                            <span class="stat-label" data-en="AI Projects Completed" data-ko="완료된 AI 프로젝트">AI Projects Completed</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label" data-en="Countries of Study" data-ko="학업 국가 수">Countries of Study</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Timeline -->
-    <section class="education-timeline">
-        <div class="container">
-            <h2 class="section-title" data-en="Educational Journey" data-ko="교육 여정">Educational Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2021 - 2023</div>
-                        <h3 data-en="Master of Science in Artificial Intelligence" data-ko="인공지능 석사">Master of Science in Artificial Intelligence</h3>
-                        <p class="institution">Kyungpook National University, South Korea</p>
-                        <p class="gpa">GPA: 4.1/4.3</p>
-                        <div class="courses">
-                            <span class="course-tag" data-en="Deep Learning" data-ko="딥러닝">Deep Learning</span>
-                            <span class="course-tag" data-en="Advanced AI" data-ko="고급 AI">Advanced AI</span>
-                            <span class="course-tag" data-en="Computer Vision" data-ko="컴퓨터 비전">Computer Vision</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2018 - 2020</div>
-                        <h3 data-en="Bachelor of Science in Engineering" data-ko="공학 학사">Bachelor of Science in Engineering</h3>
-                        <p class="institution">Kyungpook National University, South Korea</p>
-                        <p class="gpa">GPA: 3.81/4.3 | Exchange Student</p>
-                        <div class="courses">
-                            <span class="course-tag" data-en="Linear Algebra" data-ko="선형대수">Linear Algebra</span>
-                            <span class="course-tag" data-en="Machine Learning" data-ko="머신러닝">Machine Learning</span>
-                            <span class="course-tag" data-en="Artificial Intelligence" data-ko="인공지능">Artificial Intelligence</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2016 - 2018</div>
-                        <h3 data-en="Bachelor of Technology" data-ko="기술 학사">Bachelor of Technology</h3>
-                        <p class="institution">Christ University, India</p>
-                        <p class="gpa">GPA: 3.6/4.0 | 2+2 Double Degree Program</p>
-                        <div class="courses">
-                            <span class="course-tag" data-en="Data Structures" data-ko="데이터 구조">Data Structures</span>
-                            <span class="course-tag" data-en="Algorithms" data-ko="알고리즘">Algorithms</span>
-                            <span class="course-tag" data-en="Discrete Mathematics" data-ko="이산수학">Discrete Mathematics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Competencies -->
-    <section class="core-competencies">
-        <div class="container">
-            <h2 class="section-title" data-en="Core Competencies" data-ko="핵심 역량">Core Competencies</h2>
-            <div class="competency-grid">
-                <div class="competency-card" data-aos="fade-up">
-                    <div class="competency-icon">🤖</div>
-                    <h3 data-en="Document Intelligence" data-ko="문서 지능">Document Intelligence</h3>
-                    <ul>
-                        <li data-en="Advanced document parsing and analysis" data-ko="고급 문서 파싱 및 분석">Advanced document parsing and analysis</li>
-                        <li data-en="Format-preserving translation systems" data-ko="형식 보존 번역 시스템">Format-preserving translation systems</li>
-                        <li data-en="Multi-format document processing" data-ko="다중 형식 문서 처리">Multi-format document processing</li>
-                        <li data-en="Enterprise-grade security implementation" data-ko="엔터프라이즈급 보안 구현">Enterprise-grade security implementation</li>
-                    </ul>
-                </div>
-
-                <div class="competency-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="competency-icon">🧠</div>
-                    <h3 data-en="Large Language Models" data-ko="대형 언어 모델">Large Language Models</h3>
-                    <ul>
-                        <li data-en="LLM fine-tuning and optimization" data-ko="LLM 미세 조정 및 최적화">LLM fine-tuning and optimization</li>
-                        <li data-en="On-device model deployment" data-ko="온디바이스 모델 배포">On-device model deployment</li>
-                        <li data-en="Prompt engineering expertise" data-ko="프롬프트 엔지니어링 전문 지식">Prompt engineering expertise</li>
-                        <li data-en="RAG architecture development" data-ko="RAG 아키텍처 개발">RAG architecture development</li>
-                    </ul>
-                </div>
-
-                <div class="competency-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="competency-icon">👁️</div>
-                    <h3 data-en="Computer Vision & OCR" data-ko="컴퓨터 비전 및 OCR">Computer Vision & OCR</h3>
-                    <ul>
-                        <li data-en="Multi-engine OCR fusion systems" data-ko="다중 엔진 OCR 융합 시스템">Multi-engine OCR fusion systems</li>
-                        <li data-en="Vision-Language Model integration" data-ko="비전-언어 모델 통합">Vision-Language Model integration</li>
-                        <li data-en="Chart and diagram analysis" data-ko="차트 및 다이어그램 분석">Chart and diagram analysis</li>
-                        <li data-en="Table extraction from images" data-ko="이미지에서 테이블 추출">Table extraction from images</li>
-                    </ul>
-                </div>
-
-                <div class="competency-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="competency-icon">🔧</div>
-                    <h3 data-en="Software Engineering" data-ko="소프트웨어 엔지니어링">Software Engineering</h3>
-                    <ul>
-                        <li data-en="Distributed system architecture" data-ko="분산 시스템 아키텍처">Distributed system architecture</li>
-                        <li data-en="API design and development" data-ko="API 설계 및 개발">API design and development</li>
-                        <li data-en="Docker containerization" data-ko="Docker 컨테이너화">Docker containerization</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Languages & Skills -->
-    <section class="languages-skills">
-        <div class="container">
-            <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up">
-                    <h3 data-en="Programming Languages" data-ko="프로그래밍 언어">Programming Languages</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-name">Python</div>
-                            <div class="skill-progress">
-                                <div class="skill-fill" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">Java</div>
-                            <div class="skill-progress">
-                                <div class="skill-fill" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">C++</div>
-                            <div class="skill-progress">
-                                <div class="skill-fill" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-progress">
-                                <div class="skill-fill" style="width: 78%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3 data-en="AI/ML Frameworks" data-ko="AI/ML 프레임워크">AI/ML Frameworks</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-name">PyTorch</div>
-                            <div class="skill-progress">
-                                <div class="skill-fill" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">TensorFlow</div>
-                            <div class="skill-progress">
-                                <div class="skill-fill" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">HuggingFace</div>
-                            <div class="skill-progress">
-                                <div class="skill-fill" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">OpenCV</div>
-                            <div class="skill-progress">
-                                <div class="skill-fill" style="width: 88%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3 data-en="Spoken Languages" data-ko="언어 능력">Spoken Languages</h3>
-                    <div class="language-skills">
-                        <div class="language-item">
-                            <span class="language-name" data-en="English" data-ko="영어">English</span>
-                            <span class="language-level" data-en="Fluent" data-ko="유창함">Fluent</span>
-                        </div>
-                        <div class="language-item">
-                            <span class="language-name" data-en="Hindi" data-ko="힌디어">Hindi</span>
-                            <span class="language-level" data-en="Native" data-ko="모국어">Native</span>
-                        </div>
-                        <div class="language-item">
-                            <span class="language-name" data-en="Korean" data-ko="한국어">Korean</span>
-                            <span class="language-level" data-en="Beginner" data-ko="초급">Beginner</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Personal Philosophy -->
-    <section class="personal-philosophy">
-        <div class="container">
-            <div class="philosophy-content" data-aos="fade-up">
-                <h2 class="section-title" data-en="Professional Philosophy" data-ko="전문가 철학">Professional Philosophy</h2>
-                <blockquote class="philosophy-quote">
-                    <p data-en="I deliver transformative automation by bridging fundamental AI research with scalable product engineering. My portfolio illustrates a proven ability to own systems end-to-end—from research concept to enterprise deployment—and deliver tangible operational, security, and efficiency gains for organizations worldwide." data-ko="저는 기초 AI 연구와 확장 가능한 제품 엔지니어링을 연결하여 혁신적인 자동화를 제공합니다. 제 포트폴리오는 연구 개념부터 기업 배포까지 시스템을 엔드투엔드로 소유하고 전 세계 조직에 실질적인 운영, 보안 및 효율성 향상을 제공하는 입증된 능력을 보여줍니다.">
-                        "I deliver transformative automation by bridging fundamental AI research with scalable product engineering. My portfolio illustrates a proven ability to own systems end-to-end—from research concept to enterprise deployment—and deliver tangible operational, security, and efficiency gains for organizations worldwide."
-                    </p>
-                </blockquote>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chatbot -->
-    <div id="chatbot-container" class="chatbot-container">
-        <div id="chatbot-toggle" class="chatbot-toggle">
-            <span class="chatbot-icon">💬</span>
-        </div>
-        <div id="chatbot-window" class="chatbot-window">
-            <div class="chatbot-header">
-                <h4 data-en="Ask about Shreyanshu" data-ko="Shreyanshu에 대해 물어보세요">Ask about Shreyanshu</h4>
-                <button id="chatbot-close" class="chatbot-close">×</button>
-            </div>
-            <div id="chatbot-messages" class="chatbot-messages">
-                <div class="bot-message">
-                    <span data-en="Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?" data-ko="안녕하세요! Shreyanshu의 경험, 프로젝트 및 기술에 대한 질문에 답변드립니다. 무엇을 알고 싶으신가요?">Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?</span>
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="chatbot-message" placeholder="Type your question..." data-placeholder-en="Type your question..." data-placeholder-ko="질문을 입력하세요...">
-                <button id="chatbot-send">Send</button>
-            </div>
-        </div>
+<!-- Chatbot -->
+<div class="chatbot-fab">
+  <button class="chatbot-trigger" id="chatbot-trigger">💬</button>
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-head">
+      <h4>Ask about Shreyanshu</h4>
+      <button class="chatbot-close-btn" id="chatbot-close">✕</button>
     </div>
+    <div class="chatbot-body" id="chatbot-messages">
+      <div class="chat-msg bot">Hi! Ask me about Shreyanshu's experience, projects, skills, or research.</div>
+    </div>
+    <div class="chatbot-footer">
+      <input class="chatbot-input" id="chatbot-input" type="text" placeholder="Ask anything...">
+      <button class="chatbot-send" id="chatbot-send">Send</button>
+    </div>
+  </div>
+</div>
 
-    <script src="js/script.js"></script>
-    <style>
-        /* Additional styles for About page */
-        
-        /* Fixed header compensation */
-        body {
-            padding-top: 80px; /* Adjust based on your navbar height */
-        }
-        
-        .page-hero {
-            padding: 40px 0 80px; /* Reduced top padding since we have body padding */
-            text-align: center;
-            background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
-        }
-
-        .page-title {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--text-highlight);
-        }
-
-        .page-subtitle {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .personal-info {
-            padding: var(--section-padding);
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .info-card {
-            background: var(--secondary-bg);
-            padding: 3rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-        }
-
-        .info-content h2 {
-            color: var(--text-highlight);
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-        }
-
-        .info-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-            color: var(--text-primary);
-        }
-
-        .profile-showcase {
-            text-align: center;
-        }
-
-        .about-profile-img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--border-color);
-            margin-bottom: 2rem;
-        }
-
-        .profile-stats {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 2rem;
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-number {
-            display: block;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--accent-blue);
-        }
-
-        .stat-label {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-
-        .education-timeline {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .timeline {
-            position: relative;
-            margin-left: 2rem;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: var(--text-highlight);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 3rem;
-            padding-left: 4rem;
-        }
-
-        .timeline-marker {
-            position: absolute;
-            left: -2rem;
-            top: 0;
-            width: 40px;
-            height: 40px;
-            background: var(--text-highlight);
-            border-radius: 50%;
-            border: 4px solid var(--secondary-bg);
-        }
-
-        .timeline-content {
-            background: var(--accent-bg);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid var(--border-color);
-        }
-
-        .timeline-period {
-            color: var(--accent-blue);
-            font-weight: 600;
-            font-size: 0.875rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-content h3 {
-            color: var(--text-highlight);
-            margin-bottom: 0.5rem;
-            font-size: 1.5rem;
-        }
-
-        .institution {
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-        }
-
-        .gpa {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-        }
-
-        .courses {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .course-tag {
-            background: var(--border-color);
-            color: var(--text-primary);
-            padding: 0.25rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.875rem;
-        }
-
-        .core-competencies {
-            padding: var(--section-padding);
-        }
-
-        .competency-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .competency-card {
-            background: var(--secondary-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .competency-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--text-highlight);
-        }
-
-        .competency-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .competency-card h3 {
-            color: var(--text-highlight);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .competency-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .competency-card li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid var(--border-color);
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .competency-card li:before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: var(--text-highlight);
-        }
-
-        .competency-card li:last-child {
-            border-bottom: none;
-        }
-
-        .languages-skills {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-        }
-
-        .skill-category h3 {
-            color: var(--text-highlight);
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
-        }
-
-        .skill-bar {
-            margin-bottom: 1.5rem;
-        }
-
-        .skill-name {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .skill-progress {
-            height: 8px;
-            background: var(--border-color);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .skill-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--text-highlight), var(--accent-green));
-            border-radius: 4px;
-            transition: width 1s ease;
-        }
-
-        .language-skills {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .language-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            background: var(--accent-bg);
-            border-radius: 10px;
-            border: 1px solid var(--border-color);
-        }
-
-        .language-name {
-            font-weight: 600;
-        }
-
-        .language-level {
-            color: var(--text-highlight);
-            font-weight: 600;
-        }
-
-        .personal-philosophy {
-            padding: var(--section-padding);
-        }
-
-        .philosophy-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .philosophy-quote {
-            background: var(--secondary-bg);
-            padding: 3rem;
-            border-radius: 20px;
-            border-left: 4px solid var(--text-highlight);
-            margin: 2rem 0;
-            position: relative;
-        }
-
-        .philosophy-quote::before {
-            content: '"';
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            font-size: 4rem;
-            color: var(--text-highlight);
-        }
-
-        .philosophy-quote p {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            margin: 0;
-            font-style: italic;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding-top: 60px; /* Smaller padding for mobile */
-            }
-            
-            .info-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .timeline {
-                margin-left: 0;
-            }
-            
-            .timeline-item {
-                padding-left: 2rem;
-            }
-            
-            .timeline-marker {
-                left: -1rem;
-            }
-            
-            .profile-stats {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .page-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/chatbot.js"></script>
 </body>
 </html>

@@ -1,733 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Shreyanshu Bhushan</title>
-    <meta name="description" content="Academic research contributions by Shreyanshu Bhushan in AI, NLP, Computer Vision, and Document Understanding">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Shreyanshu Bhushan</title>
+  <meta name="description" content="Research publications and patents by Shreyanshu Bhushan in NLP, Computer Vision, and Document AI.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <!-- Language Toggle -->
-    <div class="language-toggle">
-        <button id="lang-en" class="lang-btn active">EN</button>
-        <button id="lang-ko" class="lang-btn">한국어</button>
+<div id="scroll-progress"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>Shreyanshu</span> Bhushan</a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link">Home</a></li>
+      <li><a href="about.html"      class="nav-link">About</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li>
+      <li><a href="projects.html"   class="nav-link">Projects</a></li>
+      <li><a href="research.html"   class="nav-link">Research</a></li>
+      <li><a href="contact.html"    class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ko">KO</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">☀</span></button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-menu" id="mobile-nav">
+  <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+  <a href="experience.html" class="nav-link">Experience</a><a href="projects.html" class="nav-link">Projects</a>
+  <a href="research.html" class="nav-link">Research</a><a href="contact.html" class="nav-link">Contact</a>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="page-hero-label">Academic Output</p>
+    <h1 class="page-hero-title" data-en="Research" data-ko="연구">Research</h1>
+    <p class="page-hero-subtitle" data-en="Peer-reviewed publications, patents, and academic contributions in NLP, Computer Vision, and Document AI." data-ko="NLP, 컴퓨터 비전, 문서 AI 분야의 동료 심사 논문, 특허 및 학술 기여.">
+      Peer-reviewed publications, patents, and academic contributions in NLP, Computer Vision, and Document AI.
+    </p>
+  </div>
+</div>
+
+<!-- Publications -->
+<section style="padding: 5rem 0;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Publications</span>
+      <h2 class="section-title">Peer-Reviewed <span>Papers</span></h2>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-highlight">Shreyanshu</span> Bhushan
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link" data-en="Home" data-ko="홈">Home</a></li>
-                <li><a href="about.html" class="nav-link" data-en="About" data-ko="소개">About</a></li>
-                <li><a href="experience.html" class="nav-link" data-en="Experience" data-ko="경력">Experience</a></li>
-                <li><a href="projects.html" class="nav-link" data-en="Projects" data-ko="프로젝트">Projects</a></li>
-                <li><a href="research.html" class="nav-link active" data-en="Research" data-ko="연구">Research</a></li>
-                <li><a href="contact.html" class="nav-link" data-en="Contact" data-ko="연락처">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <div style="display:flex; flex-direction:column; gap:1.5rem; max-width:860px; margin:0 auto;">
+
+      <!-- BlockNet ACL 2024 -->
+      <div class="pub-card reveal">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:0.5rem;">
+            <h3 class="pub-title">BlockNet: Multilingual Block Diagram Summarization</h3>
+            <span class="badge badge-gold">ACL 2024</span>
+          </div>
+          <p class="pub-venue">Annual Meeting of the Association for Computational Linguistics (ACL 2024)</p>
+          <p class="pub-authors">Shreyanshu Bhushan et al.</p>
+          <p class="pub-abstract" data-en="Introduces BlockNet, a novel framework for understanding and summarizing block diagrams with multilingual output support. The model addresses the challenge of extracting structured information from technical diagram images, combining computer vision with language generation. BlockNet advances document AI by enabling automated summarization of complex flow charts and process diagrams commonly found in technical and scientific documents." data-ko="다국어 출력 지원을 통한 블록 다이어그램 이해 및 요약을 위한 새로운 프레임워크인 BlockNet을 소개합니다. 이 모델은 컴퓨터 비전과 언어 생성을 결합하여 기술 다이어그램 이미지에서 구조화된 정보를 추출하는 과제를 해결합니다.">
+            Introduces BlockNet, a novel framework for understanding and summarizing block diagrams with multilingual output support. The model addresses the challenge of extracting structured information from technical diagram images, combining computer vision with language generation. BlockNet advances document AI by enabling automated summarization of complex flow charts and process diagrams commonly found in technical and scientific documents.
+          </p>
+          <div class="skill-cloud" style="margin-top:1rem;">
+            <span class="tag">NLP</span><span class="tag">Computer Vision</span>
+            <span class="tag">Diagram Understanding</span><span class="tag">Multilingual</span>
+            <span class="tag">Seq2Seq</span>
+          </div>
         </div>
+      </div>
+
+      <!-- AACL 2022 -->
+      <div class="pub-card reveal delay-1">
+        <div class="pub-year">2022</div>
+        <div class="pub-body">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:0.5rem;">
+            <h3 class="pub-title">Image-Based Document Summarization</h3>
+            <span class="badge badge-blue">AACL-IJCNLP 2022</span>
+          </div>
+          <p class="pub-venue">Asia-Pacific Chapter of the ACL — AACL-IJCNLP 2022</p>
+          <p class="pub-authors">Shreyanshu Bhushan et al.</p>
+          <p class="pub-abstract" data-en="Research on extracting and summarizing textual content from document images, integrating OCR pipelines with abstractive summarization models. The work explores techniques for handling noisy OCR outputs in summarization workflows, contributing to the field of document image understanding." data-ko="OCR 파이프라인과 추상적 요약 모델을 통합하여 문서 이미지에서 텍스트 내용을 추출하고 요약하는 연구. 요약 워크플로우에서 노이즈 있는 OCR 출력 처리 기술을 탐구합니다.">
+            Research on extracting and summarizing textual content from document images, integrating OCR pipelines with abstractive summarization models. The work explores techniques for handling noisy OCR outputs in summarization workflows, contributing to the field of document image understanding.
+          </p>
+          <div class="skill-cloud" style="margin-top:1rem;">
+            <span class="tag">OCR</span><span class="tag">Text Summarization</span>
+            <span class="tag">NLP</span><span class="tag">Document Understanding</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Patent -->
+<section style="padding: 5rem 0; background: var(--bg-secondary); border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Intellectual Property</span>
+      <h2 class="section-title">Patent <span>Application</span></h2>
+    </div>
+
+    <div class="card reveal" style="max-width:720px; margin:0 auto;">
+      <div style="display:flex; align-items:flex-start; gap:1.5rem;">
+        <div style="font-size:1.8rem; min-width:44px; text-align:center; color:var(--accent-gold);">⚖</div>
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem; flex-wrap:wrap;">
+            <h3 style="font-size:1.1rem;" data-en="AI-Based Method and System for Understanding Document Structures" data-ko="문서 구조 이해를 위한 AI 기반 방법 및 시스템">
+              AI-Based Method and System for Understanding Document Structures
+            </h3>
+            <span class="badge badge-gold">Filed</span>
+          </div>
+          <p style="font-size:0.82rem; color:var(--text-muted); font-family:'JetBrains Mono',monospace; margin-bottom:0.75rem;">NEOALI Co. Ltd. · South Korea</p>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.7;" data-en="Patent application for a novel AI-based approach to parsing, interpreting, and structuring complex document layouts, enabling accurate extraction of hierarchical content from multi-format business and government documents." data-ko="복합적인 문서 레이아웃을 파싱, 해석 및 구조화하는 새로운 AI 기반 접근 방식에 대한 특허 출원으로, 다양한 형식의 비즈니스 및 정부 문서에서 계층적 내용의 정확한 추출을 가능하게 합니다.">
+            Patent application for a novel AI-based approach to parsing, interpreting, and structuring complex document layouts, enabling accurate extraction of hierarchical content from multi-format business and government documents.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Research areas -->
+<section style="padding: 5rem 0;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Focus Areas</span>
+      <h2 class="section-title">Research <span>Interests</span></h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category-card reveal">
+        <div class="skill-cat-title">Document AI & Understanding</div>
+        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.65;" data-en="Layout detection, structure parsing, multi-format document processing, format-preserving translation, and AI-driven document automation." data-ko="레이아웃 감지, 구조 파싱, 다중 형식 문서 처리, 형식 보존 번역 및 AI 기반 문서 자동화.">
+          Layout detection, structure parsing, multi-format document processing, format-preserving translation, and AI-driven document automation.
+        </p>
+      </div>
+      <div class="skill-category-card reveal delay-1">
+        <div class="skill-cat-title">Large & Small Language Models</div>
+        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.65;" data-en="On-device LLM deployment, quantization, prompt engineering, fine-tuning for domain-specific tasks, and efficient inference with Ollama and vLLM." data-ko="온디바이스 LLM 배포, 양자화, 프롬프트 엔지니어링, 도메인별 작업을 위한 미세 조정, Ollama 및 vLLM을 사용한 효율적인 추론.">
+          On-device LLM deployment, quantization, prompt engineering, fine-tuning for domain-specific tasks, and efficient inference with Ollama and vLLM.
+        </p>
+      </div>
+      <div class="skill-category-card reveal delay-2">
+        <div class="skill-cat-title">Vision-Language Models & OCR</div>
+        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.65;" data-en="Multi-engine OCR fusion, VLM post-correction, block diagram understanding, chart analysis, and visual document question answering." data-ko="다중 엔진 OCR 융합, VLM 후처리 교정, 블록 다이어그램 이해, 차트 분석, 시각적 문서 질의응답.">
+          Multi-engine OCR fusion, VLM post-correction, block diagram understanding, chart analysis, and visual document question answering.
+        </p>
+      </div>
+      <div class="skill-category-card reveal delay-3">
+        <div class="skill-cat-title">Retrieval-Augmented Generation</div>
+        <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.65;" data-en="Semantic chunking strategies, vector database optimization, multi-modal retrieval, re-ranking methods, and enterprise-grade RAG system design." data-ko="의미론적 청킹 전략, 벡터 데이터베이스 최적화, 다중 모달 검색, 재순위화 방법, 기업급 RAG 시스템 설계.">
+          Semantic chunking strategies, vector database optimization, multi-modal retrieval, re-ranking methods, and enterprise-grade RAG system design.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-text">© 2025 Shreyanshu Bhushan</p>
+    <nav class="footer-links">
+      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
     </nav>
+  </div>
+</footer>
 
-    <!-- Research Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <h1 class="page-title" data-en="Research & Publications" data-ko="연구 및 출판물">Research & Publications</h1>
-            <p class="page-subtitle" data-en="Bridging fundamental AI research with scalable product engineering" data-ko="기초 AI 연구와 확장 가능한 제품 엔지니어링 연결">Bridging fundamental AI research with scalable product engineering</p>
-            <div class="research-stats">
-                <div class="stat-item">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label" data-en="Conference Publications" data-ko="학회 논문">Conference Publications</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label" data-en="Patents Filed" data-ko="특허 출원">Patents Filed</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">3+</span>
-                    <span class="stat-label" data-en="Research Areas" data-ko="연구 분야">Research Areas</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Philosophy -->
-    <section class="research-philosophy">
-        <div class="container">
-            <div class="philosophy-content" data-aos="fade-up">
-                <h2 class="section-title" data-en="Research Philosophy" data-ko="연구 철학">Research Philosophy</h2>
-                <div class="philosophy-grid">
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">🔬</div>
-                        <h3 data-en="Applied Innovation" data-ko="응용 혁신">Applied Innovation</h3>
-                        <p data-en="Developing AI solutions that bridge the gap between theoretical research and practical industry applications" data-ko="이론적 연구와 실제 산업 응용 사이의 격차를 해소하는 AI 솔루션 개발">Developing AI solutions that bridge the gap between theoretical research and practical industry applications</p>
-                    </div>
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">🌐</div>
-                        <h3 data-en="Multilingual Focus" data-ko="다국어 중심">Multilingual Focus</h3>
-                        <p data-en="Creating AI systems that work effectively across languages and cultures, particularly for English-Korean language pairs" data-ko="특히 영어-한국어 언어 쌍에 대해 언어와 문화를 넘나들며 효과적으로 작동하는 AI 시스템 구축">Creating AI systems that work effectively across languages and cultures, particularly for English-Korean language pairs</p>
-                    </div>
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">📊</div>
-                        <h3 data-en="Document Intelligence" data-ko="문서 지능">Document Intelligence</h3>
-                        <p data-en="Advancing the understanding and processing of visual documents through computer vision and NLP integration" data-ko="컴퓨터 비전과 NLP 통합을 통한 시각적 문서의 이해 및 처리 발전">Advancing the understanding and processing of visual documents through computer vision and NLP integration</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications List -->
-    <section class="publications-list">
-        <div class="container">
-            <h2 class="section-title" data-en="Publications" data-ko="출판물">Publications</h2>
-            
-            <div class="publications-timeline">
-                <div class="publication-item" data-aos="fade-up">
-                    <div class="pub-year">2024</div>
-                    <div class="pub-content">
-                        <div class="pub-header">
-                            <h3>Unveiling the Power of Integration: Block Diagram Summarization through Local-Global Fusion</h3>
-                            <span class="venue-badge acl">ACL 2024</span>
-                        </div>
-                        <div class="pub-authors">
-                            <strong>Shreyanshu Bhushan</strong>, Eun-Soo Jung, Minho Lee
-                        </div>
-                        <div class="pub-venue" data-en="Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics" data-ko="제62회 계산언어학회 연례회의 논문집">Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics</div>
-                        <div class="pub-description">
-                            <p data-en="Introduced BlockNet framework for multilingual block diagram analysis, combining OCR-based local extraction with transformer-based global understanding. Achieved 92% summary accuracy with 70% workflow improvement." data-ko="OCR 기반 로컬 추출과 트랜스포머 기반 글로벌 이해를 결합한 다국어 블록 다이어그램 분석을 위한 BlockNet 프레임워크를 소개했습니다. 70% 워크플로 개선으로 92% 요약 정확도를 달성했습니다.">
-                                Introduced BlockNet framework for multilingual block diagram analysis, combining OCR-based local extraction with transformer-based global understanding. Achieved 92% summary accuracy with 70% workflow improvement.
-                            </p>
-                        </div>
-                        <div class="pub-links">
-                            <a href="https://aclanthology.org/2024.findings-acl.822/" class="pub-link" target="_blank" data-en="Paper" data-ko="논문">Paper</a>
-                            <a href="#" class="pub-link" data-en="Code" data-ko="코드">Code</a>
-                            <a href="#" class="pub-link" data-en="Dataset" data-ko="데이터셋">Dataset</a>
-                        </div>
-                        <div class="pub-tags">
-                            <span class="pub-tag">Computer Vision</span>
-                            <span class="pub-tag">NLP</span>
-                            <span class="pub-tag">Document Understanding</span>
-                            <span class="pub-tag">Multilingual</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pub-year">2022</div>
-                    <div class="pub-content">
-                        <div class="pub-header">
-                            <h3>Block Diagram-to-Text: Understanding Block Diagram Images by Generating Natural Language Descriptors</h3>
-                            <span class="venue-badge aacl">AACL-IJCNLP 2022</span>
-                        </div>
-                        <div class="pub-authors">
-                            <strong>Shreyanshu Bhushan</strong>, Minho Lee
-                        </div>
-                        <div class="pub-venue" data-en="Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing" data-ko="제2회 아시아-태평양 계산언어학회 및 제12회 국제 자연어 처리 공동 컨퍼런스 논문집">Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing</div>
-                        <div class="pub-description">
-                            <p data-en="Proposed BloSum framework for converting block diagram images into natural language descriptions. Developed novel dataset for complex computerized block diagrams and triplet-based context extraction methodology." data-ko="블록 다이어그램 이미지를 자연어 설명으로 변환하는 BloSum 프레임워크를 제안했습니다. 복잡한 컴퓨터화된 블록 다이어그램을 위한 새로운 데이터셋과 삼중체 기반 맥락 추출 방법론을 개발했습니다.">
-                                Proposed BloSum framework for converting block diagram images into natural language descriptions. Developed novel dataset for complex computerized block diagrams and triplet-based context extraction methodology.
-                            </p>
-                        </div>
-                        <div class="pub-links">
-                            <a href="https://aclanthology.org/2022.findings-aacl.15/" class="pub-link" target="_blank" data-en="Paper" data-ko="논문">Paper</a>
-                            <a href="#" class="pub-link" data-en="Code" data-ko="코드">Code</a>
-                            <a href="#" class="pub-link" data-en="Dataset" data-ko="데이터셋">Dataset</a>
-                        </div>
-                        <div class="pub-tags">
-                            <span class="pub-tag">Computer Vision</span>
-                            <span class="pub-tag">NLG</span>
-                            <span class="pub-tag">Diagram Understanding</span>
-                            <span class="pub-tag">Image-to-Text</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Patents -->
-    <section class="patents-section">
-        <div class="container">
-            <h2 class="section-title" data-en="Patents & Intellectual Property" data-ko="특허 및 지적 재산권">Patents & Intellectual Property</h2>
-            
-            <div class="patents-grid">
-                <div class="patent-card" data-aos="fade-up">
-                    <div class="patent-header">
-                        <div class="patent-icon">📋</div>
-                        <div class="patent-number">10-2024-0132123</div>
-                    </div>
-                    <h3 data-en="AI-Based Method and System for Understanding Document Structures" data-ko="문서 구조 이해를 위한 AI 기반 방법 및 시스템">AI-Based Method and System for Understanding Document Structures</h3>
-                    <div class="patent-inventors">
-                        <strong data-en="Inventors:" data-ko="발명자:">Inventors:</strong> Jung Eun-Soo, Toikkanen Miika Timo Samuli, <strong>Bhushan Shreyanshu</strong>, K C Bibek
-                    </div>
-                    <div class="patent-date">
-                        <strong data-en="Filed:" data-ko="출원일:">Filed:</strong> September 27, 2024
-                    </div>
-                    <p class="patent-description" data-en="Novel AI methodology for automatically understanding and parsing complex document structures across multiple formats, enabling efficient information extraction and processing." data-ko="여러 형식에 걸쳐 복잡한 문서 구조를 자동으로 이해하고 파싱하여 효율적인 정보 추출 및 처리를 가능하게 하는 새로운 AI 방법론입니다.">
-                        Novel AI methodology for automatically understanding and parsing complex document structures across multiple formats, enabling efficient information extraction and processing.
-                    </p>
-                    <div class="patent-status">
-                        <span class="status-badge filed" data-en="Patent Filed" data-ko="특허 출원">Patent Filed</span>
-                    </div>
-                </div>
-
-                <div class="patent-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="patent-header">
-                        <div class="patent-icon">📊</div>
-                        <div class="patent-number">10-2024-0101342</div>
-                    </div>
-                    <h3 data-en="Relevant Method for Understanding Block Diagrams and Generating Natural Language Descriptions" data-ko="블록 다이어그램 이해 및 자연어 설명 생성을 위한 관련 방법">Relevant Method for Understanding Block Diagrams and Generating Natural Language Descriptions</h3>
-                    <div class="patent-inventors">
-                        <strong data-en="Inventors:" data-ko="발명자:">Inventors:</strong> Hwang Kyung-ho, Lee Minho, <strong>Bhushan Shreyanshu</strong>
-                    </div>
-                    <div class="patent-date">
-                        <strong data-en="Filed:" data-ko="출원일:">Filed:</strong> July 31, 2024
-                    </div>
-                    <p class="patent-description" data-en="Innovative approach for automated block diagram analysis and natural language generation, integrating computer vision and NLP techniques for comprehensive diagram understanding." data-ko="포괄적인 다이어그램 이해를 위해 컴퓨터 비전과 NLP 기술을 통합한 자동화된 블록 다이어그램 분석 및 자연어 생성을 위한 혁신적인 접근법입니다.">
-                        Innovative approach for automated block diagram analysis and natural language generation, integrating computer vision and NLP techniques for comprehensive diagram understanding.
-                    </p>
-                    <div class="patent-status">
-                        <span class="status-badge filed" data-en="Patent Filed" data-ko="특허 출원">Patent Filed</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Areas -->
-    <section class="research-areas">
-        <div class="container">
-            <h2 class="section-title" data-en="Research Areas & Future Directions" data-ko="연구 분야 및 미래 방향">Research Areas & Future Directions</h2>
-            
-            <div class="areas-grid">
-                <div class="area-card" data-aos="fade-up">
-                    <div class="area-icon">🔤</div>
-                    <h3 data-en="Multimodal Document Understanding" data-ko="다중 모달 문서 이해">Multimodal Document Understanding</h3>
-                    <p data-en="Advancing AI systems that can comprehensively understand documents containing text, images, tables, and diagrams through integrated vision-language approaches." data-ko="통합된 비전-언어 접근법을 통해 텍스트, 이미지, 테이블, 다이어그램이 포함된 문서를 포괄적으로 이해할 수 있는 AI 시스템을 발전시킵니다.">
-                        Advancing AI systems that can comprehensively understand documents containing text, images, tables, and diagrams through integrated vision-language approaches.
-                    </p>
-                    <div class="area-progress">
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 85%"></div>
-                        </div>
-                        <span class="progress-label" data-en="Current Focus" data-ko="현재 중점">Current Focus</span>
-                    </div>
-                </div>
-
-                <div class="area-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="area-icon">🌍</div>
-                    <h3 data-en="Cross-lingual AI Systems" data-ko="다국어 AI 시스템">Cross-lingual AI Systems</h3>
-                    <p data-en="Developing AI models that work seamlessly across different languages and writing systems, with particular focus on English-Korean language pairs and Asian languages." data-ko="영어-한국어 언어 쌍과 아시아 언어에 특히 중점을 두고 다양한 언어와 문자 체계에서 원활하게 작동하는 AI 모델을 개발합니다.">
-                        Developing AI models that work seamlessly across different languages and writing systems, with particular focus on English-Korean language pairs and Asian languages.
-                    </p>
-                    <div class="area-progress">
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 75%"></div>
-                        </div>
-                        <span class="progress-label" data-en="Active Research" data-ko="활발한 연구">Active Research</span>
-                    </div>
-                </div>
-
-                <div class="area-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="area-icon">⚡</div>
-                    <h3 data-en="Efficient On-device Models" data-ko="효율적인 온디바이스 모델">Efficient On-device Models</h3>
-                    <p data-en="Creating compact, efficient AI models that can run on edge devices while maintaining high performance, enabling privacy-preserving and offline AI applications." data-ko="높은 성능을 유지하면서 에지 디바이스에서 실행할 수 있는 컴팩트하고 효율적인 AI 모델을 만들어 프라이버시 보존 및 오프라인 AI 애플리케이션을 가능하게 합니다.">
-                        Creating compact, efficient AI models that can run on edge devices while maintaining high performance, enabling privacy-preserving and offline AI applications.
-                    </p>
-                    <div class="area-progress">
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 90%"></div>
-                        </div>
-                        <span class="progress-label" data-en="Applied Research" data-ko="응용 연구">Applied Research</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Collaborations -->
-    <section class="collaborations">
-        <div class="container">
-            <h2 class="section-title" data-en="Research Collaborations" data-ko="연구 협력">Research Collaborations</h2>
-            
-            <div class="collab-grid">
-                <div class="collab-card" data-aos="fade-up">
-                    <div class="collab-institution">
-                        <h3>Kyungpook National University</h3>
-                        <p class="collab-location" data-en="Daegu, South Korea" data-ko="대구, 대한민국">Daegu, South Korea</p>
-                    </div>
-                    <div class="collab-details">
-                        <p data-en="Collaborative research on computer vision and NLP integration under Prof. Minho Lee's guidance. Focus on document understanding and diagram analysis." data-ko="이민호 교수의 지도 하에 컴퓨터 비전과 NLP 통합에 대한 공동 연구. 문서 이해 및 다이어그램 분석에 중점.">
-                            Collaborative research on computer vision and NLP integration under Prof. Minho Lee's guidance. Focus on document understanding and diagram analysis.
-                        </p>
-                    </div>
-                    <div class="collab-period">2021 - 2023</div>
-                </div>
-
-                <div class="collab-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="collab-institution">
-                        <h3>NEOALI Co. Ltd.</h3>
-                        <p class="collab-location" data-en="Seoul, South Korea" data-ko="서울, 대한민국">Seoul, South Korea</p>
-                    </div>
-                    <div class="collab-details">
-                        <p data-en="Leading AI product development and research initiatives in document intelligence, LLMs, and enterprise AI solutions. Translating cutting-edge research into production-ready systems." data-ko="문서 인텔리전스, LLM 및 기업 AI 솔루션에서 AI 제품 개발 및 연구 이니셔티브를 주도합니다. 최첨단 연구를 프로덕션 준비 시스템으로 전환합니다.">
-                            Leading AI product development and research initiatives in document intelligence, LLMs, and enterprise AI solutions. Translating cutting-edge research into production-ready systems.
-                        </p>
-                    </div>
-                    <div class="collab-period">2023 - Present</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chatbot -->
-    <div id="chatbot-container" class="chatbot-container">
-        <div id="chatbot-toggle" class="chatbot-toggle">
-            <span class="chatbot-icon">💬</span>
-        </div>
-        <div id="chatbot-window" class="chatbot-window">
-            <div class="chatbot-header">
-                <h4 data-en="Ask about Shreyanshu" data-ko="Shreyanshu에 대해 물어보세요">Ask about Shreyanshu</h4>
-                <button id="chatbot-close" class="chatbot-close">×</button>
-            </div>
-            <div id="chatbot-messages" class="chatbot-messages">
-                <div class="bot-message">
-                    <span data-en="Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?" data-ko="안녕하세요! Shreyanshu의 경험, 프로젝트 및 기술에 대한 질문에 답변드립니다. 무엇을 알고 싶으신가요?">Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?</span>
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="chatbot-message" placeholder="Type your question..." data-placeholder-en="Type your question..." data-placeholder-ko="질문을 입력하세요...">
-                <button id="chatbot-send">Send</button>
-            </div>
-        </div>
+<div class="chatbot-fab">
+  <button class="chatbot-trigger" id="chatbot-trigger">💬</button>
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-head"><h4>Ask about Shreyanshu</h4><button class="chatbot-close-btn" id="chatbot-close">✕</button></div>
+    <div class="chatbot-body" id="chatbot-messages"><div class="chat-msg bot">Ask me about research, projects, or skills.</div></div>
+    <div class="chatbot-footer">
+      <input class="chatbot-input" id="chatbot-input" type="text" placeholder="Ask anything...">
+      <button class="chatbot-send" id="chatbot-send">Send</button>
     </div>
-
-    <script src="js/script.js"></script>
-    <style>
-        /* Fixed header adjustment */
-        body {
-            padding-top: 80px; /* Adjust based on your navbar height */
-        }
-
-        .page-hero {
-            padding-top: 4rem; /* Additional padding for hero section */
-        }
-
-        /* Research Page Specific Styles */
-        .research-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 2rem;
-        }
-
-        .research-philosophy {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .philosophy-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .philosophy-card {
-            background: var(--accent-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            text-align: center;
-            transition: var(--transition);
-        }
-
-        .philosophy-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--text-highlight);
-        }
-
-        .philosophy-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .philosophy-card h3 {
-            color: var(--text-highlight);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .philosophy-card p {
-            line-height: 1.7;
-            color: var(--text-primary);
-        }
-
-        .publications-list {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .venue-badge {
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 0.875rem;
-        }
-
-        .venue-badge.acl {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-        }
-
-        .venue-badge.aacl {
-            background: linear-gradient(135deg, #f093fb, #f5576c);
-            color: white;
-        }
-
-        .publications-timeline {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .publication-item {
-            display: grid;
-            grid-template-columns: 80px 1fr;
-            gap: 2rem;
-            margin-bottom: 3rem;
-            align-items: start;
-        }
-
-        .pub-year {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-highlight);
-            text-align: center;
-            position: sticky;
-            top: 100px;
-        }
-
-        .pub-content {
-            background: var(--accent-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .pub-content:hover {
-            border-color: var(--text-highlight);
-            transform: translateY(-3px);
-        }
-
-        .pub-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 1rem;
-            gap: 1rem;
-        }
-
-        .pub-header h3 {
-            color: var(--text-highlight);
-            font-size: 1.3rem;
-            flex: 1;
-        }
-
-        .pub-authors {
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-        }
-
-        .pub-venue {
-            margin-bottom: 1rem;
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-
-        .pub-description {
-            margin-bottom: 1.5rem;
-        }
-
-        .pub-description p {
-            line-height: 1.7;
-        }
-
-        .pub-links {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .pub-link {
-            background: var(--text-highlight);
-            color: var(--primary-bg);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 0.875rem;
-            font-weight: 600;
-            transition: var(--transition);
-        }
-
-        .pub-link:hover {
-            background: var(--accent-green);
-        }
-
-        .pub-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .pub-tag {
-            background: var(--border-color);
-            color: var(--text-primary);
-            padding: 0.25rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.75rem;
-            font-family: var(--font-mono);
-        }
-
-        .patents-section {
-            padding: var(--section-padding);
-        }
-
-        .patents-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-        }
-
-        .patent-card {
-            background: var(--secondary-bg);
-            padding: 2.5rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .patent-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--text-highlight);
-        }
-
-        .patent-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .patent-icon {
-            font-size: 2rem;
-        }
-
-        .patent-number {
-            background: var(--accent-blue);
-            color: var(--primary-bg);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-family: var(--font-mono);
-            font-size: 0.875rem;
-            font-weight: 600;
-        }
-
-        .patent-card h3 {
-            color: var(--text-highlight);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-            line-height: 1.4;
-        }
-
-        .patent-inventors, .patent-date {
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .patent-description {
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-        }
-
-        .patent-status {
-            text-align: center;
-        }
-
-        .status-badge {
-            background: var(--accent-green);
-            color: var(--primary-bg);
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 0.875rem;
-        }
-
-        .status-badge.filed {
-            background: var(--accent-blue);
-        }
-
-        .research-areas {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .areas-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .area-card {
-            background: var(--accent-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .area-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--text-highlight);
-        }
-
-        .area-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .area-card h3 {
-            color: var(--text-highlight);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .area-card p {
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-        }
-
-        .area-progress {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .progress-bar {
-            flex: 1;
-            height: 8px;
-            background: var(--border-color);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--text-highlight), var(--accent-green));
-            border-radius: 4px;
-            transition: width 1s ease;
-        }
-
-        .progress-label {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-            white-space: nowrap;
-        }
-
-        .collaborations {
-            padding: var(--section-padding);
-        }
-
-        .collab-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-
-        .collab-card {
-            background: var(--secondary-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .collab-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--text-highlight);
-        }
-
-        .collab-institution h3 {
-            color: var(--text-highlight);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .collab-location {
-            color: var(--accent-blue);
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .collab-details p {
-            line-height: 1.7;
-            margin-bottom: 1rem;
-        }
-
-        .collab-period {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: var(--accent-bg);
-            color: var(--text-secondary);
-            padding: 0.5rem 1rem;
-            border-radius: 15px;
-            font-size: 0.875rem;
-            font-weight: 600;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding-top: 60px; /* Smaller padding for mobile */
-            }
-
-            .page-hero {
-                padding-top: 2rem;
-            }
-            
-            .publication-item {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            .pub-year {
-                position: static;
-                text-align: left;
-            }
-            
-            .pub-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .research-stats {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    </style>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/chatbot.js"></script>
 </body>
 </html>

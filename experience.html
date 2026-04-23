@@ -1,709 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - Shreyanshu Bhushan</title>
-    <meta name="description" content="Professional experience and career journey of Shreyanshu Bhushan in AI research and development">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience — Shreyanshu Bhushan</title>
+  <meta name="description" content="Professional experience and career journey of Shreyanshu Bhushan in AI research and engineering.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <!-- Language Toggle -->
-    <div class="language-toggle">
-        <button id="lang-en" class="lang-btn active">EN</button>
-        <button id="lang-ko" class="lang-btn">한국어</button>
+<div id="scroll-progress"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>Shreyanshu</span> Bhushan</a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link">Home</a></li>
+      <li><a href="about.html"      class="nav-link">About</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li>
+      <li><a href="projects.html"   class="nav-link">Projects</a></li>
+      <li><a href="research.html"   class="nav-link">Research</a></li>
+      <li><a href="contact.html"    class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ko">KO</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">☀</span></button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-menu" id="mobile-nav">
+  <a href="index.html"      class="nav-link">Home</a>
+  <a href="about.html"      class="nav-link">About</a>
+  <a href="experience.html" class="nav-link">Experience</a>
+  <a href="projects.html"   class="nav-link">Projects</a>
+  <a href="research.html"   class="nav-link">Research</a>
+  <a href="contact.html"    class="nav-link">Contact</a>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <p class="page-hero-label">Career History</p>
+    <h1 class="page-hero-title" data-en="Experience" data-ko="경력">Experience</h1>
+    <p class="page-hero-subtitle" data-en="3+ years building production AI systems in industry and academia." data-ko="산업과 학계에서 3년 이상 프로덕션 AI 시스템 구축.">
+      3+ years building production AI systems in industry and academia.
+    </p>
+  </div>
+</div>
+
+<!-- Work Experience -->
+<section style="padding: 5rem 0;">
+  <div class="container" style="max-width:860px;">
+    <div class="section-header" style="text-align:left; margin-bottom:3rem;">
+      <span class="section-label" data-en="Industry" data-ko="산업">Industry</span>
+      <h2 class="section-title" data-en="Work <span>Experience</span>" data-ko="업무 <span>경험</span>">Work <span>Experience</span></h2>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-highlight">Shreyanshu</span> Bhushan
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link" data-en="Home" data-ko="홈">Home</a></li>
-                <li><a href="about.html" class="nav-link" data-en="About" data-ko="소개">About</a></li>
-                <li><a href="experience.html" class="nav-link active" data-en="Experience" data-ko="경력">Experience</a></li>
-                <li><a href="projects.html" class="nav-link" data-en="Projects" data-ko="프로젝트">Projects</a></li>
-                <li><a href="research.html" class="nav-link" data-en="Research" data-ko="연구">Research</a></li>
-                <li><a href="contact.html" class="nav-link" data-en="Contact" data-ko="연락처">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- NEOALI -->
+    <div class="timeline">
+
+      <div class="timeline-item gold reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period" data-en="May 2023 — Present" data-ko="2023년 5월 — 현재">May 2023 — Present</div>
+        <h3 class="timeline-title" data-en="AI Researcher" data-ko="AI 연구원">AI Researcher</h3>
+        <p class="timeline-org">NEOALI Co. Ltd. · Seoul, South Korea</p>
+
+        <div style="margin: 1rem 0;">
+          <div class="skill-cloud">
+            <span class="badge badge-gold" data-en="Document AI" data-ko="문서 AI">Document AI</span>
+            <span class="badge badge-blue" data-en="LLMs / sLLMs" data-ko="LLM / sLLM">LLMs / sLLMs</span>
+            <span class="badge badge-cyan" data-en="On-Device AI" data-ko="온디바이스 AI">On-Device AI</span>
+            <span class="badge badge-green" data-en="RAG Systems" data-ko="RAG 시스템">RAG Systems</span>
+          </div>
         </div>
+
+        <ul class="timeline-list">
+          <li data-en="Lead researcher and engineer for LayGen, a multi-platform AI document translation ecosystem supporting DOCX, HWPX, and PDF with on-device LLM inference — won 1st Place at Intel AI PC Innovation Challenge 2024." data-ko="DOCX, HWPX, PDF를 지원하는 다중 플랫폼 AI 문서 번역 생태계 LayGen의 수석 연구원 및 엔지니어 — 2024 인텔 AI PC 혁신 챌린지 1위 수상.">
+            Lead researcher and engineer for LayGen, a multi-platform AI document translation ecosystem supporting DOCX, HWPX, and PDF with on-device LLM inference — won 1st Place at Intel AI PC Innovation Challenge 2024.
+          </li>
+          <li data-en="Designed and deployed AskMe, an intelligent document Q&A system using RAG architecture with ALIParse for complex document structure analysis." data-ko="ALIParse를 사용한 복잡한 문서 구조 분석을 위한 RAG 아키텍처 기반 지능형 문서 Q&A 시스템 AskMe를 설계 및 배포.">
+            Designed and deployed AskMe, an intelligent document Q&A system using RAG architecture with ALIParse for complex document structure analysis.
+          </li>
+          <li data-en="Built VLMFusion OCR — a multi-engine OCR system combining EasyOCR, PaddleOCR, and Tesseract with Vision-Language Model post-correction for degraded and complex document images." data-ko="EasyOCR, PaddleOCR, Tesseract와 비전-언어 모델 후처리 교정을 결합한 다중 엔진 OCR 시스템 VLMFusion OCR 구축.">
+            Built VLMFusion OCR — a multi-engine OCR system combining EasyOCR, PaddleOCR, and Tesseract with Vision-Language Model post-correction for degraded and complex document images.
+          </li>
+          <li data-en="Developed FormGen, an AI-powered form field extraction and auto-fill system for HTML, DOCX, and HWPX documents using LLM-based analysis and RAG document fill pipelines." data-ko="LLM 기반 분석 및 RAG 문서 채우기 파이프라인을 사용하여 HTML, DOCX, HWPX 문서용 AI 기반 양식 필드 추출 및 자동 채우기 시스템 FormGen 개발.">
+            Developed FormGen, an AI-powered form field extraction and auto-fill system for HTML, DOCX, and HWPX documents using LLM-based analysis and RAG document fill pipelines.
+          </li>
+          <li data-en="Created HanForge, an open-source HTML to HWPX conversion engine in pure JavaScript — available publicly on GitHub." data-ko="순수 JavaScript로 작성된 오픈소스 HTML to HWPX 변환 엔진 HanForge 개발 — GitHub에 공개.">
+            Created HanForge, an open-source HTML to HWPX conversion engine in pure JavaScript — available publicly on GitHub.
+          </li>
+          <li data-en="Built SlideGen, a multi-LLM provider AI presentation generator with PDF context support and dynamic Unsplash backgrounds." data-ko="PDF 컨텍스트 지원 및 동적 Unsplash 배경을 갖춘 다중 LLM 제공업체 AI 프레젠테이션 생성기 SlideGen 구축.">
+            Built SlideGen, a multi-LLM provider AI presentation generator with PDF context support and dynamic Unsplash backgrounds.
+          </li>
+          <li data-en="Developed Medical Document Disease Extractor v2.0 — a RAG-based medical NLP pipeline supporting single-pass, double-pass, and RAG analysis methods with Qdrant vector storage." data-ko="Qdrant 벡터 스토리지를 사용하는 단일 패스, 이중 패스, RAG 분석 방법을 지원하는 RAG 기반 의료 NLP 파이프라인 Medical Document Disease Extractor v2.0 개발.">
+            Developed Medical Document Disease Extractor v2.0 — a RAG-based medical NLP pipeline supporting single-pass, double-pass, and RAG analysis methods with Qdrant vector storage.
+          </li>
+          <li data-en="Research and develop compact on-device language models optimized for efficiency and performance in offline enterprise environments using Ollama and vLLM." data-ko="Ollama 및 vLLM을 사용하여 오프라인 기업 환경에서 효율성과 성능에 최적화된 컴팩트 온디바이스 언어 모델 연구 개발.">
+            Research and develop compact on-device language models optimized for efficiency and performance in offline enterprise environments using Ollama and vLLM.
+          </li>
+          <li data-en="Filed a patent for an AI-Based Method and System for Understanding Document Structures." data-ko="문서 구조 이해를 위한 AI 기반 방법 및 시스템에 대한 특허 출원.">
+            Filed a patent for an AI-Based Method and System for Understanding Document Structures.
+          </li>
+        </ul>
+
+        <div style="margin-top:1.25rem;">
+          <div class="skill-cloud">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">ElectronJS</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Ollama</span>
+            <span class="skill-pill">vLLM</span>
+            <span class="skill-pill">Qdrant</span>
+            <span class="skill-pill">HuggingFace</span>
+            <span class="skill-pill">OpenAI API</span>
+            <span class="skill-pill">Pandoc</span>
+            <span class="skill-pill">RAG</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABR Lab -->
+      <div class="timeline-item reveal delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Mar 2021 — Feb 2023</div>
+        <h3 class="timeline-title" data-en="Graduate Researcher" data-ko="대학원 연구원">Graduate Researcher</h3>
+        <p class="timeline-org">ABR Lab, Kyungpook National University · Daegu, South Korea</p>
+
+        <ul class="timeline-list">
+          <li data-en="Conducted research on integrating NLP and Computer Vision using deep learning, specializing in image-based text summarization and block diagram understanding." data-ko="이미지 기반 텍스트 요약 및 블록 다이어그램 이해 전문화를 포함한 딥러닝을 사용한 NLP 및 컴퓨터 비전 통합 연구 수행.">
+            Conducted research on integrating NLP and Computer Vision using deep learning, specializing in image-based text summarization and block diagram understanding.
+          </li>
+          <li data-en="Published BlockNet at ACL 2024 — a novel model for block diagram summarization with multilingual support." data-ko="다국어 지원 블록 다이어그램 요약을 위한 새로운 모델인 BlockNet을 ACL 2024에 발표.">
+            Published BlockNet at ACL 2024 — a novel model for block diagram summarization with multilingual support.
+          </li>
+          <li data-en="Published research at AACL-IJCNLP 2022 on image-based document summarization." data-ko="이미지 기반 문서 요약에 관한 연구를 AACL-IJCNLP 2022에 발표.">
+            Published research at AACL-IJCNLP 2022 on image-based document summarization.
+          </li>
+          <li data-en="Secured 2nd Place at AI Grand Challenge 2023 for Document QA (Chart2Excel + Chart QA)." data-ko="문서 QA 부문 AI 그랜드 챌린지 2023에서 2위 수상 (Chart2Excel + Chart QA).">
+            Secured 2nd Place at AI Grand Challenge 2023 for Document QA (Chart2Excel + Chart QA).
+          </li>
+          <li data-en="Mentored junior researchers in AI fundamentals, research methodologies, Computer Vision, and NLP." data-ko="AI 기초, 연구 방법론, 컴퓨터 비전, NLP 분야에서 후배 연구원 멘토링.">
+            Mentored junior researchers in AI fundamentals, research methodologies, Computer Vision, and NLP.
+          </li>
+        </ul>
+
+        <div style="margin-top:1.25rem;">
+          <div class="skill-cloud">
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">Computer Vision</span>
+            <span class="skill-pill">NLP</span>
+            <span class="skill-pill">Seq2Seq</span>
+            <span class="skill-pill">Transformers</span>
+            <span class="skill-pill">Research</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Educator -->
+      <div class="timeline-item reveal delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Sep 2020 — Feb 2021</div>
+        <h3 class="timeline-title" data-en="AI Educator" data-ko="AI 강사">AI Educator</h3>
+        <p class="timeline-org">Shashwat Foundation · Remote</p>
+
+        <ul class="timeline-list">
+          <li data-en="Guided students in developing AI project ideas from concept to proof-of-concept, with emphasis on practical applications." data-ko="개념부터 개념 증명까지 AI 프로젝트 아이디어를 개발하는 학생들을 지도.">
+            Guided students in developing AI project ideas from concept to proof-of-concept, with emphasis on practical applications.
+          </li>
+          <li data-en="Designed curriculum for AI education targeting a youth audience, covering foundational ML and Computer Vision topics." data-ko="기초 ML 및 컴퓨터 비전 주제를 다루는 청소년 대상 AI 교육 커리큘럼 설계.">
+            Designed curriculum for AI education targeting a youth audience, covering foundational ML and Computer Vision topics.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Internship -->
+      <div class="timeline-item reveal delay-3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Apr 2018 — May 2018</div>
+        <h3 class="timeline-title" data-en="Software Development Intern" data-ko="소프트웨어 개발 인턴">Software Development Intern</h3>
+        <p class="timeline-org">Huawei · India</p>
+
+        <ul class="timeline-list">
+          <li data-en="Developed a software tool for storing, modifying, searching, and converting data between JSON and CSV formats using Java." data-ko="Java를 사용하여 JSON과 CSV 형식 간 데이터 저장, 수정, 검색 및 변환을 위한 소프트웨어 도구 개발.">
+            Developed a software tool for storing, modifying, searching, and converting data between JSON and CSV formats using Java.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Volunteer & Recognition -->
+<section style="padding: 5rem 0; background: var(--bg-secondary); border-top: 1px solid var(--border);">
+  <div class="container" style="max-width:860px;">
+    <div class="section-header" style="text-align:left; margin-bottom:3rem;">
+      <span class="section-label">Service & Recognition</span>
+      <h2 class="section-title">Volunteer & <span>Achievements</span></h2>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:1.25rem;">
+
+      <div class="card reveal">
+        <div style="font-size:0.78rem; font-family:'JetBrains Mono',monospace; color:var(--accent-cyan); margin-bottom:0.5rem;">Aug 2021 — Feb 2023</div>
+        <h4 style="font-size:0.97rem; margin-bottom:0.4rem;" data-en="AI Instructor — ABR Lab" data-ko="AI 강사 — ABR 연구실">AI Instructor — ABR Lab</h4>
+        <p style="font-size:0.85rem; color:var(--text-secondary);" data-en="Delivered instruction on Computer Vision and NLP; mentored incoming graduate students in research methodology." data-ko="컴퓨터 비전 및 NLP 교육 제공; 신입 대학원생의 연구 방법론 멘토링.">
+          Delivered instruction on Computer Vision and NLP; mentored incoming graduate students in research methodology.
+        </p>
+      </div>
+
+      <div class="card reveal delay-1">
+        <div style="font-size:0.78rem; font-family:'JetBrains Mono',monospace; color:var(--accent-cyan); margin-bottom:0.5rem;">Jul 2021 — Feb 2023</div>
+        <h4 style="font-size:0.97rem; margin-bottom:0.4rem;" data-en="Journal Club Presenter — ABR Lab" data-ko="저널 클럽 발표자 — ABR 연구실">Journal Club Presenter — ABR Lab</h4>
+        <p style="font-size:0.85rem; color:var(--text-secondary);" data-en="Led discussions on emerging AI research; presented recent scholarly publications to the research group." data-ko="신흥 AI 연구에 대한 토론 주도; 연구 그룹에 최근 학술 논문 발표.">
+          Led discussions on emerging AI research; presented recent scholarly publications to the research group.
+        </p>
+      </div>
+
+      <div class="card reveal delay-2">
+        <div style="font-size:0.78rem; font-family:'JetBrains Mono',monospace; color:var(--accent-gold); margin-bottom:0.5rem;">Jun 2020</div>
+        <h4 style="font-size:0.97rem; margin-bottom:0.4rem;" data-en="Honorary International Ambassador" data-ko="명예 국제 앰배서더">Honorary International Ambassador</h4>
+        <p style="font-size:0.85rem; color:var(--text-secondary);" data-en="Officially appointed as Honorary International Ambassador of KNU for enthusiasm and achievements as an international student." data-ko="국제 학생으로서의 열정과 성취를 인정받아 경북대학교 명예 국제 앰배서더로 공식 임명.">
+          Officially appointed as Honorary International Ambassador of KNU for enthusiasm and achievements as an international student.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-text">© 2025 Shreyanshu Bhushan</p>
+    <nav class="footer-links">
+      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
     </nav>
+  </div>
+</footer>
 
-    <!-- Experience Hero -->
-    <section class="page-hero" style="padding-top: 120px;">
-        <div class="container">
-            <h1 class="page-title" data-en="Professional Experience" data-ko="전문 경력">Professional Experience</h1>
-            <p class="page-subtitle" data-en="2+ years of work experience and 3+ years of research experience in AI and machine learning" data-ko="AI 및 머신러닝 분야에서 2년 이상의 업무 경험과 3년 이상의 연구 경험">2+ years of work experience and 3+ years of research experience in AI and machine learning</p>
-        </div>
-    </section>
-
-    <!-- Current Position -->
-    <section class="current-position">
-        <div class="container">
-            <div class="position-highlight" data-aos="fade-up">
-                <div class="position-badge" data-en="Current Position" data-ko="현재 직책">Current Position</div>
-                <h2 data-en="AI Researcher" data-ko="AI 연구원">AI Researcher</h2>
-                <h3 data-en="NEOALI Co. Ltd. | Seoul, South Korea" data-ko="NEOALI Co. Ltd. | 서울, 대한민국">NEOALI Co. Ltd. | Seoul, South Korea</h3>
-                <div class="date-range">May 2023 - Present</div>
-                
-                <div class="position-summary">
-                    <p data-en="Leading cutting-edge research and development in Document AI, LLMs/sLLMs, and Vision-Language Models. Responsible for end-to-end development of AI solutions from research concept to enterprise deployment." data-ko="문서 AI, LLM/sLLM 및 비전-언어 모델의 최첨단 연구 개발을 주도하고 있습니다. 연구 개념부터 기업 배포까지 AI 솔루션의 엔드투엔드 개발을 담당합니다.">
-                        Leading cutting-edge research and development in Document AI, LLMs/sLLMs, and Vision-Language Models. Responsible for end-to-end development of AI solutions from research concept to enterprise deployment.
-                    </p>
-                </div>
-
-                <div class="key-responsibilities">
-                    <h4 data-en="Key Responsibilities & Achievements" data-ko="주요 책임 및 성과">Key Responsibilities & Achievements</h4>
-                    <div class="responsibilities-grid">
-                        <div class="responsibility-item">
-                            <div class="resp-icon">🔬</div>
-                            <div class="resp-content">
-                                <h5 data-en="LLMs/sLLMs R&D" data-ko="LLM/sLLM 연구개발">LLMs/sLLMs R&D</h5>
-                                <p data-en="Research and develop compact, on-device language models optimized for efficiency and performance" data-ko="효율성과 성능에 최적화된 컴팩트한 온디바이스 언어 모델을 연구 개발">Research and develop compact, on-device language models optimized for efficiency and performance</p>
-                            </div>
-                        </div>
-                        
-                        <div class="responsibility-item">
-                            <div class="resp-icon">⚙️</div>
-                            <div class="resp-content">
-                                <h5 data-en="Model Fine-Tuning" data-ko="모델 미세 조정">Model Fine-Tuning</h5>
-                                <p data-en="Optimize pre-trained models for enhanced performance across various NLP and computer vision tasks" data-ko="다양한 NLP 및 컴퓨터 비전 작업에서 향상된 성능을 위해 사전 훈련된 모델을 최적화">Optimize pre-trained models for enhanced performance across various NLP and computer vision tasks</p>
-                            </div>
-                        </div>
-                        
-                        <div class="responsibility-item">
-                            <div class="resp-icon">📊</div>
-                            <div class="resp-content">
-                                <h5 data-en="Dataset Creation & Analysis" data-ko="데이터셋 생성 및 분석">Dataset Creation & Analysis</h5>
-                                <p data-en="Develop and analyze high-quality datasets to support model training and evaluation processes" data-ko="모델 훈련 및 평가 프로세스를 지원하기 위해 고품질 데이터셋을 개발하고 분석">Develop and analyze high-quality datasets to support model training and evaluation processes</p>
-                            </div>
-                        </div>
-                        
-                        <div class="responsibility-item">
-                            <div class="resp-icon">🎯</div>
-                            <div class="resp-content">
-                                <h5 data-en="Prompt Engineering" data-ko="프롬프트 엔지니어링">Prompt Engineering</h5>
-                                <p data-en="Design and refine prompts to maximize model effectiveness and achieve optimal results" data-ko="모델 효과를 극대화하고 최적의 결과를 달성하기 위해 프롬프트를 설계하고 개선">Design and refine prompts to maximize model effectiveness and achieve optimal results</p>
-                            </div>
-                        </div>
-                        
-                        <div class="responsibility-item">
-                            <div class="resp-icon">📄</div>
-                            <div class="resp-content">
-                                <h5 data-en="Document AI" data-ko="문서 AI">Document AI</h5>
-                                <p data-en="Develop advanced solutions for extracting and processing text from diverse document formats" data-ko="다양한 문서 형식에서 텍스트를 추출하고 처리하는 고급 솔루션을 개발">Develop advanced solutions for extracting and processing text from diverse document formats</p>
-                            </div>
-                        </div>
-                        
-                        <div class="responsibility-item">
-                            <div class="resp-icon">🔍</div>
-                            <div class="resp-content">
-                                <h5 data-en="OCR Enhancement" data-ko="OCR 향상">OCR Enhancement</h5>
-                                <p data-en="Leverage Vision-Language Models to improve OCR accuracy and contextual understanding" data-ko="비전-언어 모델을 활용하여 OCR 정확도와 맥락적 이해를 향상">Leverage Vision-Language Models to improve OCR accuracy and contextual understanding</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="achievements">
-                    <h4 data-en="Major Achievements" data-ko="주요 성과">Major Achievements</h4>
-                    <ul class="achievement-list">
-                        <li data-en="🏆 Won 1st Place at Intel AI PC Innovation Challenge 2024 with LayGen project" data-ko="🏆 LayGen 프로젝트로 2024 인텔 AI PC 혁신 챌린지 1위 수상">🏆 Won 1st Place at Intel AI PC Innovation Challenge 2024 with LayGen project</li>
-                        <li data-en="🥉 Secured 2rd Place at AI Grand Challenge 2023 for Document QA" data-ko="🥉 문서 QA 부문 2023 AI 그랜드 챌린지 2위 수상">🥉 Secured 2rd Place at AI Grand Challenge 2023 for Document QA</li>
-                        <li data-en="📜 Filed patent for AI-Based Method and System for Understanding Document Structures" data-ko="📜 문서 구조 이해를 위한 AI 기반 방법 및 시스템 특허 출원">📜 Filed patent for AI-Based Method and System for Understanding Document Structures</li>
-                        <li data-en="📚 Published BlockNet at ACL 2024 for block diagram summarization with multilingual support" data-ko="📚 다국어 지원 블록 다이어그램 요약을 위한 BlockNet을 ACL 2024에 발표">📚 Published BlockNet at ACL 2024 for block diagram summarization with multilingual support</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Experience Timeline -->
-    <section class="work-timeline">
-        <div class="container">
-            <h2 class="section-title" data-en="Career Journey" data-ko="경력 여정">Career Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item current" data-aos="fade-up">
-                    <div class="timeline-marker current-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">May 2023 - Present</div>
-                        <h3 data-en="AI Researcher" data-ko="AI 연구원">AI Researcher</h3>
-                        <h4 data-en="NEOALI Co. Ltd. | Seoul, South Korea" data-ko="NEOALI Co. Ltd. | 서울, 대한민국">NEOALI Co. Ltd. | Seoul, South Korea</h4>
-                        <div class="experience-highlights">
-                            <span class="highlight-tag" data-en="Document AI" data-ko="문서 AI">Document AI</span>
-                            <span class="highlight-tag" data-en="LLMs/sLLMs" data-ko="LLM/sLLM">LLMs/sLLMs</span>
-                            <span class="highlight-tag" data-en="OCR Enhancement" data-ko="OCR 향상">OCR Enhancement</span>
-                            <span class="highlight-tag" data-en="Vision-Language Models" data-ko="비전-언어 모델">Vision-Language Models</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">Mar 2021 - Feb 2023</div>
-                        <h3 data-en="Graduate Student Researcher" data-ko="대학원 연구원">Graduate Student Researcher</h3>
-                        <h4 data-en="Kyungpook National University | Daegu, South Korea" data-ko="경북대학교 | 대구, 대한민국">Kyungpook National University | Daegu, South Korea</h4>
-                        <ul class="experience-details">
-                            <li data-en="Conducted research on integrating NLP and Computer Vision using Deep Learning methodologies" data-ko="딥러닝 방법론을 사용하여 NLP와 컴퓨터 비전을 통합하는 연구 수행">Conducted research on integrating NLP and Computer Vision using Deep Learning methodologies</li>
-                            <li data-en="Specialized in developing techniques for image-based summarization" data-ko="이미지 기반 요약 기법 개발 전문">Specialized in developing techniques for image-based summarization</li>
-                            <li data-en="Published research at ACL 2024 and AACL-IJCNLP 2022" data-ko="ACL 2024 및 AACL-IJCNLP 2022에서 연구 발표">Published research at ACL 2024 and AACL-IJCNLP 2022</li>
-                            <li data-en="Mentored junior students in AI fundamentals and research methodologies" data-ko="AI 기초 및 연구 방법론에서 후배 학생들을 멘토링">Mentored junior students in AI fundamentals and research methodologies</li>
-                        </ul>
-                        <div class="experience-highlights">
-                            <span class="highlight-tag" data-en="Deep Learning" data-ko="딥러닝">Deep Learning</span>
-                            <span class="highlight-tag" data-en="Computer Vision" data-ko="컴퓨터 비전">Computer Vision</span>
-                            <span class="highlight-tag" data-en="NLP Research" data-ko="NLP 연구">NLP Research</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">Sep 2020 - Feb 2021</div>
-                        <h3 data-en="AI Youth Trainer for Intel | Intern" data-ko="인텔 AI 청년 트레이너 | 인턴">AI Youth Trainer for Intel | Intern</h3>
-                        <h4 data-en="Shashwat Foundation | Remote" data-ko="Shashwat Foundation | 원격">Shashwat Foundation | Remote</h4>
-                        <ul class="experience-details">
-                            <li data-en="Guided and mentored students in developing AI project ideas into proof-of-concepts" data-ko="학생들이 AI 프로젝트 아이디어를 개념 증명으로 발전시키도록 지도 및 멘토링">Guided and mentored students in developing AI project ideas into proof-of-concepts</li>
-                            <li data-en="Demonstrated strong organizational and analytical skills in managing tasks and projects" data-ko="업무 및 프로젝트 관리에서 강력한 조직력과 분석 능력을 입증">Demonstrated strong organizational and analytical skills in managing tasks and projects</li>
-                            <li data-en="Designed curriculum for AI education targeting youth audience" data-ko="청소년 대상 AI 교육 커리큘럼 설계">Designed curriculum for AI education targeting youth audience</li>
-                        </ul>
-                        <div class="experience-highlights">
-                            <span class="highlight-tag" data-en="AI Education" data-ko="AI 교육">AI Education</span>
-                            <span class="highlight-tag" data-en="Mentoring" data-ko="멘토링">Mentoring</span>
-                            <span class="highlight-tag" data-en="Project Management" data-ko="프로젝트 관리">Project Management</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">Apr 2018 - May 2018</div>
-                        <h3 data-en="Software Developer | Intern" data-ko="소프트웨어 개발자 | 인턴">Software Developer | Intern</h3>
-                        <h4 data-en="Huawei Technologies | Bengaluru, India" data-ko="화웨이 테크놀로지 | 방갈로르, 인도">Huawei Technologies | Bengaluru, India</h4>
-                        <ul class="experience-details">
-                            <li data-en="Developed a software tool for storing, modifying, searching, and converting data between JSON and CSV formats" data-ko="JSON과 CSV 형식 간 데이터 저장, 수정, 검색 및 변환을 위한 소프트웨어 도구 개발">Developed a software tool for storing, modifying, searching, and converting data between JSON and CSV formats</li>
-                            <li data-en="Utilized skills in JAVA, JSON syntax and format, CSV format, and user interface design" data-ko="JAVA, JSON 구문 및 형식, CSV 형식, 사용자 인터페이스 설계 기술 활용">Utilized skills in JAVA, JSON syntax and format, CSV format, and user interface design</li>
-                            <li data-en="Gained experience in enterprise software development practices" data-ko="엔터프라이즈 소프트웨어 개발 관행 경험 습득">Gained experience in enterprise software development practices</li>
-                        </ul>
-                        <div class="experience-highlights">
-                            <span class="highlight-tag">Java</span>
-                            <span class="highlight-tag">JSON/CSV</span>
-                            <span class="highlight-tag" data-en="UI Design" data-ko="UI 설계">UI Design</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technical Expertise -->
-    <section class="technical-expertise">
-        <div class="container">
-            <h2 class="section-title" data-en="Technical Expertise Evolution" data-ko="기술 전문성 발전">Technical Expertise Evolution</h2>
-            <div class="expertise-timeline">
-                <div class="expertise-stage" data-aos="fade-up">
-                    <div class="stage-year">2018-2020</div>
-                    <h3 data-en="Foundation Building" data-ko="기초 구축">Foundation Building</h3>
-                    <div class="tech-stack">
-                        <span class="tech-item">Java</span>
-                        <span class="tech-item">C++</span>
-                        <span class="tech-item" data-en="Data Structures" data-ko="데이터 구조">Data Structures</span>
-                        <span class="tech-item" data-en="Algorithms" data-ko="알고리즘">Algorithms</span>
-                        <span class="tech-item" data-en="Linear Algebra" data-ko="선형대수">Linear Algebra</span>
-                    </div>
-                </div>
-
-                <div class="expertise-stage" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stage-year">2021-2023</div>
-                    <h3 data-en="AI Specialization" data-ko="AI 전문화">AI Specialization</h3>
-                    <div class="tech-stack">
-                        <span class="tech-item">Python</span>
-                        <span class="tech-item">PyTorch</span>
-                        <span class="tech-item">TensorFlow</span>
-                        <span class="tech-item" data-en="Deep Learning" data-ko="딥러닝">Deep Learning</span>
-                        <span class="tech-item" data-en="Computer Vision" data-ko="컴퓨터 비전">Computer Vision</span>
-                        <span class="tech-item">NLP</span>
-                    </div>
-                </div>
-
-                <div class="expertise-stage current-stage" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stage-year">2023-Present</div>
-                    <h3 data-en="Advanced AI & Production" data-ko="고급 AI 및 프로덕션">Advanced AI & Production</h3>
-                    <div class="tech-stack">
-                        <span class="tech-item">LLMs/sLLMs</span>
-                        <span class="tech-item">VLMs</span>
-                        <span class="tech-item">FastAPI</span>
-                        <span class="tech-item">Docker</span>
-                        <span class="tech-item">ElectronJS</span>
-                        <span class="tech-item" data-en="Document AI" data-ko="문서 AI">Document AI</span>
-                        <span class="tech-item">RAG</span>
-                        <span class="tech-item">OCR</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Volunteer Experience -->
-    <section class="volunteer-experience">
-        <div class="container">
-            <h2 class="section-title" data-en="Volunteer & Leadership Experience" data-ko="자원봉사 및 리더십 경험">Volunteer & Leadership Experience</h2>
-            <div class="volunteer-grid">
-                <div class="volunteer-card" data-aos="fade-up">
-                    <div class="volunteer-header">
-                        <h3 data-en="AI Instructor" data-ko="AI 강사">AI Instructor</h3>
-                        <div class="volunteer-period">Aug 2021 - Feb 2023</div>
-                    </div>
-                    <h4 data-en="Kyungpook National University | Daegu, South Korea" data-ko="경북대학교 | 대구, 대한민국">Kyungpook National University | Daegu, South Korea</h4>
-                    <ul>
-                        <li data-en="Served as an AI Instructor for ABR Lab's foundational education program" data-ko="ABR 연구실의 기초 교육 프로그램에서 AI 강사로 활동">Served as an AI Instructor for ABR Lab's foundational education program</li>
-                        <li data-en="Delivered comprehensive instruction on Computer Vision and NLP topics" data-ko="컴퓨터 비전 및 NLP 주제에 대한 포괄적인 교육 제공">Delivered comprehensive instruction on Computer Vision and NLP topics</li>
-                        <li data-en="Mentored incoming students in AI fundamentals and research methodologies" data-ko="AI 기초 및 연구 방법론에서 신입생 멘토링">Mentored incoming students in AI fundamentals and research methodologies</li>
-                    </ul>
-                </div>
-
-                <div class="volunteer-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="volunteer-header">
-                        <h3 data-en="Research Mentor" data-ko="연구 멘토">Research Mentor</h3>
-                        <div class="volunteer-period">Jul 2021 - Feb 2023</div>
-                    </div>
-                    <h4 data-en="Kyungpook National University | Daegu, South Korea" data-ko="경북대학교 | 대구, 대한민국">Kyungpook National University | Daegu, South Korea</h4>
-                    <ul>
-                        <li data-en="Led discussions on emerging AI technologies at ABR Lab's journal club" data-ko="ABR 연구실 저널 클럽에서 신흥 AI 기술에 대한 토론을 주도">Led discussions on emerging AI technologies at ABR Lab's journal club</li>
-                        <li data-en="Presented recent scholarly publications and research findings" data-ko="최근 학술 논문 및 연구 결과를 발표">Presented recent scholarly publications and research findings</li>
-                        <li data-en="Demonstrated exceptional proficiency in both written and verbal communication" data-ko="서면 및 구두 의사소통에서 뛰어난 능력을 입증">Demonstrated exceptional proficiency in both written and verbal communication</li>
-                    </ul>
-                </div>
-
-                <div class="volunteer-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="volunteer-header">
-                        <h3 data-en="Honorary International Ambassador" data-ko="명예 국제 앰배서더">Honorary International Ambassador</h3>
-                        <div class="volunteer-period">Jun 2020</div>
-                    </div>
-                    <h4 data-en="Kyungpook National University | Daegu, South Korea" data-ko="경북대학교 | 대구, 대한민국">Kyungpook National University | Daegu, South Korea</h4>
-                    <ul>
-                        <li data-en="Officially appointed as an Honorary International Ambassador of KNU" data-ko="KNU의 명예 국제 앰배서더로 공식 임명">Officially appointed as an Honorary International Ambassador of KNU</li>
-                        <li data-en="Recognized for enthusiasm and achievements as an international student" data-ko="국제 학생으로서의 열정과 성취를 인정받음">Recognized for enthusiasm and achievements as an international student</li>
-                        <li data-en="Represented the university in various international student events" data-ko="다양한 국제 학생 행사에서 대학을 대표">Represented the university in various international student events</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chatbot -->
-    <div id="chatbot-container" class="chatbot-container">
-        <div id="chatbot-toggle" class="chatbot-toggle">
-            <span class="chatbot-icon">💬</span>
-        </div>
-        <div id="chatbot-window" class="chatbot-window">
-            <div class="chatbot-header">
-                <h4 data-en="Ask about Shreyanshu" data-ko="Shreyanshu에 대해 물어보세요">Ask about Shreyanshu</h4>
-                <button id="chatbot-close" class="chatbot-close">×</button>
-            </div>
-            <div id="chatbot-messages" class="chatbot-messages">
-                <div class="bot-message">
-                    <span data-en="Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?" data-ko="안녕하세요! Shreyanshu의 경험, 프로젝트 및 기술에 대한 질문에 답변드립니다. 무엇을 알고 싶으신가요?">Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?</span>
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="chatbot-message" placeholder="Type your question..." data-placeholder-en="Type your question..." data-placeholder-ko="질문을 입력하세요...">
-                <button id="chatbot-send">Send</button>
-            </div>
-        </div>
+<!-- Chatbot -->
+<div class="chatbot-fab">
+  <button class="chatbot-trigger" id="chatbot-trigger">💬</button>
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-head">
+      <h4>Ask about Shreyanshu</h4>
+      <button class="chatbot-close-btn" id="chatbot-close">✕</button>
     </div>
+    <div class="chatbot-body" id="chatbot-messages">
+      <div class="chat-msg bot">Hi! Ask me about Shreyanshu's experience, projects, skills, or research.</div>
+    </div>
+    <div class="chatbot-footer">
+      <input class="chatbot-input" id="chatbot-input" type="text" placeholder="Ask anything...">
+      <button class="chatbot-send" id="chatbot-send">Send</button>
+    </div>
+  </div>
+</div>
 
-    <script src="js/script.js"></script>
-    <style>
-        /* Experience Page Specific Styles */
-        .current-position {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .position-highlight {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: var(--accent-bg);
-            padding: 3rem;
-            border-radius: 20px;
-            border: 2px solid var(--text-highlight);
-            position: relative;
-        }
-
-        .position-badge {
-            display: inline-block;
-            background: var(--text-highlight);
-            color: var(--primary-bg);
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 0.875rem;
-            margin-bottom: 1rem;
-        }
-
-        .position-highlight h2 {
-            font-size: 2.5rem;
-            color: var(--text-highlight);
-            margin-bottom: 0.5rem;
-        }
-
-        .position-highlight h3 {
-            font-size: 1.25rem;
-            color: var(--accent-blue);
-            margin-bottom: 0.5rem;
-        }
-
-        .date-range {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-        }
-
-        .position-summary {
-            margin-bottom: 3rem;
-        }
-
-        .position-summary p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--text-primary);
-        }
-
-        .key-responsibilities h4,
-        .achievements h4 {
-            color: var(--text-highlight);
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .responsibilities-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .responsibility-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            padding: 1.5rem;
-            background: var(--secondary-bg);
-            border-radius: 15px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .responsibility-item:hover {
-            border-color: var(--text-highlight);
-            transform: translateY(-3px);
-        }
-
-        .resp-icon {
-            font-size: 2rem;
-            flex-shrink: 0;
-        }
-
-        .resp-content h5 {
-            color: var(--text-highlight);
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .resp-content p {
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        .achievement-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .achievement-list li {
-            padding: 1rem;
-            margin-bottom: 0.5rem;
-            background: var(--secondary-bg);
-            border-radius: 10px;
-            border-left: 4px solid var(--text-highlight);
-        }
-
-        .work-timeline {
-            padding: var(--section-padding);
-        }
-
-        .timeline {
-            position: relative;
-            margin-left: 2rem;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: var(--border-color);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 3rem;
-            padding-left: 4rem;
-        }
-
-        .timeline-item.current .timeline-content {
-            background: linear-gradient(135deg, var(--secondary-bg), var(--accent-bg));
-            border-color: var(--text-highlight);
-        }
-
-        .timeline-marker {
-            position: absolute;
-            left: -2rem;
-            top: 0;
-            width: 40px;
-            height: 40px;
-            background: var(--border-color);
-            border-radius: 50%;
-            border: 4px solid var(--primary-bg);
-        }
-
-        .current-marker {
-            background: var(--text-highlight);
-            animation: pulse 2s infinite;
-        }
-
-        .timeline-content {
-            background: var(--secondary-bg);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid var(--border-color);
-        }
-
-        .timeline-period {
-            color: var(--accent-blue);
-            font-weight: 600;
-            font-size: 0.875rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-content h3 {
-            color: var(--text-highlight);
-            margin-bottom: 0.5rem;
-            font-size: 1.5rem;
-        }
-
-        .timeline-content h4 {
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
-        .experience-details {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 1rem;
-        }
-
-        .experience-details li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .experience-details li:before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: var(--text-highlight);
-        }
-
-        .experience-highlights {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .highlight-tag {
-            background: var(--border-color);
-            color: var(--text-primary);
-            padding: 0.25rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.875rem;
-            font-family: var(--font-mono);
-        }
-
-        .technical-expertise {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .expertise-timeline {
-            display: flex;
-            justify-content: space-between;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .expertise-stage {
-            flex: 1;
-            text-align: center;
-            padding: 2rem;
-            background: var(--accent-bg);
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .expertise-stage:hover {
-            transform: translateY(-5px);
-            border-color: var(--text-highlight);
-        }
-
-        .current-stage {
-            border-color: var(--text-highlight);
-            background: linear-gradient(135deg, var(--accent-bg), var(--secondary-bg));
-        }
-
-        .stage-year {
-            color: var(--accent-blue);
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .expertise-stage h3 {
-            color: var(--text-highlight);
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-        }
-
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            justify-content: center;
-        }
-
-        .tech-item {
-            background: var(--border-color);
-            color: var(--text-primary);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-family: var(--font-mono);
-        }
-
-        .volunteer-experience {
-            padding: var(--section-padding);
-        }
-
-        .volunteer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-
-        .volunteer-card {
-            background: var(--secondary-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .volunteer-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--text-highlight);
-        }
-
-        .volunteer-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .volunteer-header h3 {
-            color: var(--text-highlight);
-            font-size: 1.3rem;
-        }
-
-        .volunteer-period {
-            color: var(--accent-blue);
-            font-weight: 600;
-            font-size: 0.875rem;
-        }
-
-        .volunteer-card h4 {
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
-        .volunteer-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .volunteer-card li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .volunteer-card li:before {
-            content: '●';
-            position: absolute;
-            left: 0;
-            color: var(--text-highlight);
-        }
-
-        @media (max-width: 768px) {
-            .responsibilities-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .timeline {
-                margin-left: 0;
-            }
-            
-            .timeline-item {
-                padding-left: 2rem;
-            }
-            
-            .timeline-marker {
-                left: -1rem;
-            }
-            
-            .expertise-timeline {
-                flex-direction: column;
-            }
-            
-            .position-highlight {
-                padding: 2rem;
-            }
-            
-            .position-highlight h2 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/chatbot.js"></script>
 </body>
 </html>

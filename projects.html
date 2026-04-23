@@ -1,1208 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Shreyanshu Bhushan</title>
-    <meta name="description" content="Explore Shreyanshu Bhushan's AI projects including LayGen, AskMe, VLMFusion OCR, and other innovative solutions">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Shreyanshu Bhushan</title>
+  <meta name="description" content="AI projects by Shreyanshu Bhushan — Document AI, LLMs, RAG systems, OCR, and more.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <!-- Language Toggle -->
-    <div class="language-toggle">
-        <button id="lang-en" class="lang-btn active">EN</button>
-        <button id="lang-ko" class="lang-btn">한국어</button>
+<div id="scroll-progress"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>Shreyanshu</span> Bhushan</a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link">Home</a></li>
+      <li><a href="about.html"      class="nav-link">About</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li>
+      <li><a href="projects.html"   class="nav-link">Projects</a></li>
+      <li><a href="research.html"   class="nav-link">Research</a></li>
+      <li><a href="contact.html"    class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ko">KO</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">☀</span></button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-menu" id="mobile-nav">
+  <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+  <a href="experience.html" class="nav-link">Experience</a><a href="projects.html" class="nav-link">Projects</a>
+  <a href="research.html" class="nav-link">Research</a><a href="contact.html" class="nav-link">Contact</a>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="page-hero-label">Portfolio</p>
+    <h1 class="page-hero-title" data-en="Projects" data-ko="프로젝트">Projects</h1>
+    <p class="page-hero-subtitle" data-en="Production AI systems, open-source tools, and research implementations." data-ko="프로덕션 AI 시스템, 오픈소스 도구 및 연구 구현체.">
+      Production AI systems, open-source tools, and research implementations.
+    </p>
+  </div>
+</div>
+
+<section style="padding: 5rem 0;">
+  <div class="container">
+
+    <!-- LayGen -->
+    <div id="laygen" class="card reveal" style="margin-bottom:2rem; border-color:rgba(232,184,75,0.25); position:relative; overflow:hidden;">
+      <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--gradient-gold);"></div>
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
+            <h2 style="font-size:1.4rem;">LayGen</h2>
+            <span class="badge badge-gold">Award Winner</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2025–Present</p>
+        </div>
+        <div style="display:flex; gap:0.75rem; flex-shrink:0; flex-wrap:wrap;">
+          <a href="https://ondevice.neoali.com/laygen" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Product ↗</a>
+        </div>
+      </div>
+      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="LayGen is a multi-platform AI document translation ecosystem that preserves original document formatting across DOCX, HWPX, PDF, PPTX, and XLSX. The system integrates on-device LLM inference (via Ollama) for enterprise-grade offline security, eliminating the need to send sensitive documents to cloud servers. A desktop application (ElectronJS) and server-side API (FastAPI + Python) provide a seamless end-to-end user experience. Won 1st Place at Intel AI PC Innovation Challenge 2024." data-ko="LayGen은 DOCX, HWPX, PDF, PPTX, XLSX 형식의 원본 문서 서식을 보존하는 다중 플랫폼 AI 문서 번역 생태계입니다. 기업급 오프라인 보안을 위한 온디바이스 LLM 추론(Ollama)을 통합하여 민감한 문서를 클라우드 서버로 전송할 필요가 없습니다. 2024 인텔 AI PC 혁신 챌린지 1위 수상.">
+        LayGen is a multi-platform AI document translation ecosystem that preserves original document formatting across DOCX, HWPX, PDF, PPTX, and XLSX. The system integrates on-device LLM inference (via Ollama) for enterprise-grade offline security, eliminating the need to send sensitive documents to cloud servers. A desktop application (ElectronJS) and server-side API (FastAPI + Python) provide a seamless end-to-end user experience. Won 1st Place at Intel AI PC Innovation Challenge 2024.
+      </p>
+      <div class="skill-cloud">
+        <span class="tag">Python</span><span class="tag">ElectronJS</span><span class="tag">FastAPI</span>
+        <span class="tag">Ollama</span><span class="tag">On-Device LLM</span><span class="tag">PyTorch</span>
+        <span class="tag">Pandoc</span><span class="tag">Layout Detection</span><span class="tag">HWPX</span>
+      </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-highlight">Shreyanshu</span> Bhushan
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link" data-en="Home" data-ko="홈">Home</a></li>
-                <li><a href="about.html" class="nav-link" data-en="About" data-ko="소개">About</a></li>
-                <li><a href="experience.html" class="nav-link" data-en="Experience" data-ko="경력">Experience</a></li>
-                <li><a href="projects.html" class="nav-link active" data-en="Projects" data-ko="프로젝트">Projects</a></li>
-                <li><a href="research.html" class="nav-link" data-en="Research" data-ko="연구">Research</a></li>
-                <li><a href="contact.html" class="nav-link" data-en="Contact" data-ko="연락처">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- HanForge -->
+    <div id="hanforge" class="card reveal" style="margin-bottom:2rem;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
+            <h2 style="font-size:1.4rem;">HanForge</h2>
+            <span class="badge badge-green">Open Source</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2026 · github.com/shreyanshu09/HanForge</p>
         </div>
+        <a href="https://github.com/shreyanshu09/HanForge" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">GitHub ↗</a>
+      </div>
+      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="Lightweight HTML to HWPX (Hangul Word Processor XML) conversion engine written in pure JavaScript with no native binaries. Supports headings, paragraphs, bold/italic/underline, tables with colspan/rowspan, nested lists, hyperlinks, images (auto-sizing), inline styles, and code blocks. Available as a standalone script, CLI command, or Node.js library. Designed to support document pipelines that target Korean government and enterprise workflows." data-ko="네이티브 바이너리 없이 순수 JavaScript로 작성된 경량 HTML to HWPX 변환 엔진. 제목, 단락, 굵게/기울임꼴/밑줄, colspan/rowspan 테이블, 중첩 목록, 하이퍼링크, 이미지, 인라인 스타일, 코드 블록을 지원합니다. 독립형 스크립트, CLI 명령 또는 Node.js 라이브러리로 사용 가능합니다.">
+        Lightweight HTML to HWPX (Hangul Word Processor XML) conversion engine written in pure JavaScript with no native binaries. Supports headings, paragraphs, bold/italic/underline, tables with colspan/rowspan, nested lists, hyperlinks, images (auto-sizing), inline styles, and code blocks. Available as a standalone script, CLI command, or Node.js library.
+      </p>
+      <div class="skill-cloud">
+        <span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">HWPX / ZIP</span>
+        <span class="tag">htmlparser2</span><span class="tag">XML DOM</span><span class="tag">CLI</span>
+      </div>
+    </div>
+
+    <!-- FormGen -->
+    <div id="formgen" class="card reveal" style="margin-bottom:2rem;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
+            <h2 style="font-size:1.4rem;">FormGen</h2>
+            <span class="badge badge-cyan">Document AI</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · Ongoing</p>
+        </div>
+      </div>
+      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="AI-powered form field extraction and auto-fill system for HTML, DOCX, and HWPX documents. Detects form fields using LLM-based document analysis, supports sample data generation, and provides a RAG-powered 'Fill from Documents' feature that retrieves relevant values from uploaded reference documents via semantic search and re-ranking. Features parallel LLM processing with order-preserving concurrency, a React frontend, and an Express.js backend." data-ko="HTML, DOCX, HWPX 문서용 AI 기반 양식 필드 추출 및 자동 채우기 시스템. LLM 기반 문서 분석을 사용하여 양식 필드를 감지하고, 샘플 데이터 생성을 지원하며, 의미론적 검색 및 재순위화를 통해 업로드된 참조 문서에서 관련 값을 검색하는 RAG 기반 '문서에서 채우기' 기능을 제공합니다.">
+        AI-powered form field extraction and auto-fill system for HTML, DOCX, and HWPX documents. Detects form fields using LLM-based document analysis, supports sample data generation, and provides a RAG-powered "Fill from Documents" feature that retrieves relevant values from uploaded reference documents via semantic search and re-ranking. Features parallel LLM processing with order-preserving concurrency, a React frontend, and an Express.js backend.
+      </p>
+      <div class="skill-cloud">
+        <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">React</span>
+        <span class="tag">OpenAI API</span><span class="tag">Qdrant</span><span class="tag">RAG</span>
+        <span class="tag">Semantic Search</span><span class="tag">HWPX</span><span class="tag">DOCX XML</span>
+      </div>
+    </div>
+
+    <!-- AskMe -->
+    <div id="askme" class="card reveal" style="margin-bottom:2rem;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
+            <h2 style="font-size:1.4rem;">AskMe</h2>
+            <span class="badge badge-blue">RAG System</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2023</p>
+        </div>
+      </div>
+      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="Intelligent document Q&A platform leveraging RAG architecture for complex multi-document analysis. Integrates ALIParse for advanced document structure parsing, semantic vector retrieval, and LLM synthesis to provide accurate, context-aware answers. Designed for enterprise deployment with support for DOCX, PDF, and HWPX input formats." data-ko="복잡한 다중 문서 분석을 위한 RAG 아키텍처를 활용한 지능형 문서 Q&A 플랫폼. 고급 문서 구조 파싱을 위한 ALIParse, 의미론적 벡터 검색, LLM 합성을 통합하여 정확하고 상황에 맞는 답변을 제공합니다.">
+        Intelligent document Q&A platform leveraging RAG architecture for complex multi-document analysis. Integrates ALIParse for advanced document structure parsing, semantic vector retrieval, and LLM synthesis to provide accurate, context-aware answers. Designed for enterprise deployment with support for DOCX, PDF, and HWPX input formats.
+      </p>
+      <div class="skill-cloud">
+        <span class="tag">Python</span><span class="tag">RAG</span><span class="tag">ALIParse</span>
+        <span class="tag">LLMs</span><span class="tag">Vector DB</span><span class="tag">FastAPI</span>
+      </div>
+    </div>
+
+    <!-- VLMFusion OCR -->
+    <div id="vlmfusion" class="card reveal" style="margin-bottom:2rem;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
+            <h2 style="font-size:1.4rem;">VLMFusion OCR</h2>
+            <span class="badge badge-blue">Research</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2024</p>
+        </div>
+      </div>
+      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="Multi-engine OCR fusion system combining EasyOCR, PaddleOCR, and Tesseract, with a Vision-Language Model post-correction layer for superior accuracy on degraded, complex, or low-resolution document images. Implements confidence-based engine selection and VLM-driven error correction to significantly reduce character error rates." data-ko="VLM 후처리 교정 레이어를 통해 열화되고 복잡하거나 저해상도 문서 이미지에서 탁월한 정확도를 제공하는 EasyOCR, PaddleOCR, Tesseract를 결합한 다중 엔진 OCR 융합 시스템.">
+        Multi-engine OCR fusion system combining EasyOCR, PaddleOCR, and Tesseract, with a Vision-Language Model post-correction layer for superior accuracy on degraded, complex, or low-resolution document images. Implements confidence-based engine selection and VLM-driven error correction to significantly reduce character error rates.
+      </p>
+      <div class="skill-cloud">
+        <span class="tag">Python</span><span class="tag">EasyOCR</span><span class="tag">PaddleOCR</span>
+        <span class="tag">Tesseract</span><span class="tag">VLMs</span><span class="tag">OpenCV</span>
+        <span class="tag">Qwen-VL</span>
+      </div>
+    </div>
+
+    <!-- SlideGen -->
+    <div id="slidegen" class="card reveal" style="margin-bottom:2rem;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
+            <h2 style="font-size:1.4rem;">SlideGen</h2>
+            <span class="badge badge-cyan">Generative AI</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2025</p>
+        </div>
+      </div>
+      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="AI-powered presentation generator that creates structured slide decks from a text prompt or uploaded PDF context. Supports multiple LLM providers including OpenRouter, Together AI, Cohere, Google Gemini, Hugging Face, and Azure OpenAI. Features dynamic Unsplash background integration and adjustable slide count (3–30)." data-ko="텍스트 프롬프트 또는 업로드된 PDF 컨텍스트에서 구조화된 슬라이드 덱을 생성하는 AI 기반 프레젠테이션 생성기. OpenRouter, Together AI, Cohere, Google Gemini, Hugging Face, Azure OpenAI를 포함한 여러 LLM 제공업체 지원.">
+        AI-powered presentation generator that creates structured slide decks from a text prompt or uploaded PDF context. Supports multiple LLM providers including OpenRouter, Together AI, Cohere, Google Gemini, Hugging Face, and Azure OpenAI. Features dynamic Unsplash background integration and adjustable slide count (3–30).
+      </p>
+      <div class="skill-cloud">
+        <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Multi-LLM</span>
+        <span class="tag">OpenRouter</span><span class="tag">Google Gemini</span><span class="tag">PPTX</span>
+        <span class="tag">PDF Parsing</span>
+      </div>
+    </div>
+
+    <!-- Medical Disease Extractor -->
+    <div id="medical" class="card reveal" style="margin-bottom:2rem;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
+            <h2 style="font-size:1.4rem;">Medical Document Disease Extractor</h2>
+            <span class="badge badge-blue">Medical NLP</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">NEOALI Co. Ltd. · 2025</p>
+        </div>
+      </div>
+      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="RAG-based medical NLP system for extracting disease information from clinical documents and research literature. Supports three analysis modes: Single Pass, Double Pass, and RAG. Uses Qdrant vector store with HNSW indexing, Qwen VLM for visual document understanding, and WebSocket-based real-time progress updates." data-ko="임상 문서 및 연구 문헌에서 질병 정보를 추출하는 RAG 기반 의료 NLP 시스템. 단일 패스, 이중 패스, RAG 세 가지 분석 모드를 지원합니다. Qdrant 벡터 스토어, HNSW 인덱싱, Qwen VLM을 사용합니다.">
+        RAG-based medical NLP system for extracting disease information from clinical documents and research literature. Supports three analysis modes: Single Pass, Double Pass, and RAG. Uses Qdrant vector store with HNSW indexing, Qwen VLM for visual document understanding, and WebSocket-based real-time progress updates.
+      </p>
+      <div class="skill-cloud">
+        <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">RAG</span>
+        <span class="tag">Qdrant</span><span class="tag">Qwen-VL</span><span class="tag">Docker</span>
+        <span class="tag">WebSockets</span><span class="tag">OpenRouter</span>
+      </div>
+    </div>
+
+    <!-- Chart2Excel -->
+    <div id="chart2excel" class="card reveal" style="margin-bottom:2rem;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
+            <h2 style="font-size:1.4rem;">Chart2Excel + Chart QA</h2>
+            <span class="badge badge-gold">Award Winner</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.82rem; font-family:'JetBrains Mono',monospace;">ABR Lab, KNU · 2023</p>
+        </div>
+      </div>
+      <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:1.25rem;" data-en="Chart data extraction and question-answering system that converts chart images into structured Excel data and supports natural language queries over chart content. Secured 2nd Place at AI Grand Challenge 2023 (Document QA track)." data-ko="차트 이미지를 구조화된 Excel 데이터로 변환하고 차트 내용에 대한 자연어 쿼리를 지원하는 차트 데이터 추출 및 질의응답 시스템. AI 그랜드 챌린지 2023(문서 QA 트랙)에서 2위 수상.">
+        Chart data extraction and question-answering system that converts chart images into structured Excel data and supports natural language queries over chart content. Secured 2nd Place at AI Grand Challenge 2023 (Document QA track).
+      </p>
+      <div class="skill-cloud">
+        <span class="tag">Python</span><span class="tag">Computer Vision</span><span class="tag">Chart Understanding</span>
+        <span class="tag">NLP</span><span class="tag">Excel</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-text">© 2026 Shreyanshu Bhushan</p>
+    <nav class="footer-links">
+      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
     </nav>
+  </div>
+</footer>
 
-    <!-- Projects Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <h1 class="page-title" data-en="AI Projects" data-ko="AI 프로젝트">AI Projects</h1>
-            <p class="page-subtitle" data-en="Innovative AI solutions bridging research and real-world applications" data-ko="연구와 실제 응용을 연결하는 혁신적인 AI 솔루션">Innovative AI solutions bridging research and real-world applications</p>
-            <div class="project-stats">
-                <div class="stat-item">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label" data-en="Projects Completed" data-ko="완료된 프로젝트">Projects Completed</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label" data-en="Award Winners" data-ko="수상 프로젝트">Award Winners</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label" data-en="Production Ready" data-ko="프로덕션 준비">Production Ready</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Flagship Project - LayGen -->
-    <section id="laygen" class="flagship-project">
-        <div class="container">
-            <div class="flagship-header" data-aos="fade-up">
-                <div class="flagship-badge">
-                    <span class="award-icon">🏆</span>
-                    <span data-en="Flagship Project - Award Winner" data-ko="대표 프로젝트 - 수상작">Flagship Project - Award Winner</span>
-                </div>
-                <h2>LayGen</h2>
-                <p class="flagship-subtitle" data-en="Multi-platform AI Document Translation Ecosystem" data-ko="다중 플랫폼 AI 문서 번역 생태계">Multi-platform AI Document Translation Ecosystem</p>
-                <div class="project-links">
-                    <a href="https://ondevice.neoali.com/laygen" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                        <span>🌐</span>
-                        <span data-en="Visit Website" data-ko="웹사이트 방문">Visit Website</span>
-                    </a>
-                </div>           
-            </div>
-
-            <div class="flagship-content">
-                <div class="flagship-overview" data-aos="fade-up" data-aos-delay="100">
-                    <div class="overview-text">
-                        <h3 data-en="Project Overview" data-ko="프로젝트 개요">Project Overview</h3>
-                        <p data-en="LayGen is a comprehensive end-to-end AI document translation and processing ecosystem designed with format preservation, security, and scalability at its core. The system addresses critical challenges in enterprise document translation by providing offline capabilities, maintaining document integrity, and ensuring privacy-by-design implementation." data-ko="LayGen은 형식 보존, 보안 및 확장성을 핵심으로 설계된 포괄적인 엔드투엔드 AI 문서 번역 및 처리 생태계입니다. 이 시스템은 오프라인 기능 제공, 문서 무결성 유지, 프라이버시 바이 디자인 구현을 통해 기업 문서 번역의 중요한 과제를 해결합니다.">
-                            LayGen is a comprehensive end-to-end AI document translation and processing ecosystem designed with format preservation, security, and scalability at its core. The system addresses critical challenges in enterprise document translation by providing offline capabilities, maintaining document integrity, and ensuring privacy-by-design implementation.
-                        </p>
-                        
-                        <div class="achievement-highlight">
-                            <h4 data-en="🥇 Intel AI PC Innovation Challenge 2024 - 1st Place Winner" data-ko="🥇 인텔 AI PC 혁신 챌린지 2024 - 1위 수상">🥇 Intel AI PC Innovation Challenge 2024 - 1st Place Winner</h4>
-                        </div> 
-                    </div>
-                    <div class="project-visual">
-                        <div class="project-demo">
-                            <div class="demo-screen">
-                                <div class="demo-header">
-                                    <span class="demo-title">LayGen Dashboard</span>
-                                </div>
-                                <div class="demo-content">
-                                    <div class="demo-item">📄 Document Processing</div>
-                                    <div class="demo-item">🌐 Multi-language Support</div>
-                                    <div class="demo-item">🎨 Format Preservation</div>
-                                    <div class="demo-item">🔒 Offline Security</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="layger-subprojects">
-                    <h3 data-en="LayGen Ecosystem Components" data-ko="LayGen 생태계 구성 요소">LayGen Ecosystem Components</h3>
-                    
-                    <div class="subproject-grid">
-                        <div class="subproject-card" data-aos="fade-up">
-                            <div class="subproject-header">
-                                <h4 data-en="LayGen Windows Desktop Application" data-ko="LayGen 윈도우 데스크톱 애플리케이션">LayGen Windows Desktop Application</h4>
-                                <div class="contribution-badge" data-en="100% Core Development" data-ko="100% 핵심 개발">100% Core Development</div>
-                            </div>
-                            <div class="problem-solution">
-                                <div class="problem">
-                                    <h5 data-en="Problem" data-ko="문제점">Problem</h5>
-                                    <p data-en="Existing translation tools fail to preserve formatting, require internet access, and cannot guarantee enterprise security." data-ko="기존 번역 도구는 형식 보존에 실패하고, 인터넷 액세스가 필요하며, 기업 보안을 보장할 수 없습니다.">Existing translation tools fail to preserve formatting, require internet access, and cannot guarantee enterprise security.</p>
-                                </div>
-                                <div class="solution">
-                                    <h5 data-en="Solution" data-ko="해결책">Solution</h5>
-                                    <p data-en="Architected Python-based backend with advanced document parsing, integrating offline LLM and cloud GPT with Electron-based frontend for batch processing." data-ko="고급 문서 파싱이 포함된 Python 기반 백엔드를 설계하고, 오프라인 LLM과 클라우드 GPT를 통합하여 배치 처리를 위한 Electron 기반 프론트엔드를 구축했습니다.">Architected Python-based backend with advanced document parsing, integrating offline LLM and cloud GPT with Electron-based frontend for batch processing.</p>
-                                </div>
-                            </div>
-                            <div class="tech-impact">
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">ElectronJS</span>
-                                    <span class="tech-tag">PyTorch</span>
-                                    <span class="tech-tag">OpenAI GPT</span>
-                                    <span class="tech-tag">sLLM</span>
-                                </div>
-                                <div class="impact-metrics">
-                                    <div class="metric">
-                                        <span class="metric-value">95%+</span>
-                                        <span class="metric-label" data-en="Format Retention" data-ko="형식 보존">Format Retention</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">50%</span>
-                                        <span class="metric-label" data-en="Lower Memory" data-ko="메모리 절약">Lower Memory</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">100%</span>
-                                        <span class="metric-label" data-en="Offline Security" data-ko="오프라인 보안">Offline Security</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="subproject-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="subproject-header">
-                                <h4 data-en="LayGen-Ubuntu Distributed System" data-ko="LayGen-Ubuntu 분산 시스템">LayGen-Ubuntu Distributed System</h4>
-                                <div class="contribution-badge" data-en="100% Development" data-ko="100% 개발">100% Development</div>
-                            </div>
-                            <div class="problem-solution">
-                                <div class="problem">
-                                    <h5 data-en="Problem" data-ko="문제점">Problem</h5>
-                                    <p data-en="High-volume translation required for large teams with limited client resources and scalability challenges." data-ko="제한된 클라이언트 리소스와 확장성 문제로 대규모 팀을 위한 대용량 번역이 필요했습니다.">High-volume translation required for large teams with limited client resources and scalability challenges.</p>
-                                </div>
-                                <div class="solution">
-                                    <h5 data-en="Solution" data-ko="해결책">Solution</h5>
-                                    <p data-en="Developed multi-client, multi-GPU server with Python FastAPI for centralized, high-throughput encrypted processing and load balancing." data-ko="중앙 집중식 고처리량 암호화 처리 및 로드 밸런싱을 위해 Python FastAPI를 사용한 다중 클라이언트, 다중 GPU 서버를 개발했습니다.">Developed multi-client, multi-GPU server with Python FastAPI for centralized, high-throughput encrypted processing and load balancing.</p>
-                                </div>
-                            </div>
-                            <div class="tech-impact">
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">FastAPI</span>
-                                    <span class="tech-tag">Docker</span>
-                                    <span class="tech-tag">NVIDIA GPUs</span>
-                                </div>
-                                <div class="impact-metrics">
-                                    <div class="metric">
-                                        <span class="metric-value">3x</span>
-                                        <span class="metric-label" data-en="Processing Speed" data-ko="처리 속도">Processing Speed</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">90%</span>
-                                        <span class="metric-label" data-en="Resource Reduction" data-ko="리소스 절약">Resource Reduction</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">99.8%</span>
-                                        <span class="metric-label" data-en="Uptime" data-ko="가동시간">Uptime</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="subproject-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="subproject-header">
-                                <h4 data-en="LayGen Enterprise APIs" data-ko="LayGen 엔터프라이즈 API">LayGen Enterprise APIs</h4>
-                                <div class="contribution-badge" data-en="100% Development" data-ko="100% 개발">100% Development</div>
-                            </div>
-                            <div class="problem-solution">
-                                <div class="problem">
-                                    <h5 data-en="Problem" data-ko="문제점">Problem</h5>
-                                    <p data-en="Businesses required scalable, secure, and automatable translation and extraction solutions with enterprise compliance." data-ko="기업은 엔터프라이즈 규정 준수와 함께 확장 가능하고 안전하며 자동화 가능한 번역 및 추출 솔루션이 필요했습니다.">Businesses required scalable, secure, and automatable translation and extraction solutions with enterprise compliance.</p>
-                                </div>
-                                <div class="solution">
-                                    <h5 data-en="Solution" data-ko="해결책">Solution</h5>
-                                    <p data-en="Designed modular REST APIs with AES-256 secure storage, GDPR compliance, and developer-ready endpoints for workflow automation." data-ko="AES-256 보안 저장소, GDPR 준수 및 워크플로 자동화를 위한 개발자 준비 엔드포인트가 포함된 모듈식 REST API를 설계했습니다.">Designed modular REST APIs with AES-256 secure storage, GDPR compliance, and developer-ready endpoints for workflow automation.</p>
-                                </div>
-                            </div>
-                            <div class="tech-impact">
-                                <div class="tech-stack">
-                                    <span class="tech-tag">FastAPI</span>
-                                    <span class="tech-tag">AES-256</span>
-                                    <span class="tech-tag">JWT</span>
-                                    <span class="tech-tag">GDPR</span>
-                                </div>
-                                <div class="impact-metrics">
-                                    <div class="metric">
-                                        <span class="metric-value">5,000+</span>
-                                        <span class="metric-label" data-en="Docs/Day" data-ko="일일 문서">Docs/Day</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">99.9%</span>
-                                        <span class="metric-label" data-en="Reliability" data-ko="신뢰성">Reliability</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">35%</span>
-                                        <span class="metric-label" data-en="Cost Reduction" data-ko="비용 절감">Cost Reduction</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Major Projects -->
-    <section class="major-projects">
-        <div class="container">
-            <h2 class="section-title" data-en="Major AI Projects" data-ko="주요 AI 프로젝트">Major AI Projects</h2>
-            
-            <div class="projects-grid">
-                <div id="askme" class="project-card featured" data-aos="fade-up">
-                    <div class="project-header">
-                        <h3>AskMe</h3>
-                        <div class="project-badges">
-                            <span class="project-badge contrib" data-en="Document AI" data-ko="Document AI">Document AI</span>
-                            <span class="project-badge team" data-en="Team Project" data-ko="팀 프로젝트">Team Project</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-en="Intelligent Document QA & Retrieval system using RAG architecture for analyzing complex documents like contracts, insurance policies, and financial statements." data-ko="계약서, 보험 정책, 재무제표와 같은 복잡한 문서를 분석하기 위한 RAG 아키텍처를 사용한 지능형 문서 QA 및 검색 시스템입니다.">
-                        Intelligent Document QA & Retrieval system using RAG architecture for analyzing complex documents like contracts, insurance policies, and financial statements.
-                    </p>
-                    
-                    <div class="project-details">
-                        <div class="detail-section">
-                            <h4 data-en="Technical Implementation" data-ko="기술 구현">Technical Implementation</h4>
-                            <ul>
-                                <li data-en="Developed ALIParse - core multi-format document parser" data-ko="ALIParse 개발 - 핵심 다중 형식 문서 파서">Developed ALIParse - core multi-format document parser</li>
-                                <li data-en="Integrated RAG architecture combining retrievers and LLMs" data-ko="검색기와 LLM을 결합한 RAG 아키텍처 통합">Integrated RAG architecture combining retrievers and LLMs (50% contribution)</li>
-                                <li data-en="Implemented intelligent chunking with semantic layout retention" data-ko="의미론적 레이아웃 보존과 함께 지능형 청킹 구현">Implemented intelligent chunking with semantic layout retention</li>
-                            </ul>
-                        </div>
-                        <div class="detail-section">
-                            <h4 data-en="Impact & Results" data-ko="영향 및 결과">Impact & Results</h4>
-                            <div class="impact-grid">
-                                <div class="impact-item">
-                                    <span class="impact-number">83%</span>
-                                    <span class="impact-text" data-en="Query Accuracy" data-ko="쿼리 정확도">Query Accuracy</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">5x</span>
-                                    <span class="impact-text" data-en="Faster Analysis" data-ko="빠른 분석">Faster Analysis</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">40%</span>
-                                    <span class="impact-text" data-en="Cost Savings" data-ko="비용 절약">Cost Savings</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">LLMs</span>
-                        <span class="tech-tag">ALIParse</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">FastAPI</span>
-                    </div>
-                </div>
-
-                <div id="vlmfusion" class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-header">
-                        <h3>VLMFusion OCR</h3>
-                        <div class="project-badges">
-                            <span class="project-badge research" data-en="Research Project" data-ko="연구 프로젝트">Research Project</span>
-                            <span class="project-badge contrib" data-en="100% Development" data-ko="100% 개발">100% Development</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-en="Vision-Language Model enhanced OCR engine that combines multiple OCR systems with VLMs for superior accuracy and multilingual support across 20+ scripts." data-ko="20개 이상의 스크립트에서 뛰어난 정확도와 다국어 지원을 위해 여러 OCR 시스템과 VLM을 결합한 비전-언어 모델 향상 OCR 엔진입니다.">
-                        Vision-Language Model enhanced OCR engine that combines multiple OCR systems with VLMs for superior accuracy and multilingual support across 20+ scripts.
-                    </p>
-                    
-                    <div class="project-details">
-                        <div class="detail-section">
-                            <h4 data-en="Innovation" data-ko="혁신">Innovation</h4>
-                            <ul>
-                                <li data-en="Multi-engine fusion using EasyOCR, PaddleOCR, and Vision-Language Models" data-ko="EasyOCR, PaddleOCR 및 비전-언어 모델을 사용한 다중 엔진 융합">Multi-engine fusion using EasyOCR, PaddleOCR, and Vision-Language Models</li>
-                                <li data-en="Post-hoc sequence correction and multilingual support (20+ scripts)" data-ko="사후 시퀀스 수정 및 다국어 지원 (20개 이상 스크립트)">Post-hoc sequence correction and multilingual support (20+ scripts)</li>
-                                <li data-en="Robust performance on government forms and noisy real-world imagery" data-ko="정부 양식 및 노이즈가 있는 실제 이미지에서 강력한 성능">Robust performance on government forms and noisy real-world imagery</li>
-                            </ul>
-                        </div>
-                        <div class="detail-section">
-                            <h4 data-en="Achievement" data-ko="성과">Achievement</h4>
-                            <div class="impact-grid">
-                                <div class="impact-item">
-                                    <span class="impact-number">10%</span>
-                                    <span class="impact-text" data-en="Accuracy Boost" data-ko="정확도 향상">Accuracy Boost</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">20+</span>
-                                    <span class="impact-text" data-en="Supported Scripts" data-ko="지원 스크립트">Supported Scripts</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">VLMs</span>
-                        <span class="tech-tag">EasyOCR</span>
-                        <span class="tech-tag">PaddleOCR</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenCV</span>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-header">
-                        <h3>Report Gen</h3>
-                        <div class="project-badges">
-                            <span class="project-badge productivity" data-en="Productivity Tool" data-ko="생산성 도구">Productivity Tool</span>
-                            <span class="project-badge contrib" data-en="100% Development" data-ko="100% 개발">100% Development</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-en="AI-powered report generation system that converts diverse document formats into structured, professional reports with multi-language support and customizable templates." data-ko="다양한 문서 형식을 구조화된 전문 보고서로 변환하는 다국어 지원 및 사용자 정의 템플릿이 있는 AI 기반 보고서 생성 시스템입니다.">
-                        AI-powered report generation system that converts diverse document formats into structured, professional reports with multi-language support and customizable templates.
-                    </p>
-                    
-                    <div class="project-details">
-                        <div class="detail-section">
-                            <h4 data-en="Technical Implementation" data-ko="기술 구현">Technical Implementation</h4>
-                            <ul>
-                                <li data-en="Built FastAPI-based application for multi-format document ingestion (PDF, DOCX, Markdown, TXT, HTML)" data-ko="다형식 문서 수집을 위한 FastAPI 기반 애플리케이션 구축 (PDF, DOCX, Markdown, TXT, HTML)">Built FastAPI-based application for multi-format document ingestion (PDF, DOCX, Markdown, TXT, HTML)</li>
-                                <li data-en="Integrated LLM-powered report generator with 4 customizable templates (Mixed, Sentences, Points, PDCA)" data-ko="4개의 사용자 정의 템플릿이 있는 LLM 기반 보고서 생성기 통합 (Mixed, Sentences, Points, PDCA)">Integrated LLM-powered report generator with 4 customizable templates (Mixed, Sentences, Points, PDCA)</li>
-                                <li data-en="Implemented batch uploads, intelligent parsing, and iterative quality control" data-ko="배치 업로드, 지능형 파싱 및 반복적 품질 관리 구현">Implemented batch uploads, intelligent parsing, and iterative quality control</li>
-                            </ul>
-                        </div>
-                        <div class="detail-section">
-                            <h4 data-en="Impact & Results" data-ko="영향 및 결과">Impact & Results</h4>
-                            <div class="impact-grid">
-                                <div class="impact-item">
-                                    <span class="impact-number">80%</span>
-                                    <span class="impact-text" data-en="Time Reduction" data-ko="시간 절약">Time Reduction</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">15+</span>
-                                    <span class="impact-text" data-en="Languages" data-ko="언어">Languages</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">100%</span>
-                                    <span class="impact-text" data-en="Consistency" data-ko="일관성">Consistency</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">LLMs</span>
-                        <span class="tech-tag">Document Processing</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Multi-format</span>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-header">
-                        <h3>Disease Extraction</h3>
-                        <div class="project-badges">
-                            <span class="project-badge data" data-en="Medical AI" data-ko="의료 AI">Medical AI</span>
-                            <span class="project-badge contrib" data-en="100% Development" data-ko="100% 개발">100% Development</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-en="AI-powered medical document analysis system that extracts disease information from complex medical files using Vision-Language Models with automated Excel reporting." data-ko="비전-언어 모델을 사용하여 복잡한 의료 파일에서 질병 정보를 추출하고 자동화된 Excel 보고서를 제공하는 AI 기반 의료 문서 분석 시스템입니다.">
-                        AI-powered medical document analysis system that extracts disease information from complex medical files using Vision-Language Models with automated Excel reporting.
-                    </p>
-                    
-                    <div class="project-details">
-                        <div class="detail-section">
-                            <h4 data-en="Technical Features" data-ko="기술적 특징">Technical Features</h4>
-                            <ul>
-                                <li data-en="Designed complete architecture with FastAPI backend and responsive web UI" data-ko="FastAPI 백엔드와 반응형 웹 UI로 완전한 아키텍처 설계">Designed complete architecture with FastAPI backend and responsive web UI</li>
-                                <li data-en="Integrated InternVL3-14B Vision-Language Model for disease extraction schema" data-ko="질병 추출 스키마를 위한 InternVL3-14B 비전-언어 모델 통합">Integrated InternVL3-14B Vision-Language Model for disease extraction schema</li>
-                                <li data-en="Built comprehensive error handling pipeline with file validation and timeout management" data-ko="파일 검증 및 타임아웃 관리가 포함된 포괄적인 오류 처리 파이프라인 구축">Built comprehensive error handling pipeline with file validation and timeout management</li>
-                            </ul>
-                        </div>
-                        <div class="detail-section">
-                            <h4 data-en="Impact & Results" data-ko="영향 및 결과">Impact & Results</h4>
-                            <div class="impact-grid">
-                                <div class="impact-item">
-                                    <span class="impact-number">95%</span>
-                                    <span class="impact-text" data-en="Extraction Accuracy" data-ko="추출 정확도">Extraction Accuracy</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">70%</span>
-                                    <span class="impact-text" data-en="Processing Speed" data-ko="처리 속도">Processing Speed</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">10+</span>
-                                    <span class="impact-text" data-en="File Formats" data-ko="파일 형식">File Formats</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">InternVL3-14B</span>
-                        <span class="tech-tag">OCR</span>
-                        <span class="tech-tag">Excel Automation</span>
-                        <span class="tech-tag">Medical AI</span>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-header">
-                        <h3>SlideAssist</h3>
-                        <div class="project-badges">
-                            <span class="project-badge productivity" data-en="Productivity Tool" data-ko="생산성 도구">Productivity Tool</span>
-                            <span class="project-badge contrib" data-en="100% Development" data-ko="100% 개발">100% Development</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-en="AI PowerPoint assistant that enables direct Q&A on slide content using lightweight Vision-Language Models with minimal memory footprint." data-ko="최소한의 메모리 사용량으로 경량 비전-언어 모델을 사용하여 슬라이드 콘텐츠에 대한 직접적인 Q&A를 가능하게 하는 AI PowerPoint 어시스턴트입니다.">
-                        AI PowerPoint assistant that enables direct Q&A on slide content using lightweight Vision-Language Models with minimal memory footprint.
-                    </p>
-                    
-                    <div class="project-details">
-                        <div class="detail-section">
-                            <h4 data-en="Capabilities" data-ko="기능">Capabilities</h4>
-                            <ul>
-                                <li data-en="Direct analysis of slide text, charts, and visual objects" data-ko="슬라이드 텍스트, 차트 및 시각적 객체의 직접 분석">Direct analysis of slide text, charts, and visual objects</li>
-                                <li data-en="Lightweight VLM with efficient retrieval model integration" data-ko="효율적인 검색 모델 통합이 포함된 경량 VLM">Lightweight VLM with efficient retrieval model integration</li>
-                                <li data-en="Real-time question answering with contextual understanding" data-ko="맥락적 이해가 포함된 실시간 질문 답변">Real-time question answering with contextual understanding</li>
-                            </ul>
-                        </div>
-                        <div class="detail-section">
-                            <h4 data-en="Impact & Results" data-ko="영향 및 결과">Impact & Results</h4>
-                            <div class="impact-grid">
-                                <div class="impact-item">
-                                    <span class="impact-number">85%</span>
-                                    <span class="impact-text" data-en="Query Accuracy" data-ko="쿼리 정확도">Query Accuracy</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">2x</span>
-                                    <span class="impact-text" data-en="Faster Analysis" data-ko="빠른 분석">Faster Analysis</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">40%</span>
-                                    <span class="impact-text" data-en="Memory Efficient" data-ko="메모리 효율성">Memory Efficient</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">VLMs</span>
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Streamlit</span>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="project-header">
-                        <h3>AdVision Pro</h3>
-                        <div class="project-badges">
-                            <span class="project-badge creative" data-en="Creative AI" data-ko="창의적 AI">Creative AI</span>
-                            <span class="project-badge contrib" data-en="100% Development" data-ko="100% 개발">100% Development</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-en="AI-powered marketing visual generation system that creates brand-consistent advertisements with multi-language slogans using advanced generative models." data-ko="고급 생성 모델을 사용하여 다국어 슬로건이 포함된 브랜드 일관성 있는 광고를 생성하는 AI 기반 마케팅 비주얼 생성 시스템입니다.">
-                        AI-powered marketing visual generation system that creates brand-consistent advertisements with multi-language slogans using advanced generative models.
-                    </p>
-                    
-                    <div class="project-details">
-                        <div class="detail-section">
-                            <h4 data-en="Features" data-ko="기능">Features</h4>
-                            <ul>
-                                <li data-en="Automated AI generation using DALL-E/Flux for marketing imagery" data-ko="마케팅 이미지를 위한 DALL-E/Flux를 사용한 자동 AI 생성">Automated AI generation using DALL-E/Flux for marketing imagery</li>
-                                <li data-en="Brand-configurable templates with consistent visual identity" data-ko="일관된 비주얼 아이덴티티를 가진 브랜드 구성 가능 템플릿">Brand-configurable templates with consistent visual identity</li>
-                                <li data-en="Real-time design generation in 10+ languages" data-ko="10개 이상 언어로 실시간 디자인 생성">Real-time design generation in 10+ languages</li>
-                            </ul>
-                        </div>
-                        <div class="detail-section">
-                            <h4 data-en="Impact" data-ko="영향">Impact</h4>
-                            <div class="impact-grid">
-                                <div class="impact-item">
-                                    <span class="impact-number">3x</span>
-                                    <span class="impact-text" data-en="Creative Throughput" data-ko="창작 처리량">Creative Throughput</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">10+</span>
-                                    <span class="impact-text" data-en="Languages" data-ko="언어">Languages</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">DALL-E</span>
-                        <span class="tech-tag">Flux</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Streamlit</span>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="project-header">
-                        <h3>Chart2Excel</h3>
-                        <div class="project-badges">
-                            <span class="project-badge award" data-en="🥈 Award Winner" data-ko="🥈 수상작">🥈 Award Winner</span>
-                            <span class="project-badge contrib" data-en="100% Development" data-ko="100% 개발">100% Development</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-en="End-to-end framework for converting chart images into structured Excel tables with high accuracy data extraction and automated processing." data-ko="높은 정확도의 데이터 추출 및 자동화된 처리로 차트 이미지를 구조화된 Excel 테이블로 변환하는 엔드투엔드 프레임워크입니다.">
-                        End-to-end framework for converting chart images into structured Excel tables with high accuracy data extraction and automated processing.
-                    </p>
-                    
-                    <div class="project-details">
-                        <div class="detail-section">
-                            <h4 data-en="Technical Approach" data-ko="기술적 접근">Technical Approach</h4>
-                            <ul>
-                                <li data-en="Distinct algorithms tailored for various chart types (bar, line, pie, etc.)" data-ko="다양한 차트 유형(막대, 선, 원형 등)에 맞춘 고유 알고리즘">Distinct algorithms tailored for various chart types (bar, line, pie, etc.)</li>
-                                <li data-en="Dual OCR system integration for enhanced text extraction accuracy" data-ko="향상된 텍스트 추출 정확도를 위한 이중 OCR 시스템 통합">Dual OCR system integration for enhanced text extraction accuracy</li>
-                                <li data-en="Pattern recognition for axes labels and data point extraction" data-ko="축 레이블 및 데이터 포인트 추출을 위한 패턴 인식">Pattern recognition for axes labels and data point extraction</li>
-                            </ul>
-                        </div>
-                        <div class="detail-section">
-                            <h4 data-en="Recognition" data-ko="인정">Recognition</h4>
-                            <div class="impact-grid">
-                                <div class="impact-item">
-                                    <span class="impact-number">🥈</span>
-                                    <span class="impact-text" data-en="AI Grand Challenge 2023" data-ko="AI 그랜드 챌린지 2023">AI Grand Challenge 2023</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">90%</span>
-                                    <span class="impact-text" data-en="Data Recovery" data-ko="데이터 복구">Data Recovery</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">OCR</span>
-                        <span class="tech-tag">Pattern Recognition</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenCV</span>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="700">
-                    <div class="project-header">
-                        <h3>Table to Excel</h3>
-                        <div class="project-badges">
-                            <span class="project-badge data" data-en="Data Extraction" data-ko="데이터 추출">Data Extraction</span>
-                            <span class="project-badge contrib" data-en="100% Development" data-ko="100% 개발">100% Development</span>
-                        </div>
-                    </div>
-                    <p class="project-description" data-en="Advanced table extraction system that converts table images into editable Excel files with robust performance on both clear and noisy images." data-ko="깨끗하고 노이즈가 있는 이미지 모두에서 강력한 성능으로 테이블 이미지를 편집 가능한 Excel 파일로 변환하는 고급 테이블 추출 시스템입니다.">
-                        Advanced table extraction system that converts table images into editable Excel files with robust performance on both clear and noisy images.
-                    </p>
-                    
-                    <div class="project-details">
-                        <div class="detail-section">
-                            <h4 data-en="Key Features" data-ko="주요 기능">Key Features</h4>
-                            <ul>
-                                <li data-en="Advanced detection and cell segmentation algorithms" data-ko="고급 감지 및 셀 분할 알고리즘">Advanced detection and cell segmentation algorithms</li>
-                                <li data-en="Image processing for noise reduction and clarity enhancement" data-ko="노이즈 감소 및 선명도 향상을 위한 이미지 처리">Image processing for noise reduction and clarity enhancement</li>
-                                <li data-en="End-to-end pipeline from image input to Excel output" data-ko="이미지 입력에서 Excel 출력까지의 엔드투엔드 파이프라인">End-to-end pipeline from image input to Excel output</li>
-                            </ul>
-                        </div>
-                        <div class="detail-section">
-                            <h4 data-en="Performance" data-ko="성능">Performance</h4>
-                            <div class="impact-grid">
-                                <div class="impact-item">
-                                    <span class="impact-number">93%+</span>
-                                    <span class="impact-text" data-en="Cell Accuracy" data-ko="셀 정확도">Cell Accuracy</span>
-                                </div>
-                                <div class="impact-item">
-                                    <span class="impact-number">10x</span>
-                                    <span class="impact-text" data-en="Speed vs Manual" data-ko="수동 대비 속도">Speed vs Manual</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">Image Processing</span>
-                        <span class="tech-tag">OCR</span>
-                        <span class="tech-tag">Table Detection</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenCV</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chatbot -->
-    <div id="chatbot-container" class="chatbot-container">
-        <div id="chatbot-toggle" class="chatbot-toggle">
-            <span class="chatbot-icon">💬</span>
-        </div>
-        <div id="chatbot-window" class="chatbot-window">
-            <div class="chatbot-header">
-                <h4 data-en="Ask about Shreyanshu" data-ko="Shreyanshu에 대해 물어보세요">Ask about Shreyanshu</h4>
-                <button id="chatbot-close" class="chatbot-close">×</button>
-            </div>
-            <div id="chatbot-messages" class="chatbot-messages">
-                <div class="bot-message">
-                    <span data-en="Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?" data-ko="안녕하세요! Shreyanshu의 경험, 프로젝트 및 기술에 대한 질문에 답변드립니다. 무엇을 알고 싶으신가요?">Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?</span>
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="chatbot-message" placeholder="Type your question..." data-placeholder-en="Type your question..." data-placeholder-ko="질문을 입력하세요...">
-                <button id="chatbot-send">Send</button>
-            </div>
-        </div>
+<div class="chatbot-fab">
+  <button class="chatbot-trigger" id="chatbot-trigger">💬</button>
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-head"><h4>Ask about Shreyanshu</h4><button class="chatbot-close-btn" id="chatbot-close">✕</button></div>
+    <div class="chatbot-body" id="chatbot-messages"><div class="chat-msg bot">Hi! Ask me about projects, skills, or experience.</div></div>
+    <div class="chatbot-footer">
+      <input class="chatbot-input" id="chatbot-input" type="text" placeholder="Ask anything...">
+      <button class="chatbot-send" id="chatbot-send">Send</button>
     </div>
-
-    <script src="js/script.js"></script>
-    <style>
-        /* Projects Page Specific Styles */
-        
-        /* Fixed header compensation */
-        body {
-            padding-top: 80px;
-        }
-        
-        .page-hero {
-            padding-top: 2rem;
-        }
-
-        .project-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 2rem;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            display: block;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-highlight);
-        }
-
-        .stat-label {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-
-        .flagship-project {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .flagship-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .flagship-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, var(--text-highlight), var(--accent-green));
-            color: var(--primary-bg);
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .award-icon {
-            font-size: 1.5rem;
-        }
-
-        .flagship-header h2 {
-            font-size: 4rem;
-            color: var(--text-highlight);
-            margin-bottom: 1rem;
-        }
-
-        .flagship-subtitle {
-            font-size: 1.5rem;
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-        }
-
-        /* Compact Button Styling */
-        .project-links {
-            display: flex;
-            justify-content: center;
-            margin-top: 1.5rem;
-        }
-
-        .project-link-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, #DAD085, #c4b76e);
-            color: #1a1a1a;
-            padding: 0.6rem 1.5rem;
-            border-radius: 25px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(218, 208, 133, 0.25);
-            border: 1px solid transparent;
-        }
-
-        .project-link-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(218, 208, 133, 0.4);
-            background: linear-gradient(135deg, #e8dfa0, #DAD085);
-            border-color: #DAD085;
-        }
-
-        .project-link-btn:active {
-            transform: translateY(0);
-        }
-
-        .project-link-btn span:first-child {
-            font-size: 1.1rem;
-        }
-
-        .flagship-overview {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 4rem;
-            margin-bottom: 4rem;
-            align-items: center;
-        }
-
-        .overview-text h3 {
-            color: var(--text-highlight);
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .overview-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-        }
-
-        .achievement-highlight {
-            background: linear-gradient(135deg, var(--accent-bg), var(--secondary-bg));
-            padding: 1.5rem;
-            border-radius: 15px;
-            border-left: 4px solid var(--text-highlight);
-        }
-
-        .achievement-highlight h4 {
-            color: var(--text-highlight);
-            margin: 0;
-            font-size: 1.3rem;
-        }
-
-        .project-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .project-demo {
-            background: var(--accent-bg);
-            border-radius: 20px;
-            padding: 2rem;
-            border: 2px solid var(--border-color);
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .demo-screen {
-            background: var(--primary-bg);
-            border-radius: 15px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-        }
-
-        .demo-header {
-            background: var(--text-highlight);
-            color: var(--primary-bg);
-            padding: 0.75rem 1rem;
-            font-weight: 600;
-        }
-
-        .demo-content {
-            padding: 1.5rem;
-        }
-
-        .demo-item {
-            padding: 0.75rem;
-            margin: 0.5rem 0;
-            background: var(--secondary-bg);
-            border-radius: 8px;
-            border-left: 3px solid var(--text-highlight);
-        }
-
-        .layger-subprojects h3 {
-            color: var(--text-highlight);
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .subproject-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-        }
-
-        .subproject-card {
-            background: var(--accent-bg);
-            padding: 3rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .subproject-card:hover {
-            border-color: var(--text-highlight);
-            transform: translateY(-5px);
-        }
-
-        .subproject-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 2rem;
-        }
-
-        .subproject-header h4 {
-            color: var(--text-highlight);
-            font-size: 1.5rem;
-            flex: 1;
-        }
-
-        .contribution-badge {
-            background: var(--accent-blue);
-            color: var(--primary-bg);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-
-        .problem-solution {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .problem, .solution {
-            padding: 1.5rem;
-            border-radius: 15px;
-        }
-
-        .problem {
-            background: rgba(255, 100, 100, 0.1);
-            border-left: 4px solid #ff6b6b;
-        }
-
-        .solution {
-            background: rgba(100, 255, 100, 0.1);
-            border-left: 4px solid var(--accent-green);
-        }
-
-        .problem h5, .solution h5 {
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .problem h5 {
-            color: #ff6b6b;
-        }
-
-        .solution h5 {
-            color: var(--accent-green);
-        }
-
-        .tech-impact {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .tech-tag {
-            background: var(--border-color);
-            color: var(--text-primary);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-family: var(--font-mono);
-        }
-
-        .impact-metrics {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .metric {
-            text-align: center;
-        }
-
-        .metric-value {
-            display: block;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-highlight);
-        }
-
-        .metric-label {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-
-        .major-projects {
-            padding: var(--section-padding);
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background: var(--secondary-bg);
-            padding: 2.5rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(218, 208, 133, 0.03), transparent);
-            transform: rotate(45deg);
-            transition: var(--transition);
-            opacity: 0;
-        }
-
-        .project-card:hover::before {
-            opacity: 1;
-            animation: shimmer 1.5s ease-in-out;
-        }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            border-color: var(--text-highlight);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .project-card.featured {
-            border-color: var(--text-highlight);
-            background: linear-gradient(135deg, var(--secondary-bg), var(--accent-bg));
-        }
-
-        .project-header {
-            margin-bottom: 1.5rem;
-        }
-
-        .project-header h3 {
-            color: var(--text-highlight);
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .project-badges {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .project-badge {
-            padding: 0.25rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        .project-badge.team {
-            background: var(--accent-blue);
-            color: var(--primary-bg);
-        }
-
-        .project-badge.research {
-            background: #9f7aea;
-            color: white;
-        }
-
-        .project-badge.creative {
-            background: #ed8936;
-            color: white;
-        }
-
-        .project-badge.productivity {
-            background: #38b2ac;
-            color: white;
-        }
-
-        .project-badge.award {
-            background: linear-gradient(135deg, #ffd700, #ffed4e);
-            color: var(--primary-bg);
-        }
-
-        .project-badge.data {
-            background: #4299e1;
-            color: white;
-        }
-
-        .project-badge.contrib {
-            background: var(--text-highlight);
-            color: var(--primary-bg);
-        }
-
-        .project-description {
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-bottom: 2rem;
-            color: var(--text-primary);
-        }
-
-        .project-details {
-            margin-bottom: 2rem;
-        }
-
-        .detail-section {
-            margin-bottom: 1.5rem;
-        }
-
-        .detail-section h4 {
-            color: var(--text-highlight);
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .detail-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .detail-section li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            line-height: 1.6;
-        }
-
-        .detail-section li:before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: var(--text-highlight);
-        }
-
-        .impact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .impact-item {
-            text-align: center;
-            padding: 1rem;
-            background: var(--accent-bg);
-            border-radius: 10px;
-            border: 1px solid var(--border-color);
-        }
-
-        .impact-number {
-            display: block;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-highlight);
-            margin-bottom: 0.25rem;
-        }
-
-        .impact-text {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
-        }
-
-        @keyframes shimmer {
-            0% {
-                transform: rotate(45deg) translateY(-100%);
-            }
-            100% {
-                transform: rotate(45deg) translateY(100%);
-            }
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding-top: 60px;
-            }
-            
-            .flagship-header h2 {
-                font-size: 2.5rem;
-            }
-
-            .flagship-subtitle {
-                font-size: 1.2rem;
-            }
-
-            .project-link-btn {
-                padding: 0.5rem 1.2rem;
-                font-size: 0.875rem;
-            }
-            
-            .flagship-overview {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .problem-solution {
-                grid-template-columns: 1fr;
-            }
-            
-            .tech-impact {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .impact-metrics {
-                flex-wrap: wrap;
-                justify-content: center;
-                width: 100%;
-            }
-            
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .project-stats {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .subproject-card {
-                padding: 2rem;
-            }
-
-            .subproject-header {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    </style>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/chatbot.js"></script>
 </body>
 </html>

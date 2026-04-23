@@ -1,160 +1,126 @@
-# Shreyanshu Bhushan - Professional Portfolio
+# Shreyanshu Bhushan — Portfolio Website
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://shreyanshu09.github.io)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+A modern, responsive portfolio built with clean HTML, CSS, and JavaScript. Designed for professional presentation to recruiters, research collaborators, and engineering teams.
 
-A modern, responsive portfolio website showcasing AI research, projects, and professional experience.
+## Features
 
-## 🌟 Features
+- **Dark / Light theme** — user preference persisted via localStorage
+- **Bilingual (EN / KO)** — full English and Korean language toggle
+- **3D Neural Network Canvas** — animated WebGL-style canvas hero background
+- **Scroll-reveal animations** — IntersectionObserver-driven staggered reveals
+- **Typed text effect** — rotating role titles in the hero section
+- **Keyword-matching chatbot** — offline, rule-based assistant answering questions about experience and projects
+- **Scroll progress indicator** — top-of-page reading progress bar
+- **Fully responsive** — tested across desktop, tablet, and mobile viewports
+- **ATS-compatible content** — all text is semantic HTML, readable by parsing tools
 
-- **Bilingual Support**: English and Korean language toggle
-- **Interactive Chatbot**: AI-powered assistant to answer questions about experience and projects
-- **Responsive Design**: Mobile-first approach with smooth animations
-- **Professional Theme**: Dark mode with carefully chosen color palette
-- **Project Showcase**: Detailed project descriptions with impact metrics
-- **Research Publications**: Academic papers and patent information
-- **Contact Integration**: Multiple contact methods and working contact form
-
-## 🔧 Technologies Used
-
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Styling**: Custom CSS with CSS Variables
-- **Fonts**: Inter & JetBrains Mono from Google Fonts
-- **Icons**: Unicode Emojis
-- **Animations**: CSS Transitions and Keyframes
-- **Deployment**: GitHub Pages
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-├── index.html              # Homepage
-├── about.html              # About page
-├── experience.html         # Professional experience
-├── projects.html           # Project portfolio
-├── research.html           # Research & publications
-├── contact.html            # Contact information
+portfolio/
+├── index.html              # Homepage with hero, featured projects, awards
+├── about.html              # Profile, education timeline, skills matrix
+├── experience.html         # Work history and volunteer roles
+├── projects.html           # Full project portfolio with detailed descriptions
+├── research.html           # Publications, patent, research interests
+├── contact.html            # Contact form and social links
+│
 ├── css/
-│   └── style.css          # Main stylesheet
+│   ├── theme.css           # CSS custom properties — dark and light theme variables
+│   ├── style.css           # Base layout, typography, components (imports theme.css)
+│   └── animations.css      # Hero, timeline, project card, and reveal animations
+│
 ├── js/
-│   └── script.js          # JavaScript functionality
+│   ├── main.js             # Theme, language, navbar, scroll progress, reveal
+│   ├── animations.js       # Canvas neural network, counter animations, stagger
+│   └── chatbot.js          # Keyword-matching portfolio assistant
+│
 ├── images/
-│   ├── profile.jpg        # Profile photo
-│   └── projects/          # Project screenshots
-├── resume.pdf             # Resume download
-└── README.md              # This file
+│   └── profile.png         # Profile photo
+│
+├── files/
+│   ├── cv.pdf              # Downloadable CV (place here)
+│   └── portfolio.pdf       # Downloadable portfolio (place here)
+│
+└── README.md
 ```
 
-## 🚀 Quick Start
+## Technology Stack
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/shreyanshu09/shreyanshu09.github.io.git
-   cd shreyanshu09.github.io
-   ```
+- **HTML5** — semantic markup, accessible structure
+- **CSS3** — custom properties, grid, flexbox, keyframe animations, backdrop-filter
+- **JavaScript (ES6+)** — vanilla, no build step required
+- **Fonts** — Syne (display) + DM Sans (body) + JetBrains Mono (code/labels) via Google Fonts
+- **Canvas API** — neural network particle animation
 
-2. **Open in browser**
-   ```bash
-   # Simple HTTP server
-   python -m http.server 8000
-   # or
-   npx serve .
-   ```
+## Quick Start
 
-3. **Visit** `http://localhost:8000`
+```bash
+# Clone or download the repository
+git clone https://github.com/shreyanshu09/shreyanshu09.github.io.git
+cd shreyanshu09.github.io
 
-## 🎨 Customization
+# Serve locally
+python -m http.server 8000
+# or
+npx serve .
+```
 
-### Color Scheme
-The website uses CSS custom properties for easy theming:
+Open `http://localhost:8000` in your browser.
+
+## Customization
+
+### Theme Colors
+
+Edit `css/theme.css` to modify the colour palette:
 
 ```css
 :root {
-    --primary-bg: #1a1a1a;
-    --text-highlight: #DAD085;
-    --accent-blue: #96CBFE;
-    --accent-green: #A8FF60;
-    /* ... more variables */
+  --accent-cyan:   #00c9ff;   /* Primary accent */
+  --accent-gold:   #e8b84b;   /* Awards / highlights */
+  --accent-green:  #34d399;   /* Success / open badges */
+  --accent-purple: #818cf8;   /* Secondary accent */
 }
 ```
 
-### Content Updates
-- Update personal information in HTML files
-- Modify project descriptions and achievements
-- Replace placeholder images with actual screenshots
-- Update contact information and social links
+### Adding Content
 
-### Language Support
-Add new languages by extending the `translations` object in `script.js`:
+Update the relevant HTML file. All content uses `data-en` and `data-ko` attributes for bilingual support:
+
+```html
+<p data-en="English text" data-ko="한국어 텍스트">English text</p>
+```
+
+### Chatbot Responses
+
+Edit `js/chatbot.js` — add entries to the `RULES` array or update `PORTFOLIO_DATA` constants:
 
 ```javascript
-const translations = {
-    en: { /* English translations */ },
-    ko: { /* Korean translations */ },
-    // Add new languages here
-};
+{
+  keywords: ['your', 'keywords', 'here'],
+  response: 'Your response text here.',
+},
 ```
 
-## 📱 Responsive Design
+## Deployment
 
-The website is optimized for all device sizes:
-- **Desktop**: Full-featured layout with animations
-- **Tablet**: Adapted grid layouts and navigation
-- **Mobile**: Stacked layouts and touch-friendly interactions
+The site is fully static — no build step, no server-side requirements.
 
-## 🤖 Chatbot Features
+**GitHub Pages:**
+1. Push to a repository named `<username>.github.io`
+2. Enable GitHub Pages from the repository settings (Settings → Pages → main branch)
+3. Place `cv.pdf` and `portfolio.pdf` in the `files/` directory
 
-The integrated chatbot can answer questions about:
-- Professional experience and roles
-- Technical skills and expertise
-- Project details and achievements
-- Education and research background
-- Contact information and availability
+## Browser Support
 
-## 📊 SEO & Performance
+Tested in Chrome 110+, Firefox 110+, Safari 16+, Edge 110+. Core features (theme, navigation, reveal) degrade gracefully in older browsers.
 
-- **Semantic HTML**: Proper heading structure and landmarks
-- **Meta Tags**: Descriptions and Open Graph tags
-- **Performance**: Optimized images and minimal JavaScript
-- **Accessibility**: ARIA labels and keyboard navigation
+## License
 
-## 🛠️ Development
+MIT License. Free to use as a template with attribution.
 
-### Local Development
-```bash
-# Install a simple HTTP server
-npm install -g http-server
+## Contact
 
-# Serve the website
-http-server -p 8000
-
-# Or use Python
-python -m http.server 8000
-```
-
-### Building for Production
-The website is static HTML/CSS/JS, so no build process is required. Simply push to the `main` branch for automatic deployment via GitHub Pages.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/shreyanshu09/shreyanshu09.github.io/issues).
-
-## 📞 Contact
-
-- **Email**: shreyanshubhushan@gmail.com
-- **LinkedIn**: [linkedin.com/in/shreyanshu09](https://www.linkedin.com/in/shreyanshu09/)
-- **GitHub**: [github.com/shreyanshu09](https://github.com/shreyanshu09)
-
-## 🙏 Acknowledgments
-
-- Design inspiration from modern portfolio websites
-- Color palette optimized for accessibility
-- Font choices for professional readability
-- Animation effects for enhanced user experience
-
----
-
-⭐ **If you found this portfolio template helpful, please consider giving it a star!**
+- Email: shreyanshubhushan@gmail.com
+- LinkedIn: [linkedin.com/in/shreyanshu09](https://linkedin.com/in/shreyanshu09)
+- GitHub: [github.com/shreyanshu09](https://github.com/shreyanshu09)

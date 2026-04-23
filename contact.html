@@ -1,598 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Shreyanshu Bhushan</title>
-    <meta name="description" content="Get in touch with Shreyanshu Bhushan for AI research collaboration or employment opportunities">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Shreyanshu Bhushan</title>
+  <meta name="description" content="Contact Shreyanshu Bhushan — AI Engineer & Researcher based in Seoul, South Korea.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <!-- Language Toggle -->
-    <div class="language-toggle">
-        <button id="lang-en" class="lang-btn active">EN</button>
-        <button id="lang-ko" class="lang-btn">한국어</button>
-    </div>
+<div id="scroll-progress"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-highlight">Shreyanshu</span> Bhushan
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>Shreyanshu</span> Bhushan</a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link">Home</a></li>
+      <li><a href="about.html"      class="nav-link">About</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li>
+      <li><a href="projects.html"   class="nav-link">Projects</a></li>
+      <li><a href="research.html"   class="nav-link">Research</a></li>
+      <li><a href="contact.html"    class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ko">KO</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">☀</span></button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-menu" id="mobile-nav">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="experience.html" class="nav-link">Experience</a>
+  <a href="projects.html" class="nav-link">Projects</a>
+  <a href="research.html" class="nav-link">Research</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="page-hero-label" data-en="Let's Connect" data-ko="연결하기">Let's Connect</p>
+    <h1 class="page-hero-title" data-en="Contact" data-ko="연락처">Contact</h1>
+    <p class="page-hero-subtitle" data-en="Open to research collaborations, engineering roles, and consulting opportunities." data-ko="연구 협업, 엔지니어링 직책, 컨설팅 기회에 열려 있습니다.">
+      Open to research collaborations, engineering roles, and consulting opportunities.
+    </p>
+  </div>
+</div>
+
+<section style="padding: 5rem 0;">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div>
+        <h2 style="font-size:clamp(1.5rem,3vw,2rem); margin-bottom:1rem;" class="reveal" data-en="Get In Touch" data-ko="연락하기">Get In Touch</h2>
+        <p style="color:var(--text-secondary); line-height:1.75; margin-bottom:2rem;" class="reveal delay-1" data-en="Based in Seoul, South Korea, holding an F-2 residency visa. Available for AI engineering roles, research partnerships, and consulting on Document AI, LLM deployment, and intelligent automation projects." data-ko="F-2 거주 비자를 보유하고 서울에 거주합니다. AI 엔지니어링 직책, 연구 파트너십, 문서 AI, LLM 배포, 지능형 자동화 프로젝트 컨설팅에 응합니다.">
+          Based in Seoul, South Korea, holding an F-2 residency visa. Available for AI engineering roles, research partnerships, and consulting on Document AI, LLM deployment, and intelligent automation projects.
+        </p>
+
+        <div class="contact-methods">
+          <a href="mailto:shreyanshubhushan@gmail.com" class="contact-method reveal">
+            <div class="contact-method-icon">@</div>
+            <div>
+              <div class="contact-method-label" data-en="Email" data-ko="이메일">Email</div>
+              <div class="contact-method-value">shreyanshubhushan@gmail.com</div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link" data-en="Home" data-ko="홈">Home</a></li>
-                <li><a href="about.html" class="nav-link" data-en="About" data-ko="소개">About</a></li>
-                <li><a href="experience.html" class="nav-link" data-en="Experience" data-ko="경력">Experience</a></li>
-                <li><a href="projects.html" class="nav-link" data-en="Projects" data-ko="프로젝트">Projects</a></li>
-                <li><a href="research.html" class="nav-link" data-en="Research" data-ko="연구">Research</a></li>
-                <li><a href="contact.html" class="nav-link active" data-en="Contact" data-ko="연락처">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+          </a>
+
+          <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="contact-method reveal delay-1">
+            <div class="contact-method-icon">in</div>
+            <div>
+              <div class="contact-method-label">LinkedIn</div>
+              <div class="contact-method-value">linkedin.com/in/shreyanshu09</div>
             </div>
+          </a>
+
+          <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="contact-method reveal delay-2">
+            <div class="contact-method-icon" style="font-size:0.85rem; font-weight:700;">GH</div>
+            <div>
+              <div class="contact-method-label">GitHub</div>
+              <div class="contact-method-value">github.com/shreyanshu09</div>
+            </div>
+          </a>
+
+          <div class="contact-method reveal delay-3" style="cursor:default;">
+            <div class="contact-method-icon">◎</div>
+            <div>
+              <div class="contact-method-label" data-en="Location" data-ko="위치">Location</div>
+              <div class="contact-method-value" data-en="Seoul, South Korea · F-2 Visa" data-ko="서울, 대한민국 · F-2 비자">Seoul, South Korea · F-2 Visa</div>
+            </div>
+          </div>
         </div>
+
+        <!-- Download buttons -->
+        <div style="display:flex; gap:0.75rem; margin-top:2rem; flex-wrap:wrap;" class="reveal">
+          <a href="files/cv.pdf" download class="btn btn-primary btn-sm" data-en="Download CV" data-ko="이력서 다운로드">Download CV</a>
+          <a href="files/portfolio.pdf" download class="btn btn-secondary btn-sm" data-en="Download Portfolio" data-ko="포트폴리오 다운로드">Download Portfolio</a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="reveal delay-1">
+        <div class="card" style="padding:2rem;">
+          <h3 style="font-size:1.1rem; margin-bottom:1.5rem;" data-en="Send a Message" data-ko="메시지 보내기">Send a Message</h3>
+
+          <div class="form-group">
+            <label class="form-label" for="name" data-en="Name" data-ko="이름">Name</label>
+            <input class="form-input" type="text" id="name" name="name"
+              placeholder="Your name"
+              data-placeholder-en="Your name"
+              data-placeholder-ko="이름을 입력하세요">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email" data-en="Email" data-ko="이메일">Email</label>
+            <input class="form-input" type="email" id="email" name="email"
+              placeholder="your@email.com"
+              data-placeholder-en="your@email.com"
+              data-placeholder-ko="이메일을 입력하세요">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="subject" data-en="Subject" data-ko="제목">Subject</label>
+            <input class="form-input" type="text" id="subject" name="subject"
+              placeholder="What's this about?"
+              data-placeholder-en="What's this about?"
+              data-placeholder-ko="제목을 입력하세요">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message" data-en="Message" data-ko="메시지">Message</label>
+            <textarea class="form-textarea" id="message" name="message"
+              placeholder="Your message..."
+              data-placeholder-en="Your message..."
+              data-placeholder-ko="메시지를 입력하세요..."></textarea>
+          </div>
+
+          <button class="btn btn-primary" id="send-btn" style="width:100%; justify-content:center;"
+            data-en="Send Message" data-ko="메시지 전송">
+            Send Message
+          </button>
+
+          <p id="form-status" style="margin-top:1rem; font-size:0.85rem; color:var(--accent-green); display:none;" data-en="Message sent — I'll be in touch soon." data-ko="메시지가 전송되었습니다. 곧 연락드리겠습니다.">
+            Message sent — I'll be in touch soon.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Availability card -->
+<section style="padding: 3rem 0 5rem;">
+  <div class="container">
+    <div class="card reveal" style="max-width:720px; margin:0 auto; text-align:center; border-color:var(--border-accent);">
+      <div style="display:flex; align-items:center; justify-content:center; gap:0.6rem; margin-bottom:1rem;">
+        <span style="width:8px; height:8px; border-radius:50%; background:var(--accent-green); display:inline-block; box-shadow:0 0 0 3px rgba(52,211,153,0.2);"></span>
+        <span style="font-size:0.82rem; color:var(--accent-green); font-weight:600; text-transform:uppercase; letter-spacing:0.08em;" data-en="Open to Opportunities" data-ko="기회에 열려 있음">Open to Opportunities</span>
+      </div>
+      <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.7;" data-en="Currently available for full-time AI engineering and research positions, as well as consulting engagements in Document AI, LLM deployment, RAG systems, and intelligent automation. Based in Seoul, no relocation required for Korean companies." data-ko="현재 풀타임 AI 엔지니어링 및 연구 직책, 문서 AI, LLM 배포, RAG 시스템, 지능형 자동화 컨설팅에 응합니다. 서울에 거주하며 한국 기업의 경우 이전 불필요.">
+        Currently available for full-time AI engineering and research positions, as well as consulting engagements in Document AI, LLM deployment, RAG systems, and intelligent automation. Based in Seoul — no relocation required for Korean companies.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-text">© 2025 Shreyanshu Bhushan</p>
+    <nav class="footer-links">
+      <a href="https://linkedin.com/in/shreyanshu09" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      <a href="https://github.com/shreyanshu09" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      <a href="mailto:shreyanshubhushan@gmail.com" class="footer-link">Email</a>
     </nav>
+  </div>
+</footer>
 
-    <!-- Contact Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <h1 class="page-title" data-en="Let's Connect" data-ko="연결해요">Let's Connect</h1>
-            <p class="page-subtitle" data-en="Ready to collaborate on innovative AI solutions? I'd love to hear from you." data-ko="혁신적인 AI 솔루션에서 협업할 준비가 되셨나요? 연락 주시기 바랍니다.">Ready to collaborate on innovative AI solutions? I'd love to hear from you.</p>
-            <div class="contact-highlights">
-                <div class="highlight-item">
-                    <span class="highlight-icon">📍</span>
-                    <span data-en="Based in Seoul, South Korea" data-ko="대한민국 서울 거주">Based in Seoul, South Korea</span>
-                </div>
-                <div class="highlight-item">
-                    <span class="highlight-icon">💼</span>
-                    <span data-en="Open to New Opportunities" data-ko="새로운 기회에 열려있음">Open to New Opportunities</span>
-                </div>
-                <div class="highlight-item">
-                    <span class="highlight-icon">🚀</span>
-                    <span data-en="Research Collaboration" data-ko="연구 협력">Research Collaboration</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Methods -->
-    <section class="contact-methods">
-        <div class="container">
-            <h2 class="section-title" data-en="Get In Touch" data-ko="연락하기">Get In Touch</h2>
-            
-            <div class="contact-grid">
-                <div class="contact-card email" data-aos="fade-up">
-                    <div class="contact-icon">📧</div>
-                    <h3 data-en="Email" data-ko="이메일">Email</h3>
-                    <p data-en="For professional inquiries, collaboration opportunities, or general questions" data-ko="전문적인 문의, 협업 기회 또는 일반적인 질문">For professional inquiries, collaboration opportunities, or general questions</p>
-                    <a href="mailto:shreyanshubhushan@gmail.com" class="contact-link">shreyanshubhushan@gmail.com</a>
-                    <div class="response-time">
-                        <span data-en="Usually responds within 24 hours" data-ko="보통 24시간 이내 응답">Usually responds within 24 hours</span>
-                    </div>
-                </div>
-
-                <div class="contact-card linkedin" data-aos="fade-up" data-aos-delay="100">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p data-en="Connect for professional networking, career opportunities, and industry discussions" data-ko="전문 네트워킹, 경력 기회 및 업계 토론을 위한 연결">Connect for professional networking, career opportunities, and industry discussions</p>
-                    <a href="https://www.linkedin.com/in/shreyanshu09/" target="_blank" class="contact-link">linkedin.com/in/shreyanshu09</a>
-                    <div class="response-time">
-                        <span data-en="Active daily" data-ko="매일 활동">Active daily</span>
-                    </div>
-                </div>
-
-                <div class="contact-card github" data-aos="fade-up" data-aos-delay="200">
-                    <div class="contact-icon">💻</div>
-                    <h3>GitHub</h3>
-                    <p data-en="Explore my projects, contribute to open source, or discuss technical implementations" data-ko="프로젝트 탐색, 오픈 소스 기여 또는 기술 구현 논의">Explore my projects, contribute to open source, or discuss technical implementations</p>
-                    <a href="https://github.com/shreyanshu09" target="_blank" class="contact-link">github.com/shreyanshu09</a>
-                    <div class="response-time">
-                        <span data-en="Regular commits" data-ko="정기적인 커밋">Regular commits</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Location & Availability -->
-    <section class="location-availability">
-        <div class="container">
-            <div class="location-grid">
-                <div class="location-info" data-aos="fade-up">
-                    <h2 data-en="Location & Availability" data-ko="위치 및 가용성">Location & Availability</h2>
-                    
-                    <div class="location-details">
-                        <div class="location-item">
-                            <div class="location-icon">🌍</div>
-                            <div class="location-content">
-                                <h3 data-en="Current Location" data-ko="현재 위치">Current Location</h3>
-                                <p data-en="Seoul, South Korea" data-ko="대한민국 서울">Seoul, South Korea</p>
-                                <span class="timezone" data-en="Korea Standard Time (KST, UTC+9)" data-ko="한국 표준시 (KST, UTC+9)">Korea Standard Time (KST, UTC+9)</span>
-                            </div>
-                        </div>
-
-                        <div class="location-item">
-                            <div class="location-icon">💼</div>
-                            <div class="location-content">
-                                <h3 data-en="Work Status" data-ko="근무 상태">Work Status</h3>
-                                <p data-en="F-2 Residency Visa" data-ko="F-2 거주 비자">F-2 Residency Visa</p>
-                                <span class="status-note" data-en="Authorized to work in South Korea" data-ko="대한민국 내 취업 허가">Authorized to work in South Korea</span>
-                            </div>
-                        </div>
-
-                        <div class="location-item">
-                            <div class="location-icon">🏠</div>
-                            <div class="location-content">
-                                <h3 data-en="Hometown" data-ko="고향">Hometown</h3>
-                                <p data-en="New Delhi, India" data-ko="인도 뉴델리">New Delhi, India</p>
-                                <span class="hometown-note" data-en="Originally from India" data-ko="인도 출신">Originally from India</span>
-                            </div>
-                        </div>
-
-                        <div class="location-item">
-                            <div class="location-icon">🕒</div>
-                            <div class="location-content">
-                                <h3 data-en="Working Hours" data-ko="근무 시간">Working Hours</h3>
-                                <p data-en="Monday - Friday: 9 AM - 6 PM KST" data-ko="월요일 - 금요일: 오전 9시 - 오후 6시 KST">Monday - Friday: 9 AM - 6 PM KST</p>
-                                <span class="hours-note" data-en="Flexible for international collaboration" data-ko="국제 협력을 위한 유연한 시간">Flexible for international collaboration</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title" data-en="Frequently Asked Questions" data-ko="자주 묻는 질문">Frequently Asked Questions</h2>
-            
-            <div class="faq-list">
-                <div class="faq-item" data-aos="fade-up">
-                    <div class="faq-question">
-                        <h3 data-en="What type of projects are you most interested in?" data-ko="어떤 종류의 프로젝트에 가장 관심이 있나요?">What type of projects are you most interested in?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-en="I'm particularly passionate about document AI, multilingual NLP systems, and vision-language integration projects. I especially enjoy challenges that bridge fundamental research with practical applications, such as enterprise document processing, OCR enhancement, and on-device AI solutions." data-ko="특히 문서 AI, 다국어 NLP 시스템, 비전-언어 통합 프로젝트에 열정을 가지고 있습니다. 기업 문서 처리, OCR 향상, 온디바이스 AI 솔루션과 같이 기초 연구와 실용적 응용을 연결하는 도전을 특히 즐깁니다.">I'm particularly passionate about document AI, multilingual NLP systems, and vision-language integration projects. I especially enjoy challenges that bridge fundamental research with practical applications, such as enterprise document processing, OCR enhancement, and on-device AI solutions.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="faq-question">
-                        <h3 data-en="Do you collaborate on research projects?" data-ko="연구 프로젝트에서 협업하나요?">Do you collaborate on research projects?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-en="Absolutely! I'm always open to research collaborations, especially in areas like multimodal document understanding, cross-lingual AI systems, and efficient on-device models. I have experience working with academic institutions and am interested in projects that can lead to publications and practical implementations." data-ko="물론입니다! 특히 다중 모달 문서 이해, 다국어 AI 시스템, 효율적인 온디바이스 모델과 같은 분야에서 연구 협력에 항상 열려 있습니다. 학술 기관과 협력한 경험이 있으며 출판물과 실용적 구현으로 이어질 수 있는 프로젝트에 관심이 있습니다.">Absolutely! I'm always open to research collaborations, especially in areas like multimodal document understanding, cross-lingual AI systems, and efficient on-device models. I have experience working with academic institutions and am interested in projects that can lead to publications and practical implementations.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="faq-question">
-                        <h3 data-en="What languages do you work in?" data-ko="어떤 언어로 작업하나요?">What languages do you work in?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-en="I'm fluent in English and Hindi (native), with beginner-level Korean. For AI/ML work, I primarily use Python, Java, and C++. I have extensive experience with frameworks like PyTorch, TensorFlow, and various NLP libraries. I'm also proficient in web technologies for full-stack AI applications." data-ko="영어와 힌디어(모국어)에 유창하며, 한국어는 초급 수준입니다. AI/ML 작업에서는 주로 Python, Java, C++를 사용합니다. PyTorch, TensorFlow 및 다양한 NLP 라이브러리와 같은 프레임워크에 대한 광범위한 경험이 있습니다. 또한 풀스택 AI 애플리케이션을 위한 웹 기술에도 능숙합니다.">I'm fluent in English and Hindi (native), with beginner-level Korean. For AI/ML work, I primarily use Python, Java, and C++. I have extensive experience with frameworks like PyTorch, TensorFlow, and various NLP libraries. I'm also proficient in web technologies for full-stack AI applications.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="faq-question">
-                        <h3 data-en="How quickly can you respond to project inquiries?" data-ko="프로젝트 문의에 얼마나 빨리 응답할 수 있나요?">How quickly can you respond to project inquiries?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-en="I typically respond to emails within 24 hours during weekdays. For urgent matters, you can reach me via LinkedIn. I believe in prompt communication and will always let you know my availability and timeline for any project discussion or proposal review." data-ko="평일에는 보통 24시간 이내에 이메일에 응답합니다. 긴급한 경우 LinkedIn을 통해 연락하실 수 있습니다. 신속한 의사소통을 중시하며 모든 프로젝트 논의나 제안 검토에 대한 가용성과 일정을 항상 알려드립니다.">I typically respond to emails within 24 hours during weekdays. For urgent matters, you can reach me via LinkedIn. I believe in prompt communication and will always let you know my availability and timeline for any project discussion or proposal review.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Links -->
-    <section class="social-links">
-        <div class="container">
-            <h2 class="section-title" data-en="Connect on Social Platforms" data-ko="소셜 플랫폼에서 연결">Connect on Social Platforms</h2>
-            
-            <div class="social-grid">
-                <a href="https://www.linkedin.com/in/shreyanshu09/" target="_blank" class="social-card linkedin" data-aos="fade-up">
-                    <div class="social-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p data-en="Professional updates and networking" data-ko="전문적인 업데이트 및 네트워킹">Professional updates and networking</p>
-                    <span class="social-handle">@shreyanshu09</span>
-                </a>
-
-                <a href="https://github.com/shreyanshu09" target="_blank" class="social-card github" data-aos="fade-up" data-aos-delay="100">
-                    <div class="social-icon">💻</div>
-                    <h3>GitHub</h3>
-                    <p data-en="Open source projects and code" data-ko="오픈 소스 프로젝트 및 코드">Open source projects and code</p>
-                    <span class="social-handle">@shreyanshu09</span>
-                </a>
-
-                <div class="social-card academic" data-aos="fade-up" data-aos-delay="200">
-                    <div class="social-icon">🎓</div>
-                    <h3 data-en="Academic Profiles" data-ko="학술 프로필">Academic Profiles</h3>
-                    <p data-en="Publications and research" data-ko="출판물 및 연구">Publications and research</p>
-                    <span class="social-handle" data-en="ACL Anthology, arXiv" data-ko="ACL Anthology, arXiv">ACL Anthology, arXiv</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chatbot -->
-    <div id="chatbot-container" class="chatbot-container">
-        <div id="chatbot-toggle" class="chatbot-toggle">
-            <span class="chatbot-icon">💬</span>
-        </div>
-        <div id="chatbot-window" class="chatbot-window">
-            <div class="chatbot-header">
-                <h4 data-en="Ask about Shreyanshu" data-ko="Shreyanshu에 대해 물어보세요">Ask about Shreyanshu</h4>
-                <button id="chatbot-close" class="chatbot-close">×</button>
-            </div>
-            <div id="chatbot-messages" class="chatbot-messages">
-                <div class="bot-message">
-                    <span data-en="Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?" data-ko="안녕하세요! Shreyanshu의 경험, 프로젝트 및 기술에 대한 질문에 답변드립니다. 무엇을 알고 싶으신가요?">Hi! I'm here to answer questions about Shreyanshu's experience, projects, and skills. What would you like to know?</span>
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="chatbot-message" placeholder="Type your question..." data-placeholder-en="Type your question..." data-placeholder-ko="질문을 입력하세요...">
-                <button id="chatbot-send">Send</button>
-            </div>
-        </div>
+<div class="chatbot-fab">
+  <button class="chatbot-trigger" id="chatbot-trigger">💬</button>
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-head"><h4>Ask about Shreyanshu</h4><button class="chatbot-close-btn" id="chatbot-close">✕</button></div>
+    <div class="chatbot-body" id="chatbot-messages"><div class="chat-msg bot">Hi! Ask me about availability, projects, or skills.</div></div>
+    <div class="chatbot-footer">
+      <input class="chatbot-input" id="chatbot-input" type="text" placeholder="Ask anything...">
+      <button class="chatbot-send" id="chatbot-send">Send</button>
     </div>
+  </div>
+</div>
 
-    <script src="js/script.js"></script>
-    <script>
-        // FAQ toggle functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                const answer = faqItem.querySelector('.faq-answer');
-                const toggle = question.querySelector('.faq-toggle');
-                
-                faqItem.classList.toggle('active');
-                
-                if (faqItem.classList.contains('active')) {
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                    toggle.textContent = '−';
-                } else {
-                    answer.style.maxHeight = '0';
-                    toggle.textContent = '+';
-                }
-            });
-        });
-    </script>
-    <style>
-        /* Contact Page Specific Styles */
-        .page-hero {
-            padding-top: 140px;
-            padding-bottom: 60px;
-        }
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/chatbot.js"></script>
+<script>
+  // Simple form feedback (no server — opens mailto fallback)
+  document.getElementById('send-btn').addEventListener('click', () => {
+    const name    = document.getElementById('name').value.trim();
+    const email   = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
 
-        .contact-highlights {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
+    if (!name || !email || !message) {
+      alert('Please fill in name, email, and message.');
+      return;
+    }
 
-        .highlight-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--accent-bg);
-            padding: 1rem 1.5rem;
-            border-radius: 25px;
-            border: 1px solid var(--border-color);
-        }
+    const mailto = `mailto:shreyanshubhushan@gmail.com`
+      + `?subject=${encodeURIComponent(subject || 'Portfolio Contact: ' + name)}`
+      + `&body=${encodeURIComponent('From: ' + name + ' <' + email + '>\n\n' + message)}`;
 
-        .highlight-icon {
-            font-size: 1.2rem;
-        }
+    window.location.href = mailto;
 
-        .contact-methods {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .contact-card {
-            background: var(--accent-bg);
-            padding: 2.5rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            text-align: center;
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contact-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(218, 208, 133, 0.05), transparent);
-            transform: rotate(45deg);
-            transition: var(--transition);
-            opacity: 0;
-        }
-
-        .contact-card:hover::before {
-            opacity: 1;
-            animation: shimmer 1.5s ease-in-out;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-8px);
-            border-color: var(--text-highlight);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .contact-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-card h3 {
-            color: var(--text-highlight);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .contact-card p {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        .contact-link {
-            display: inline-block;
-            color: var(--text-highlight);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            transition: var(--transition);
-        }
-
-        .contact-link:hover {
-            color: var(--accent-green);
-        }
-
-        .response-time {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-
-        .location-availability {
-            padding: var(--section-padding);
-            background: var(--primary-bg);
-        }
-
-        .location-grid {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .location-info h2 {
-            color: var(--text-highlight);
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .location-details {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
-
-        .location-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            background: var(--accent-bg);
-            padding: 1.5rem;
-            border-radius: 15px;
-            border: 1px solid var(--border-color);
-        }
-
-        .location-icon {
-            font-size: 2rem;
-            flex-shrink: 0;
-        }
-
-        .location-content h3 {
-            color: var(--text-highlight);
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .location-content p {
-            margin-bottom: 0.25rem;
-        }
-
-        .timezone,
-        .status-note,
-        .hometown-note,
-        .hours-note {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-
-        .faq-section {
-            padding: var(--section-padding);
-            background: var(--secondary-bg);
-        }
-
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background: var(--accent-bg);
-            border-radius: 15px;
-            border: 1px solid var(--border-color);
-            margin-bottom: 1rem;
-            overflow: hidden;
-            transition: var(--transition);
-        }
-
-        .faq-item:hover {
-            border-color: var(--text-highlight);
-        }
-
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .faq-question:hover {
-            background: var(--secondary-bg);
-        }
-
-        .faq-question h3 {
-            color: var(--text-primary);
-            margin: 0;
-            font-size: 1.1rem;
-        }
-
-        .faq-toggle {
-            color: var(--text-highlight);
-            font-size: 1.5rem;
-            font-weight: bold;
-            transition: var(--transition);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-
-        .faq-answer p {
-            padding: 0 1.5rem 1.5rem;
-            margin: 0;
-            line-height: 1.7;
-            color: var(--text-secondary);
-        }
-
-        .faq-item.active .faq-toggle {
-            transform: rotate(45deg);
-        }
-
-        .social-links {
-            padding: var(--section-padding);
-            background: var(--primary-bg);
-        }
-
-        .social-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .social-card {
-            background: var(--accent-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            text-decoration: none;
-            color: inherit;
-            text-align: center;
-            transition: var(--transition);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .social-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--text-highlight);
-        }
-
-        .social-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .social-card h3 {
-            color: var(--text-highlight);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .social-card p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .social-handle {
-            color: var(--accent-blue);
-            font-weight: 600;
-            font-family: var(--font-mono);
-        }
-
-        @keyframes shimmer {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-
-        @media (max-width: 768px) {
-            .page-hero {
-                padding-top: 100px;
-            }
-            
-            .contact-highlights {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .location-details {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .social-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            }
-        }
-    </style>
+    const status = document.getElementById('form-status');
+    status.style.display = 'block';
+    setTimeout(() => { status.style.display = 'none'; }, 5000);
+  });
+</script>
 </body>
 </html>
